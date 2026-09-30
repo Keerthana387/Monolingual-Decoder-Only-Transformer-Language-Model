@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "total_examples": 25000,
+  "split_sizes": {
+    "train": 20000,
+    "val": 2000,
+    "test": 3000
+  },
+  "global_unique_prompts": 25000,
+  "global_unique_ids": 25000,
+  "exact_prompt_overlap": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "template_overlap_train_val_vs_test": [],
+  "task_counts": {
+    "train": {
+      "equality": 2002,
+      "transitive_3": 4078,
+      "transitive_2": 4051,
+      "direct_comparison": 3934,
+      "reverse_comparison": 2917,
+      "ordering": 3018
+    },
+    "val": {
+      "transitive_3": 409,
+      "transitive_2": 416,
+      "direct_comparison": 399,
+      "ordering": 314,
+      "equality": 188,
+      "reverse_comparison": 274
+    },
+    "test": {
+      "transitive_3": 581,
+      "direct_comparison": 579,
+      "transitive_2": 630,
+      "equality": 285,
+      "reverse_comparison": 473,
+      "ordering": 452
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "num_examples_requested": 50,
+  "num_examples_evaluated": 50,
+  "pretrained": {
+    "0": {
+      "mean_entropy": 2.7791655534722564,
+      "mean_attention_distance": 12.08009998257473,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "1": {
+      "mean_entropy": 2.6317110694938624,
+      "mean_attention_distance": 12.276964540934289,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "2": {
+      "mean_entropy": 2.4505847204416775,
+      "mean_attention_distance": 11.43506447710693,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "3": {
+      "mean_entropy": 1.9950653476781846,
+      "mean_attention_distance": 6.266083215452316,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "4": {
+      "mean_entropy": 1.7214054256852134,
+      "mean_attention_distance": 4.056612205216671,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "5": {
+      "mean_entropy": 1.681740638049532,
+      "mean_attention_distance": 6.212405365295503,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "6": {
+      "mean_entropy": 1.5704081145040365,
+      "mean_attention_distance": 6.882306608995434,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "7": {
+      "mean_entropy": 1.7120543986213905,
+      "mean_attention_distance": 11.374951414546468,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "8": {
+      "mean_entropy": 1.8660392534124122,
+      "mean_attention_distance": 11.473468235911396,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "9": {
+      "mean_entropy": 1.9927761999672016,
+      "mean_attention_distance": 12.359256179295596,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    }
+  },
+  "finetuned": {
+    "0": {
+      "mean_entropy": 2.7674621544060187,
+      "mean_attention_distance": 12.011132549895901,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "1": {
+      "mean_entropy": 2.5869705328822197,
+      "mean_attention_distance": 11.729329060981625,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "2": {
+      "mean_entropy": 2.4620116084071193,
+      "mean_attention_distance": 11.064943748175567,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "3": {
+      "mean_entropy": 1.9004302923931946,
+      "mean_attention_distance": 5.165502941326668,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "4": {
+      "mean_entropy": 1.5406860781217315,
+      "mean_attention_distance": 3.4395799101978715,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "5": {
+      "mean_entropy": 1.4968898151169163,
+      "mean_attention_distance": 4.956565716287531,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "6": {
+      "mean_entropy": 1.3682200931501578,
+      "mean_attention_distance": 5.045783236743871,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "7": {
+      "mean_entropy": 1.514617360978679,
+      "mean_attention_distance": 10.018582935958044,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "8": {
+      "mean_entropy": 1.5606137303510372,
+      "mean_attention_distance": 12.440471211832124,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    },
+    "9": {
+      "mean_entropy": 1.7380860807810001,
+      "mean_attention_distance": 13.038275454517311,
+      "num_examples": 50,
+      "num_heads": 8,
+      "mean_sequence_length": 49.98
+    }
+  }
+}

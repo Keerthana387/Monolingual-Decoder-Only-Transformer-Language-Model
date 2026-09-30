@@ -1,0 +1,12 @@
+{
+  "run": "reasoning_8k_real_12k",
+  "max_steps": 1250,
+  "batch_size": 16,
+  "learning_rate": 5e-05,
+  "warmup_steps": 100,
+  "final_step": 1250,
+  "final_training_loss": 2.9378812313079834,
+  "final_training_ppl": 18.875810437661816,
+  "final_validation_loss": 0.5445331671833992,
+  "final_validation_ppl": 1.7238034664829522
+}

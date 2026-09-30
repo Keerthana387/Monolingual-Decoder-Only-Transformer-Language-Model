@@ -1,0 +1,272 @@
+{
+  "language": "Nepali",
+  "vocab_size": 8000,
+  "tokenizer": "nepali_bpe_8000_sp.json",
+  "input_file": "nepali_500M_tokenizer_training.txt",
+  "dtype": "uint16",
+  "shard_size_tokens": 10000000,
+  "total_tokens": 636582387,
+  "total_lines": 1027404,
+  "total_characters": 2389326096,
+  "unknown_tokens": 0,
+  "unknown_rate_percent": 0.0,
+  "num_shards": 64,
+  "shards": [
+    {
+      "file": "train_000.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_001.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_002.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_003.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_004.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_005.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_006.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_007.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_008.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_009.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_010.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_011.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_012.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_013.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_014.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_015.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_016.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_017.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_018.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_019.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_020.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_021.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_022.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_023.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_024.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_025.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_026.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_027.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_028.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_029.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_030.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_031.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_032.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_033.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_034.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_035.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_036.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_037.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_038.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_039.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_040.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_041.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_042.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_043.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_044.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_045.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_046.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_047.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_048.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_049.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_050.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_051.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_052.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_053.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_054.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_055.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_056.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_057.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_058.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_059.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_060.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_061.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_062.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_063.bin",
+      "tokens": 6582387
+    }
+  ]
+}

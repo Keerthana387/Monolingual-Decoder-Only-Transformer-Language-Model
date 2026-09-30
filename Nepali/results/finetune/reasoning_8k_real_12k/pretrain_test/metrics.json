@@ -1,0 +1,48 @@
+{
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Nepali/finetune/mixed_data_size/reasoning_8k_real_12k/final.pt",
+  "test_bin": "/content/LMA_IP_DATA/train/test/test_000.bin",
+  "loss": 12.3399619140625,
+  "ppl": 228653.24341783437,
+  "bpb": 1.6263450395926438,
+  "evaluated_tokens": 1024000,
+  "evaluated_sequences": 2000,
+  "evaluated_utf8_bytes": 11209226,
+  "generation": {
+    "greedy": {
+      "samples": 100,
+      "BLEU4_corpus": 0.23523564102004665,
+      "chrF_mean": 15.151125996820333,
+      "ROUGE_L_mean": 9.102803738317757,
+      "repetition_rate_mean": 0.7079032258064515,
+      "distinct_1_mean": 0.244375,
+      "distinct_2_mean": 0.27365079365079364
+    },
+    "temperature_0.5": {
+      "samples": 100,
+      "BLEU4_corpus": 0.22121654236783891,
+      "chrF_mean": 17.123254780454037,
+      "ROUGE_L_mean": 8.560747663551401,
+      "repetition_rate_mean": 0.35274193548387095,
+      "distinct_1_mean": 0.47328125,
+      "distinct_2_mean": 0.5833333333333333
+    },
+    "temperature_1.0": {
+      "samples": 100,
+      "BLEU4_corpus": 0.09137222133140063,
+      "chrF_mean": 16.78382323880887,
+      "ROUGE_L_mean": 6.442367601246107,
+      "repetition_rate_mean": 0.016774193548387096,
+      "distinct_1_mean": 0.8621875,
+      "distinct_2_mean": 0.9634920634920635
+    },
+    "temperature_1.5": {
+      "samples": 100,
+      "BLEU4_corpus": 0.0,
+      "chrF_mean": 15.75486939619316,
+      "ROUGE_L_mean": 3.9003115264797503,
+      "repetition_rate_mean": 0.00016129032258064503,
+      "distinct_1_mean": 0.96,
+      "distinct_2_mean": 0.9987301587301587
+    }
+  }
+}

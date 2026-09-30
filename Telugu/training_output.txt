@@ -1,0 +1,1333 @@
+================================================================================
+TELUGU MODEL H — COLAB GPU TRAINING
+================================================================================
+
+GPU:
+Tesla T4
+GPU memory: 14.56 GB
+
+Model:
+Vocabulary size : 6000
+d_model         : 448
+Layers          : 10
+Heads           : 8
+FFN dimension   : 1344
+Context length  : 512
+
+Training configuration:
+Batch size      : 16
+Sequence length : 512
+Maximum steps   : 59,214
+Learning rate   : 3.000000e-04
+Weight decay    : 0.01
+
+Mixed precision : FP16
+GradScaler      : enabled
+
+Checking local training data...
+Training data:
+/content/LMA_IP_DATA/train
+Training shards: 49
+
+Training dataset:
+Tokens          : 486,031,477
+Samples         : 947,429
+
+Checking local validation data...
+Validation data:
+/content/LMA_IP_DATA/validation
+Validation shards: 1
+
+Validation dataset:
+Tokens          : 2,922,947
+Samples         : 5,697
+
+Creating model...
+Trainable parameters: 23,042,432
+
+Training:
+--------------------------------------------------------------------------------
+Step       1 | LR 0.000000e+00 | Loss 8.77205 | PPL 6451.37 | 11,144 tok/s
+Step      50 | LR 7.350000e-06 | Loss 8.45430 | PPL 4695.20 | 31,867 tok/s
+Step     100 | LR 1.485000e-05 | Loss 8.19131 | PPL 3609.46 | 32,364 tok/s
+Step     150 | LR 2.235000e-05 | Loss 7.93941 | PPL 2805.69 | 32,455 tok/s
+Step     200 | LR 2.985000e-05 | Loss 7.67591 | PPL 2155.79 | 32,437 tok/s
+Step     250 | LR 3.735000e-05 | Loss 7.51365 | PPL 1832.88 | 32,366 tok/s
+Step     300 | LR 4.485000e-05 | Loss 7.28604 | PPL 1459.78 | 32,335 tok/s
+Step     350 | LR 5.235000e-05 | Loss 7.30772 | PPL 1491.77 | 32,340 tok/s
+Step     400 | LR 5.985000e-05 | Loss 7.19463 | PPL 1332.26 | 32,355 tok/s
+Step     450 | LR 6.735000e-05 | Loss 7.08261 | PPL 1191.07 | 32,370 tok/s
+Step     500 | LR 7.485000e-05 | Loss 6.92267 | PPL 1015.03 | 32,375 tok/s
+Step     550 | LR 8.235000e-05 | Loss 6.80166 | PPL 899.34 | 32,371 tok/s
+Step     600 | LR 8.985000e-05 | Loss 6.67358 | PPL 791.22 | 32,355 tok/s
+Step     650 | LR 9.735000e-05 | Loss 6.56631 | PPL 710.74 | 32,347 tok/s
+Step     700 | LR 1.048500e-04 | Loss 6.44672 | PPL 630.63 | 32,343 tok/s
+Step     750 | LR 1.123500e-04 | Loss 6.43730 | PPL 624.72 | 32,340 tok/s
+Step     800 | LR 1.198500e-04 | Loss 6.21348 | PPL 499.44 | 32,341 tok/s
+Step     850 | LR 1.273500e-04 | Loss 6.16725 | PPL 476.87 | 32,339 tok/s
+Step     900 | LR 1.348500e-04 | Loss 6.09149 | PPL 442.08 | 32,338 tok/s
+Step     950 | LR 1.423500e-04 | Loss 5.91733 | PPL 371.42 | 32,335 tok/s
+Step    1000 | LR 1.498500e-04 | Loss 5.86958 | PPL 354.10 | 32,331 tok/s
+Step    1050 | LR 1.573500e-04 | Loss 5.87151 | PPL 354.78 | 32,329 tok/s
+Step    1100 | LR 1.648500e-04 | Loss 5.74805 | PPL 313.58 | 32,324 tok/s
+Step    1150 | LR 1.723500e-04 | Loss 5.76815 | PPL 319.94 | 32,322 tok/s
+Step    1200 | LR 1.798500e-04 | Loss 5.58767 | PPL 267.11 | 32,321 tok/s
+Step    1250 | LR 1.873500e-04 | Loss 5.62115 | PPL 276.21 | 32,318 tok/s
+Step    1300 | LR 1.948500e-04 | Loss 5.58495 | PPL 266.39 | 32,317 tok/s
+Step    1350 | LR 2.023500e-04 | Loss 5.64434 | PPL 282.69 | 32,315 tok/s
+Step    1400 | LR 2.098500e-04 | Loss 5.31645 | PPL 203.66 | 32,315 tok/s
+Step    1450 | LR 2.173500e-04 | Loss 5.42107 | PPL 226.12 | 32,315 tok/s
+Step    1500 | LR 2.248500e-04 | Loss 5.51383 | PPL 248.10 | 32,314 tok/s
+Step    1550 | LR 2.323500e-04 | Loss 5.40454 | PPL 222.41 | 32,315 tok/s
+Step    1600 | LR 2.398500e-04 | Loss 5.35052 | PPL 210.72 | 32,315 tok/s
+Step    1650 | LR 2.473500e-04 | Loss 5.29093 | PPL 198.53 | 32,314 tok/s
+Step    1700 | LR 2.548500e-04 | Loss 5.41822 | PPL 225.48 | 32,314 tok/s
+Step    1750 | LR 2.623500e-04 | Loss 5.30698 | PPL 201.74 | 32,314 tok/s
+Step    1800 | LR 2.698500e-04 | Loss 5.22401 | PPL 185.68 | 32,315 tok/s
+Step    1850 | LR 2.773500e-04 | Loss 5.09184 | PPL 162.69 | 32,316 tok/s
+Step    1900 | LR 2.848500e-04 | Loss 5.20824 | PPL 182.77 | 32,316 tok/s
+Step    1950 | LR 2.923500e-04 | Loss 5.13554 | PPL 169.96 | 32,317 tok/s
+Step    2000 | LR 2.998500e-04 | Loss 4.82405 | PPL 124.47 | 32,317 tok/s
+Validation | Loss 5.13217 | PPL 169.38
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_002000.pt
+Step    2050 | LR 2.999995e-04 | Loss 5.16952 | PPL 175.83 | 31,749 tok/s
+Step    2100 | LR 2.999980e-04 | Loss 5.00980 | PPL 149.87 | 31,762 tok/s
+Step    2150 | LR 2.999955e-04 | Loss 4.87223 | PPL 130.61 | 31,774 tok/s
+Step    2200 | LR 2.999919e-04 | Loss 5.16509 | PPL 175.05 | 31,786 tok/s
+Step    2250 | LR 2.999874e-04 | Loss 5.13910 | PPL 170.56 | 31,796 tok/s
+Step    2300 | LR 2.999818e-04 | Loss 5.10399 | PPL 164.68 | 31,806 tok/s
+Step    2350 | LR 2.999752e-04 | Loss 4.84227 | PPL 126.76 | 31,816 tok/s
+Step    2400 | LR 2.999676e-04 | Loss 4.97198 | PPL 144.31 | 31,825 tok/s
+Step    2450 | LR 2.999590e-04 | Loss 4.99616 | PPL 147.84 | 31,834 tok/s
+Step    2500 | LR 2.999493e-04 | Loss 4.79395 | PPL 120.78 | 31,843 tok/s
+Step    2550 | LR 2.999387e-04 | Loss 4.96010 | PPL 142.61 | 31,852 tok/s
+Step    2600 | LR 2.999270e-04 | Loss 4.95154 | PPL 141.39 | 31,860 tok/s
+Step    2650 | LR 2.999143e-04 | Loss 4.86640 | PPL 129.85 | 31,868 tok/s
+Step    2700 | LR 2.999006e-04 | Loss 4.82068 | PPL 124.05 | 31,876 tok/s
+Step    2750 | LR 2.998858e-04 | Loss 4.77792 | PPL 118.86 | 31,883 tok/s
+Step    2800 | LR 2.998701e-04 | Loss 4.56303 | PPL 95.87 | 31,890 tok/s
+Step    2850 | LR 2.998533e-04 | Loss 4.52091 | PPL 91.92 | 31,897 tok/s
+Step    2900 | LR 2.998356e-04 | Loss 4.55837 | PPL 95.43 | 31,904 tok/s
+Step    2950 | LR 2.998168e-04 | Loss 4.70371 | PPL 110.36 | 31,911 tok/s
+Step    3000 | LR 2.997969e-04 | Loss 4.29806 | PPL 73.56 | 31,918 tok/s
+Step    3050 | LR 2.997761e-04 | Loss 4.69769 | PPL 109.69 | 31,924 tok/s
+Step    3100 | LR 2.997543e-04 | Loss 4.69603 | PPL 109.51 | 31,930 tok/s
+Step    3150 | LR 2.997314e-04 | Loss 4.44418 | PPL 85.13 | 31,937 tok/s
+Step    3200 | LR 2.997075e-04 | Loss 4.45256 | PPL 85.85 | 31,943 tok/s
+Step    3250 | LR 2.996826e-04 | Loss 4.31790 | PPL 75.03 | 31,949 tok/s
+Step    3300 | LR 2.996567e-04 | Loss 4.59075 | PPL 98.57 | 31,955 tok/s
+Step    3350 | LR 2.996298e-04 | Loss 4.60846 | PPL 100.33 | 31,961 tok/s
+Step    3400 | LR 2.996019e-04 | Loss 4.57143 | PPL 96.68 | 31,966 tok/s
+Step    3450 | LR 2.995729e-04 | Loss 4.37984 | PPL 79.83 | 31,971 tok/s
+Step    3500 | LR 2.995430e-04 | Loss 4.48991 | PPL 89.11 | 31,977 tok/s
+Step    3550 | LR 2.995120e-04 | Loss 4.35389 | PPL 77.78 | 31,982 tok/s
+Step    3600 | LR 2.994800e-04 | Loss 4.26689 | PPL 71.30 | 31,987 tok/s
+Step    3650 | LR 2.994470e-04 | Loss 4.46828 | PPL 87.21 | 31,992 tok/s
+Step    3700 | LR 2.994130e-04 | Loss 4.49741 | PPL 89.78 | 31,997 tok/s
+Step    3750 | LR 2.993779e-04 | Loss 4.39503 | PPL 81.05 | 32,001 tok/s
+Step    3800 | LR 2.993419e-04 | Loss 4.55812 | PPL 95.40 | 32,006 tok/s
+Step    3850 | LR 2.993048e-04 | Loss 4.45448 | PPL 86.01 | 32,010 tok/s
+Step    3900 | LR 2.992667e-04 | Loss 4.20098 | PPL 66.75 | 32,014 tok/s
+Step    3950 | LR 2.992277e-04 | Loss 4.28549 | PPL 72.64 | 32,018 tok/s
+Step    4000 | LR 2.991876e-04 | Loss 4.55072 | PPL 94.70 | 32,022 tok/s
+Validation | Loss 4.26700 | PPL 71.31
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_004000.pt
+Step    4050 | LR 2.991465e-04 | Loss 4.31870 | PPL 75.09 | 31,738 tok/s
+Step    4100 | LR 2.991043e-04 | Loss 4.43256 | PPL 84.15 | 31,745 tok/s
+Step    4150 | LR 2.990612e-04 | Loss 4.16698 | PPL 64.52 | 31,751 tok/s
+Step    4200 | LR 2.990171e-04 | Loss 4.26693 | PPL 71.30 | 31,757 tok/s
+Step    4250 | LR 2.989719e-04 | Loss 4.43197 | PPL 84.10 | 31,764 tok/s
+Step    4300 | LR 2.989258e-04 | Loss 4.55802 | PPL 95.39 | 31,770 tok/s
+Step    4350 | LR 2.988786e-04 | Loss 4.36892 | PPL 78.96 | 31,776 tok/s
+Step    4400 | LR 2.988304e-04 | Loss 4.40684 | PPL 82.01 | 31,781 tok/s
+Step    4450 | LR 2.987812e-04 | Loss 4.19846 | PPL 66.58 | 31,787 tok/s
+Step    4500 | LR 2.987310e-04 | Loss 4.47969 | PPL 88.21 | 31,792 tok/s
+Step    4550 | LR 2.986798e-04 | Loss 4.34056 | PPL 76.75 | 31,797 tok/s
+Step    4600 | LR 2.986276e-04 | Loss 4.27956 | PPL 72.21 | 31,802 tok/s
+Step    4650 | LR 2.985744e-04 | Loss 3.99678 | PPL 54.42 | 31,807 tok/s
+Step    4700 | LR 2.985202e-04 | Loss 4.27864 | PPL 72.14 | 31,812 tok/s
+Step    4750 | LR 2.984649e-04 | Loss 4.05177 | PPL 57.50 | 31,817 tok/s
+Step    4800 | LR 2.984087e-04 | Loss 4.27980 | PPL 72.23 | 31,821 tok/s
+Step    4850 | LR 2.983515e-04 | Loss 4.08533 | PPL 59.46 | 31,826 tok/s
+Step    4900 | LR 2.982932e-04 | Loss 3.94210 | PPL 51.53 | 31,831 tok/s
+Step    4950 | LR 2.982340e-04 | Loss 3.80348 | PPL 44.86 | 31,836 tok/s
+Step    5000 | LR 2.981737e-04 | Loss 4.16438 | PPL 64.35 | 31,841 tok/s
+Step    5050 | LR 2.981124e-04 | Loss 4.22030 | PPL 68.05 | 31,845 tok/s
+Step    5100 | LR 2.980502e-04 | Loss 3.95191 | PPL 52.03 | 31,850 tok/s
+Step    5150 | LR 2.979869e-04 | Loss 4.12715 | PPL 62.00 | 31,855 tok/s
+Step    5200 | LR 2.979226e-04 | Loss 4.10589 | PPL 60.70 | 31,859 tok/s
+Step    5250 | LR 2.978574e-04 | Loss 3.96308 | PPL 52.62 | 31,864 tok/s
+Step    5300 | LR 2.977911e-04 | Loss 4.10301 | PPL 60.52 | 31,868 tok/s
+Step    5350 | LR 2.977238e-04 | Loss 4.21142 | PPL 67.45 | 31,872 tok/s
+Step    5400 | LR 2.976556e-04 | Loss 4.11914 | PPL 61.51 | 31,877 tok/s
+Step    5450 | LR 2.975863e-04 | Loss 4.19267 | PPL 66.20 | 31,881 tok/s
+Step    5500 | LR 2.975160e-04 | Loss 4.01083 | PPL 55.19 | 31,885 tok/s
+Step    5550 | LR 2.974447e-04 | Loss 4.16694 | PPL 64.52 | 31,888 tok/s
+Step    5600 | LR 2.973725e-04 | Loss 4.18551 | PPL 65.73 | 31,892 tok/s
+Step    5650 | LR 2.972992e-04 | Loss 4.02250 | PPL 55.84 | 31,896 tok/s
+Step    5700 | LR 2.972249e-04 | Loss 4.10592 | PPL 60.70 | 31,899 tok/s
+Step    5750 | LR 2.971497e-04 | Loss 3.99463 | PPL 54.31 | 31,903 tok/s
+Step    5800 | LR 2.970734e-04 | Loss 3.93751 | PPL 51.29 | 31,906 tok/s
+Step    5850 | LR 2.969962e-04 | Loss 4.26677 | PPL 71.29 | 31,909 tok/s
+Step    5900 | LR 2.969179e-04 | Loss 3.93131 | PPL 50.97 | 31,913 tok/s
+Step    5950 | LR 2.968387e-04 | Loss 4.08581 | PPL 59.49 | 31,916 tok/s
+Step    6000 | LR 2.967584e-04 | Loss 4.05684 | PPL 57.79 | 31,919 tok/s
+Validation | Loss 3.84602 | PPL 46.81
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_006000.pt
+Step    6050 | LR 2.966772e-04 | Loss 3.94707 | PPL 51.78 | 31,733 tok/s
+Step    6100 | LR 2.965950e-04 | Loss 3.96737 | PPL 52.85 | 31,737 tok/s
+Step    6150 | LR 2.965118e-04 | Loss 4.09674 | PPL 60.14 | 31,742 tok/s
+Step    6200 | LR 2.964276e-04 | Loss 4.10565 | PPL 60.68 | 31,746 tok/s
+Step    6250 | LR 2.963424e-04 | Loss 3.89133 | PPL 48.98 | 31,750 tok/s
+Step    6300 | LR 2.962562e-04 | Loss 3.78365 | PPL 43.98 | 31,755 tok/s
+Step    6350 | LR 2.961690e-04 | Loss 4.06459 | PPL 58.24 | 31,758 tok/s
+Step    6400 | LR 2.960808e-04 | Loss 3.54558 | PPL 34.66 | 31,762 tok/s
+Step    6450 | LR 2.959917e-04 | Loss 3.88515 | PPL 48.67 | 31,766 tok/s
+Step    6500 | LR 2.959015e-04 | Loss 3.95382 | PPL 52.13 | 31,770 tok/s
+Step    6550 | LR 2.958104e-04 | Loss 3.87153 | PPL 48.02 | 31,774 tok/s
+Step    6600 | LR 2.957183e-04 | Loss 4.04069 | PPL 56.87 | 31,778 tok/s
+Step    6650 | LR 2.956252e-04 | Loss 4.02413 | PPL 55.93 | 31,781 tok/s
+Step    6700 | LR 2.955311e-04 | Loss 3.86107 | PPL 47.52 | 31,785 tok/s
+Step    6750 | LR 2.954360e-04 | Loss 3.79031 | PPL 44.27 | 31,789 tok/s
+Step    6800 | LR 2.953400e-04 | Loss 3.96709 | PPL 52.83 | 31,792 tok/s
+Step    6850 | LR 2.952430e-04 | Loss 4.17149 | PPL 64.81 | 31,796 tok/s
+Step    6900 | LR 2.951450e-04 | Loss 3.96366 | PPL 52.65 | 31,799 tok/s
+Step    6950 | LR 2.950460e-04 | Loss 3.77226 | PPL 43.48 | 31,802 tok/s
+Step    7000 | LR 2.949460e-04 | Loss 3.95669 | PPL 52.28 | 31,806 tok/s
+Step    7050 | LR 2.948450e-04 | Loss 3.91752 | PPL 50.28 | 31,809 tok/s
+Step    7100 | LR 2.947431e-04 | Loss 4.13698 | PPL 62.61 | 31,812 tok/s
+Step    7150 | LR 2.946402e-04 | Loss 3.99819 | PPL 54.50 | 31,815 tok/s
+Step    7200 | LR 2.945363e-04 | Loss 4.04101 | PPL 56.88 | 31,819 tok/s
+Step    7250 | LR 2.944314e-04 | Loss 3.84083 | PPL 46.56 | 31,822 tok/s
+Step    7300 | LR 2.943256e-04 | Loss 3.90720 | PPL 49.76 | 31,825 tok/s
+Step    7350 | LR 2.942188e-04 | Loss 4.17980 | PPL 65.35 | 31,828 tok/s
+Step    7400 | LR 2.941110e-04 | Loss 3.85438 | PPL 47.20 | 31,831 tok/s
+Step    7450 | LR 2.940022e-04 | Loss 3.53663 | PPL 34.35 | 31,833 tok/s
+Step    7500 | LR 2.938925e-04 | Loss 4.05369 | PPL 57.61 | 31,836 tok/s
+Step    7550 | LR 2.937818e-04 | Loss 3.68479 | PPL 39.84 | 31,839 tok/s
+Step    7600 | LR 2.936701e-04 | Loss 3.89015 | PPL 48.92 | 31,842 tok/s
+Step    7650 | LR 2.935575e-04 | Loss 3.91755 | PPL 50.28 | 31,845 tok/s
+Step    7700 | LR 2.934438e-04 | Loss 3.84305 | PPL 46.67 | 31,848 tok/s
+Step    7750 | LR 2.933293e-04 | Loss 3.84667 | PPL 46.84 | 31,851 tok/s
+Step    7800 | LR 2.932137e-04 | Loss 4.15094 | PPL 63.49 | 31,853 tok/s
+Step    7850 | LR 2.930972e-04 | Loss 3.91456 | PPL 50.13 | 31,856 tok/s
+Step    7900 | LR 2.929797e-04 | Loss 3.90455 | PPL 49.63 | 31,858 tok/s
+Step    7950 | LR 2.928613e-04 | Loss 3.86012 | PPL 47.47 | 31,861 tok/s
+Step    8000 | LR 2.927418e-04 | Loss 3.95657 | PPL 52.28 | 31,864 tok/s
+Validation | Loss 3.65180 | PPL 38.54
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_008000.pt
+Step    8050 | LR 2.926215e-04 | Loss 4.25243 | PPL 70.28 | 31,722 tok/s
+Step    8100 | LR 2.925001e-04 | Loss 3.93689 | PPL 51.26 | 31,726 tok/s
+Step    8150 | LR 2.923778e-04 | Loss 3.89174 | PPL 49.00 | 31,729 tok/s
+Step    8200 | LR 2.922546e-04 | Loss 3.84132 | PPL 46.59 | 31,732 tok/s
+Step    8250 | LR 2.921304e-04 | Loss 3.77018 | PPL 43.39 | 31,736 tok/s
+Step    8300 | LR 2.920052e-04 | Loss 3.78547 | PPL 44.06 | 31,739 tok/s
+Step    8350 | LR 2.918791e-04 | Loss 4.02488 | PPL 55.97 | 31,742 tok/s
+Step    8400 | LR 2.917520e-04 | Loss 4.01004 | PPL 55.15 | 31,745 tok/s
+Step    8450 | LR 2.916239e-04 | Loss 3.65965 | PPL 38.85 | 31,748 tok/s
+Step    8500 | LR 2.914949e-04 | Loss 3.75443 | PPL 42.71 | 31,751 tok/s
+Step    8550 | LR 2.913650e-04 | Loss 3.80048 | PPL 44.72 | 31,754 tok/s
+Step    8600 | LR 2.912341e-04 | Loss 3.85147 | PPL 47.06 | 31,757 tok/s
+Step    8650 | LR 2.911022e-04 | Loss 4.08390 | PPL 59.38 | 31,759 tok/s
+Step    8700 | LR 2.909694e-04 | Loss 3.92500 | PPL 50.65 | 31,762 tok/s
+Step    8750 | LR 2.908356e-04 | Loss 3.97976 | PPL 53.50 | 31,765 tok/s
+Step    8800 | LR 2.907009e-04 | Loss 4.03773 | PPL 56.70 | 31,768 tok/s
+Step    8850 | LR 2.905653e-04 | Loss 3.74960 | PPL 42.50 | 31,770 tok/s
+Step    8900 | LR 2.904287e-04 | Loss 4.01009 | PPL 55.15 | 31,773 tok/s
+Step    8950 | LR 2.902911e-04 | Loss 3.92768 | PPL 50.79 | 31,776 tok/s
+Step    9000 | LR 2.901527e-04 | Loss 4.06586 | PPL 58.32 | 31,779 tok/s
+Step    9050 | LR 2.900132e-04 | Loss 3.78915 | PPL 44.22 | 31,781 tok/s
+Step    9100 | LR 2.898729e-04 | Loss 3.94262 | PPL 51.55 | 31,784 tok/s
+Step    9150 | LR 2.897315e-04 | Loss 3.70637 | PPL 40.71 | 31,787 tok/s
+Step    9200 | LR 2.895893e-04 | Loss 3.87280 | PPL 48.08 | 31,790 tok/s
+Step    9250 | LR 2.894461e-04 | Loss 3.68636 | PPL 39.90 | 31,793 tok/s
+Step    9300 | LR 2.893020e-04 | Loss 3.93479 | PPL 51.15 | 31,795 tok/s
+Step    9350 | LR 2.891569e-04 | Loss 3.89639 | PPL 49.22 | 31,798 tok/s
+Step    9400 | LR 2.890109e-04 | Loss 3.67653 | PPL 39.51 | 31,801 tok/s
+Step    9450 | LR 2.888639e-04 | Loss 3.93105 | PPL 50.96 | 31,804 tok/s
+Step    9500 | LR 2.887161e-04 | Loss 3.70681 | PPL 40.72 | 31,806 tok/s
+Step    9550 | LR 2.885673e-04 | Loss 3.90412 | PPL 49.61 | 31,809 tok/s
+Step    9600 | LR 2.884175e-04 | Loss 3.60858 | PPL 36.91 | 31,812 tok/s
+Step    9650 | LR 2.882669e-04 | Loss 3.92491 | PPL 50.65 | 31,814 tok/s
+Step    9700 | LR 2.881153e-04 | Loss 3.68914 | PPL 40.01 | 31,817 tok/s
+Step    9750 | LR 2.879627e-04 | Loss 3.83053 | PPL 46.09 | 31,819 tok/s
+Step    9800 | LR 2.878093e-04 | Loss 3.77235 | PPL 43.48 | 31,822 tok/s
+Step    9850 | LR 2.876549e-04 | Loss 3.80349 | PPL 44.86 | 31,824 tok/s
+Step    9900 | LR 2.874996e-04 | Loss 3.79998 | PPL 44.70 | 31,826 tok/s
+Step    9950 | LR 2.873434e-04 | Loss 3.74472 | PPL 42.30 | 31,829 tok/s
+Step   10000 | LR 2.871862e-04 | Loss 3.90365 | PPL 49.58 | 31,831 tok/s
+Validation | Loss 3.53559 | PPL 34.32
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_010000.pt
+Step   10050 | LR 2.870282e-04 | Loss 3.88995 | PPL 48.91 | 31,721 tok/s
+Step   10100 | LR 2.868692e-04 | Loss 3.80549 | PPL 44.95 | 31,724 tok/s
+Step   10150 | LR 2.867093e-04 | Loss 3.69846 | PPL 40.38 | 31,726 tok/s
+Step   10200 | LR 2.865484e-04 | Loss 4.07993 | PPL 59.14 | 31,729 tok/s
+Step   10250 | LR 2.863867e-04 | Loss 3.87966 | PPL 48.41 | 31,732 tok/s
+Step   10300 | LR 2.862240e-04 | Loss 3.82386 | PPL 45.78 | 31,734 tok/s
+Step   10350 | LR 2.860605e-04 | Loss 3.81956 | PPL 45.58 | 31,737 tok/s
+Step   10400 | LR 2.858960e-04 | Loss 3.80491 | PPL 44.92 | 31,739 tok/s
+Step   10450 | LR 2.857306e-04 | Loss 3.77017 | PPL 43.39 | 31,742 tok/s
+Step   10500 | LR 2.855643e-04 | Loss 3.74042 | PPL 42.12 | 31,745 tok/s
+Step   10550 | LR 2.853971e-04 | Loss 3.69183 | PPL 40.12 | 31,747 tok/s
+Step   10600 | LR 2.852290e-04 | Loss 3.74749 | PPL 42.41 | 31,750 tok/s
+Step   10650 | LR 2.850599e-04 | Loss 3.39028 | PPL 29.67 | 31,753 tok/s
+Step   10700 | LR 2.848900e-04 | Loss 3.92003 | PPL 50.40 | 31,756 tok/s
+Step   10750 | LR 2.847192e-04 | Loss 3.74693 | PPL 42.39 | 31,758 tok/s
+Step   10800 | LR 2.845474e-04 | Loss 3.48041 | PPL 32.47 | 31,761 tok/s
+Step   10850 | LR 2.843748e-04 | Loss 3.59800 | PPL 36.52 | 31,764 tok/s
+Step   10900 | LR 2.842013e-04 | Loss 3.76343 | PPL 43.10 | 31,766 tok/s
+Step   10950 | LR 2.840268e-04 | Loss 3.95491 | PPL 52.19 | 31,769 tok/s
+Step   11000 | LR 2.838515e-04 | Loss 3.59685 | PPL 36.48 | 31,772 tok/s
+Step   11050 | LR 2.836753e-04 | Loss 3.79098 | PPL 44.30 | 31,774 tok/s
+Step   11100 | LR 2.834981e-04 | Loss 3.67191 | PPL 39.33 | 31,777 tok/s
+Step   11150 | LR 2.833201e-04 | Loss 3.79957 | PPL 44.68 | 31,779 tok/s
+Step   11200 | LR 2.831412e-04 | Loss 3.67673 | PPL 39.52 | 31,782 tok/s
+Step   11250 | LR 2.829614e-04 | Loss 3.72370 | PPL 41.42 | 31,784 tok/s
+Step   11300 | LR 2.827807e-04 | Loss 3.57154 | PPL 35.57 | 31,787 tok/s
+Step   11350 | LR 2.825991e-04 | Loss 3.65852 | PPL 38.80 | 31,789 tok/s
+Step   11400 | LR 2.824167e-04 | Loss 3.88634 | PPL 48.73 | 31,791 tok/s
+Step   11450 | LR 2.822333e-04 | Loss 3.84058 | PPL 46.55 | 31,794 tok/s
+Step   11500 | LR 2.820491e-04 | Loss 3.85717 | PPL 47.33 | 31,796 tok/s
+Step   11550 | LR 2.818640e-04 | Loss 3.73838 | PPL 42.03 | 31,798 tok/s
+Step   11600 | LR 2.816780e-04 | Loss 3.82479 | PPL 45.82 | 31,800 tok/s
+Step   11650 | LR 2.814911e-04 | Loss 3.69700 | PPL 40.33 | 31,802 tok/s
+Step   11700 | LR 2.813034e-04 | Loss 3.81653 | PPL 45.45 | 31,805 tok/s
+Step   11750 | LR 2.811147e-04 | Loss 3.58903 | PPL 36.20 | 31,807 tok/s
+Step   11800 | LR 2.809252e-04 | Loss 3.75618 | PPL 42.78 | 31,809 tok/s
+Step   11850 | LR 2.807348e-04 | Loss 3.68283 | PPL 39.76 | 31,811 tok/s
+Step   11900 | LR 2.805436e-04 | Loss 3.69720 | PPL 40.33 | 31,813 tok/s
+Step   11950 | LR 2.803515e-04 | Loss 3.83854 | PPL 46.46 | 31,815 tok/s
+Step   12000 | LR 2.801585e-04 | Loss 3.60193 | PPL 36.67 | 31,816 tok/s
+Validation | Loss 3.45844 | PPL 31.77
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_012000.pt
+Step   12050 | LR 2.799646e-04 | Loss 3.66612 | PPL 39.10 | 31,724 tok/s
+Step   12100 | LR 2.797699e-04 | Loss 3.75167 | PPL 42.59 | 31,726 tok/s
+Step   12150 | LR 2.795743e-04 | Loss 3.79863 | PPL 44.64 | 31,729 tok/s
+Step   12200 | LR 2.793779e-04 | Loss 3.57821 | PPL 35.81 | 31,731 tok/s
+Step   12250 | LR 2.791805e-04 | Loss 3.80900 | PPL 45.11 | 31,733 tok/s
+Step   12300 | LR 2.789824e-04 | Loss 3.63521 | PPL 37.91 | 31,735 tok/s
+Step   12350 | LR 2.787833e-04 | Loss 3.73841 | PPL 42.03 | 31,737 tok/s
+Step   12400 | LR 2.785834e-04 | Loss 3.51044 | PPL 33.46 | 31,740 tok/s
+Step   12450 | LR 2.783827e-04 | Loss 3.98752 | PPL 53.92 | 31,742 tok/s
+Step   12500 | LR 2.781811e-04 | Loss 3.69190 | PPL 40.12 | 31,744 tok/s
+Step   12550 | LR 2.779786e-04 | Loss 3.68249 | PPL 39.75 | 31,746 tok/s
+Step   12600 | LR 2.777753e-04 | Loss 3.56077 | PPL 35.19 | 31,748 tok/s
+Step   12650 | LR 2.775712e-04 | Loss 3.90982 | PPL 49.89 | 31,751 tok/s
+Step   12700 | LR 2.773661e-04 | Loss 3.59609 | PPL 36.46 | 31,753 tok/s
+Step   12750 | LR 2.771603e-04 | Loss 3.70385 | PPL 40.60 | 31,755 tok/s
+Step   12800 | LR 2.769536e-04 | Loss 3.53205 | PPL 34.19 | 31,757 tok/s
+Step   12850 | LR 2.767460e-04 | Loss 3.82163 | PPL 45.68 | 31,760 tok/s
+Step   12900 | LR 2.765377e-04 | Loss 3.88991 | PPL 48.91 | 31,762 tok/s
+Step   12950 | LR 2.763284e-04 | Loss 4.10006 | PPL 60.34 | 31,764 tok/s
+Step   13000 | LR 2.761184e-04 | Loss 3.75235 | PPL 42.62 | 31,766 tok/s
+Step   13050 | LR 2.759075e-04 | Loss 3.59908 | PPL 36.56 | 31,768 tok/s
+Step   13100 | LR 2.756957e-04 | Loss 3.71001 | PPL 40.85 | 31,771 tok/s
+Step   13150 | LR 2.754832e-04 | Loss 3.78792 | PPL 44.16 | 31,773 tok/s
+Step   13200 | LR 2.752697e-04 | Loss 3.96728 | PPL 52.84 | 31,775 tok/s
+Step   13250 | LR 2.750555e-04 | Loss 3.73321 | PPL 41.81 | 31,777 tok/s
+Step   13300 | LR 2.748404e-04 | Loss 3.55424 | PPL 34.96 | 31,779 tok/s
+Step   13350 | LR 2.746245e-04 | Loss 3.51342 | PPL 33.56 | 31,781 tok/s
+Step   13400 | LR 2.744078e-04 | Loss 3.62295 | PPL 37.45 | 31,783 tok/s
+Step   13450 | LR 2.741903e-04 | Loss 3.35293 | PPL 28.59 | 31,785 tok/s
+Step   13500 | LR 2.739719e-04 | Loss 3.78312 | PPL 43.95 | 31,787 tok/s
+Step   13550 | LR 2.737527e-04 | Loss 3.55559 | PPL 35.01 | 31,789 tok/s
+Step   13600 | LR 2.735327e-04 | Loss 3.63049 | PPL 37.73 | 31,791 tok/s
+Step   13650 | LR 2.733119e-04 | Loss 3.65105 | PPL 38.52 | 31,793 tok/s
+Step   13700 | LR 2.730902e-04 | Loss 3.80945 | PPL 45.13 | 31,795 tok/s
+Step   13750 | LR 2.728678e-04 | Loss 3.77105 | PPL 43.43 | 31,797 tok/s
+Step   13800 | LR 2.726445e-04 | Loss 3.69940 | PPL 40.42 | 31,799 tok/s
+Step   13850 | LR 2.724204e-04 | Loss 3.81946 | PPL 45.58 | 31,801 tok/s
+Step   13900 | LR 2.721955e-04 | Loss 3.73434 | PPL 41.86 | 31,803 tok/s
+Step   13950 | LR 2.719698e-04 | Loss 3.81614 | PPL 45.43 | 31,804 tok/s
+Step   14000 | LR 2.717433e-04 | Loss 3.57628 | PPL 35.74 | 31,806 tok/s
+Validation | Loss 3.39319 | PPL 29.76
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_014000.pt
+Step   14050 | LR 2.715160e-04 | Loss 3.68816 | PPL 39.97 | 31,728 tok/s
+Step   14100 | LR 2.712879e-04 | Loss 4.08806 | PPL 59.62 | 31,730 tok/s
+Step   14150 | LR 2.710590e-04 | Loss 3.59732 | PPL 36.50 | 31,732 tok/s
+Step   14200 | LR 2.708292e-04 | Loss 3.58395 | PPL 36.02 | 31,733 tok/s
+Step   14250 | LR 2.705987e-04 | Loss 3.75675 | PPL 42.81 | 31,735 tok/s
+Step   14300 | LR 2.703674e-04 | Loss 3.65343 | PPL 38.61 | 31,737 tok/s
+Step   14350 | LR 2.701353e-04 | Loss 3.40333 | PPL 30.06 | 31,739 tok/s
+Step   14400 | LR 2.699024e-04 | Loss 3.53090 | PPL 34.15 | 31,741 tok/s
+Step   14450 | LR 2.696687e-04 | Loss 3.65174 | PPL 38.54 | 31,743 tok/s
+Step   14500 | LR 2.694343e-04 | Loss 3.29638 | PPL 27.01 | 31,745 tok/s
+Step   14550 | LR 2.691990e-04 | Loss 3.74922 | PPL 42.49 | 31,747 tok/s
+Step   14600 | LR 2.689629e-04 | Loss 3.55132 | PPL 34.86 | 31,749 tok/s
+Step   14650 | LR 2.687261e-04 | Loss 3.71108 | PPL 40.90 | 31,751 tok/s
+Step   14700 | LR 2.684885e-04 | Loss 3.85605 | PPL 47.28 | 31,753 tok/s
+Step   14750 | LR 2.682501e-04 | Loss 3.72003 | PPL 41.27 | 31,755 tok/s
+Step   14800 | LR 2.680109e-04 | Loss 3.75201 | PPL 42.61 | 31,757 tok/s
+Step   14850 | LR 2.677710e-04 | Loss 3.74321 | PPL 42.23 | 31,759 tok/s
+Step   14900 | LR 2.675303e-04 | Loss 3.82746 | PPL 45.95 | 31,761 tok/s
+Step   14950 | LR 2.672888e-04 | Loss 3.61255 | PPL 37.06 | 31,763 tok/s
+Step   15000 | LR 2.670465e-04 | Loss 3.66331 | PPL 38.99 | 31,765 tok/s
+Step   15050 | LR 2.668035e-04 | Loss 3.56909 | PPL 35.48 | 31,767 tok/s
+Step   15100 | LR 2.665596e-04 | Loss 3.62043 | PPL 37.35 | 31,769 tok/s
+Step   15150 | LR 2.663151e-04 | Loss 3.57371 | PPL 35.65 | 31,771 tok/s
+Step   15200 | LR 2.660697e-04 | Loss 3.59361 | PPL 36.36 | 31,772 tok/s
+Step   15250 | LR 2.658236e-04 | Loss 3.58548 | PPL 36.07 | 31,774 tok/s
+Step   15300 | LR 2.655768e-04 | Loss 3.52825 | PPL 34.06 | 31,776 tok/s
+Step   15350 | LR 2.653292e-04 | Loss 3.56136 | PPL 35.21 | 31,778 tok/s
+Step   15400 | LR 2.650808e-04 | Loss 3.76885 | PPL 43.33 | 31,779 tok/s
+Step   15450 | LR 2.648317e-04 | Loss 3.78956 | PPL 44.24 | 31,781 tok/s
+Step   15500 | LR 2.645818e-04 | Loss 3.83370 | PPL 46.23 | 31,783 tok/s
+Step   15550 | LR 2.643312e-04 | Loss 3.53938 | PPL 34.45 | 31,784 tok/s
+Step   15600 | LR 2.640798e-04 | Loss 3.35438 | PPL 28.63 | 31,786 tok/s
+Step   15650 | LR 2.638277e-04 | Loss 3.47622 | PPL 32.34 | 31,788 tok/s
+Step   15700 | LR 2.635748e-04 | Loss 3.56754 | PPL 35.43 | 31,789 tok/s
+Step   15750 | LR 2.633212e-04 | Loss 3.54534 | PPL 34.65 | 31,791 tok/s
+Step   15800 | LR 2.630669e-04 | Loss 3.57958 | PPL 35.86 | 31,793 tok/s
+Step   15850 | LR 2.628118e-04 | Loss 3.61479 | PPL 37.14 | 31,794 tok/s
+Step   15900 | LR 2.625559e-04 | Loss 3.71243 | PPL 40.95 | 31,796 tok/s
+Step   15950 | LR 2.622994e-04 | Loss 3.61036 | PPL 36.98 | 31,797 tok/s
+Step   16000 | LR 2.620421e-04 | Loss 3.58710 | PPL 36.13 | 31,799 tok/s
+Validation | Loss 3.34530 | PPL 28.37
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_016000.pt
+Step   16050 | LR 2.617840e-04 | Loss 3.57104 | PPL 35.55 | 31,709 tok/s
+Step   16100 | LR 2.615253e-04 | Loss 3.75934 | PPL 42.92 | 31,710 tok/s
+Step   16150 | LR 2.612658e-04 | Loss 3.78409 | PPL 44.00 | 31,712 tok/s
+Step   16200 | LR 2.610056e-04 | Loss 3.43520 | PPL 31.04 | 31,714 tok/s
+Step   16250 | LR 2.607447e-04 | Loss 3.70053 | PPL 40.47 | 31,715 tok/s
+Step   16300 | LR 2.604830e-04 | Loss 3.48948 | PPL 32.77 | 31,717 tok/s
+Step   16350 | LR 2.602206e-04 | Loss 3.80401 | PPL 44.88 | 31,719 tok/s
+Step   16400 | LR 2.599575e-04 | Loss 3.59176 | PPL 36.30 | 31,721 tok/s
+Step   16450 | LR 2.596937e-04 | Loss 3.68352 | PPL 39.79 | 31,723 tok/s
+Step   16500 | LR 2.594292e-04 | Loss 3.67946 | PPL 39.62 | 31,724 tok/s
+Step   16550 | LR 2.591640e-04 | Loss 3.65810 | PPL 38.79 | 31,726 tok/s
+Step   16600 | LR 2.588980e-04 | Loss 3.71612 | PPL 41.10 | 31,728 tok/s
+Step   16650 | LR 2.586314e-04 | Loss 3.66288 | PPL 38.97 | 31,730 tok/s
+Step   16700 | LR 2.583640e-04 | Loss 3.61653 | PPL 37.21 | 31,732 tok/s
+Step   16750 | LR 2.580959e-04 | Loss 3.55559 | PPL 35.01 | 31,733 tok/s
+Step   16800 | LR 2.578272e-04 | Loss 3.64109 | PPL 38.13 | 31,735 tok/s
+Step   16850 | LR 2.575577e-04 | Loss 3.80844 | PPL 45.08 | 31,737 tok/s
+Step   16900 | LR 2.572876e-04 | Loss 3.59930 | PPL 36.57 | 31,738 tok/s
+Step   16950 | LR 2.570167e-04 | Loss 3.63576 | PPL 37.93 | 31,740 tok/s
+Step   17000 | LR 2.567451e-04 | Loss 3.63592 | PPL 37.94 | 31,742 tok/s
+Step   17050 | LR 2.564729e-04 | Loss 3.64555 | PPL 38.30 | 31,743 tok/s
+Step   17100 | LR 2.562000e-04 | Loss 3.78260 | PPL 43.93 | 31,745 tok/s
+Step   17150 | LR 2.559264e-04 | Loss 3.89939 | PPL 49.37 | 31,746 tok/s
+Step   17200 | LR 2.556520e-04 | Loss 3.69574 | PPL 40.28 | 31,748 tok/s
+Step   17250 | LR 2.553771e-04 | Loss 3.77105 | PPL 43.43 | 31,749 tok/s
+Step   17300 | LR 2.551014e-04 | Loss 3.74159 | PPL 42.16 | 31,751 tok/s
+Step   17350 | LR 2.548250e-04 | Loss 3.37568 | PPL 29.24 | 31,752 tok/s
+Step   17400 | LR 2.545480e-04 | Loss 3.60968 | PPL 36.95 | 31,754 tok/s
+Step   17450 | LR 2.542703e-04 | Loss 3.60258 | PPL 36.69 | 31,756 tok/s
+Step   17500 | LR 2.539919e-04 | Loss 3.71325 | PPL 40.99 | 31,757 tok/s
+Step   17550 | LR 2.537129e-04 | Loss 3.70064 | PPL 40.47 | 31,759 tok/s
+Step   17600 | LR 2.534332e-04 | Loss 3.53841 | PPL 34.41 | 31,760 tok/s
+Step   17650 | LR 2.531528e-04 | Loss 3.66594 | PPL 39.09 | 31,762 tok/s
+Step   17700 | LR 2.528718e-04 | Loss 3.41356 | PPL 30.37 | 31,763 tok/s
+Step   17750 | LR 2.525901e-04 | Loss 3.76737 | PPL 43.27 | 31,765 tok/s
+Step   17800 | LR 2.523077e-04 | Loss 3.36769 | PPL 29.01 | 31,766 tok/s
+Step   17850 | LR 2.520247e-04 | Loss 3.79330 | PPL 44.40 | 31,768 tok/s
+Step   17900 | LR 2.517410e-04 | Loss 3.43130 | PPL 30.92 | 31,769 tok/s
+Step   17950 | LR 2.514567e-04 | Loss 3.50590 | PPL 33.31 | 31,771 tok/s
+Step   18000 | LR 2.511717e-04 | Loss 3.35580 | PPL 28.67 | 31,772 tok/s
+Validation | Loss 3.30794 | PPL 27.33
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_018000.pt
+Step   18050 | LR 2.508860e-04 | Loss 3.59479 | PPL 36.41 | 31,677 tok/s
+Step   18100 | LR 2.505998e-04 | Loss 3.71421 | PPL 41.03 | 31,678 tok/s
+Step   18150 | LR 2.503128e-04 | Loss 3.49486 | PPL 32.95 | 31,679 tok/s
+Step   18200 | LR 2.500253e-04 | Loss 3.67219 | PPL 39.34 | 31,681 tok/s
+Step   18250 | LR 2.497370e-04 | Loss 3.46992 | PPL 32.13 | 31,683 tok/s
+Step   18300 | LR 2.494482e-04 | Loss 3.82057 | PPL 45.63 | 31,685 tok/s
+Step   18350 | LR 2.491587e-04 | Loss 3.29715 | PPL 27.04 | 31,686 tok/s
+Step   18400 | LR 2.488686e-04 | Loss 3.83654 | PPL 46.36 | 31,688 tok/s
+Step   18450 | LR 2.485778e-04 | Loss 3.48635 | PPL 32.67 | 31,689 tok/s
+Step   18500 | LR 2.482864e-04 | Loss 3.56346 | PPL 35.29 | 31,691 tok/s
+Step   18550 | LR 2.479944e-04 | Loss 3.79384 | PPL 44.43 | 31,693 tok/s
+Step   18600 | LR 2.477018e-04 | Loss 3.59057 | PPL 36.25 | 31,694 tok/s
+Step   18650 | LR 2.474085e-04 | Loss 3.69946 | PPL 40.43 | 31,696 tok/s
+Step   18700 | LR 2.471147e-04 | Loss 3.54026 | PPL 34.48 | 31,697 tok/s
+Step   18750 | LR 2.468202e-04 | Loss 3.50359 | PPL 33.23 | 31,699 tok/s
+Step   18800 | LR 2.465250e-04 | Loss 3.69300 | PPL 40.17 | 31,700 tok/s
+Step   18850 | LR 2.462293e-04 | Loss 3.47835 | PPL 32.41 | 31,702 tok/s
+Step   18900 | LR 2.459330e-04 | Loss 3.62752 | PPL 37.62 | 31,703 tok/s
+Step   18950 | LR 2.456360e-04 | Loss 3.55335 | PPL 34.93 | 31,705 tok/s
+Step   19000 | LR 2.453384e-04 | Loss 3.44753 | PPL 31.42 | 31,706 tok/s
+Step   19050 | LR 2.450403e-04 | Loss 3.56580 | PPL 35.37 | 31,708 tok/s
+Step   19100 | LR 2.447415e-04 | Loss 3.46758 | PPL 32.06 | 31,709 tok/s
+Step   19150 | LR 2.444421e-04 | Loss 3.69487 | PPL 40.24 | 31,711 tok/s
+Step   19200 | LR 2.441422e-04 | Loss 3.58606 | PPL 36.09 | 31,712 tok/s
+Step   19250 | LR 2.438416e-04 | Loss 3.71521 | PPL 41.07 | 31,714 tok/s
+Step   19300 | LR 2.435404e-04 | Loss 3.67755 | PPL 39.55 | 31,715 tok/s
+Step   19350 | LR 2.432387e-04 | Loss 3.53314 | PPL 34.23 | 31,717 tok/s
+Step   19400 | LR 2.429363e-04 | Loss 3.52161 | PPL 33.84 | 31,718 tok/s
+Step   19450 | LR 2.426334e-04 | Loss 3.33355 | PPL 28.04 | 31,720 tok/s
+Step   19500 | LR 2.423299e-04 | Loss 3.53246 | PPL 34.21 | 31,721 tok/s
+Step   19550 | LR 2.420258e-04 | Loss 3.60170 | PPL 36.66 | 31,722 tok/s
+Step   19600 | LR 2.417211e-04 | Loss 3.52822 | PPL 34.06 | 31,724 tok/s
+Step   19650 | LR 2.414159e-04 | Loss 3.29033 | PPL 26.85 | 31,725 tok/s
+Step   19700 | LR 2.411100e-04 | Loss 3.56605 | PPL 35.38 | 31,726 tok/s
+Step   19750 | LR 2.408036e-04 | Loss 3.52479 | PPL 33.95 | 31,728 tok/s
+Step   19800 | LR 2.404966e-04 | Loss 3.67792 | PPL 39.56 | 31,729 tok/s
+Step   19850 | LR 2.401891e-04 | Loss 3.56445 | PPL 35.32 | 31,731 tok/s
+Step   19900 | LR 2.398810e-04 | Loss 3.41306 | PPL 30.36 | 31,732 tok/s
+Step   19950 | LR 2.395723e-04 | Loss 3.34405 | PPL 28.33 | 31,733 tok/s
+Step   20000 | LR 2.392631e-04 | Loss 3.51852 | PPL 33.73 | 31,735 tok/s
+Validation | Loss 3.27296 | PPL 26.39
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_020000.pt
+Step   20050 | LR 2.389533e-04 | Loss 3.73028 | PPL 41.69 | 31,680 tok/s
+Step   20100 | LR 2.386429e-04 | Loss 3.61963 | PPL 37.32 | 31,681 tok/s
+Step   20150 | LR 2.383320e-04 | Loss 3.35250 | PPL 28.57 | 31,682 tok/s
+Step   20200 | LR 2.380205e-04 | Loss 3.52044 | PPL 33.80 | 31,684 tok/s
+Step   20250 | LR 2.377085e-04 | Loss 3.59418 | PPL 36.39 | 31,685 tok/s
+Step   20300 | LR 2.373959e-04 | Loss 3.58122 | PPL 35.92 | 31,687 tok/s
+Step   20350 | LR 2.370828e-04 | Loss 3.41416 | PPL 30.39 | 31,688 tok/s
+Step   20400 | LR 2.367692e-04 | Loss 3.87710 | PPL 48.28 | 31,689 tok/s
+Step   20450 | LR 2.364550e-04 | Loss 3.50827 | PPL 33.39 | 31,691 tok/s
+Step   20500 | LR 2.361403e-04 | Loss 3.60250 | PPL 36.69 | 31,692 tok/s
+Step   20550 | LR 2.358250e-04 | Loss 3.53966 | PPL 34.46 | 31,694 tok/s
+Step   20600 | LR 2.355092e-04 | Loss 3.28943 | PPL 26.83 | 31,695 tok/s
+Step   20650 | LR 2.351928e-04 | Loss 3.54250 | PPL 34.55 | 31,696 tok/s
+Step   20700 | LR 2.348760e-04 | Loss 3.44280 | PPL 31.27 | 31,698 tok/s
+Step   20750 | LR 2.345586e-04 | Loss 3.46919 | PPL 32.11 | 31,699 tok/s
+Step   20800 | LR 2.342407e-04 | Loss 3.64637 | PPL 38.34 | 31,700 tok/s
+Step   20850 | LR 2.339222e-04 | Loss 3.23558 | PPL 25.42 | 31,702 tok/s
+Step   20900 | LR 2.336033e-04 | Loss 3.50022 | PPL 33.12 | 31,703 tok/s
+Step   20950 | LR 2.332838e-04 | Loss 3.64672 | PPL 38.35 | 31,705 tok/s
+Step   21000 | LR 2.329638e-04 | Loss 3.69168 | PPL 40.11 | 31,706 tok/s
+Step   21050 | LR 2.326433e-04 | Loss 3.25822 | PPL 26.00 | 31,707 tok/s
+Step   21100 | LR 2.323223e-04 | Loss 3.65982 | PPL 38.85 | 31,708 tok/s
+Step   21150 | LR 2.320008e-04 | Loss 3.30430 | PPL 27.23 | 31,710 tok/s
+Step   21200 | LR 2.316788e-04 | Loss 3.54662 | PPL 34.70 | 31,711 tok/s
+Step   21250 | LR 2.313562e-04 | Loss 3.48075 | PPL 32.48 | 31,712 tok/s
+Step   21300 | LR 2.310332e-04 | Loss 3.36899 | PPL 29.05 | 31,714 tok/s
+Step   21350 | LR 2.307097e-04 | Loss 3.45299 | PPL 31.59 | 31,715 tok/s
+Step   21400 | LR 2.303857e-04 | Loss 3.48113 | PPL 32.50 | 31,716 tok/s
+Step   21450 | LR 2.300612e-04 | Loss 3.59705 | PPL 36.49 | 31,718 tok/s
+Step   21500 | LR 2.297362e-04 | Loss 3.41066 | PPL 30.29 | 31,719 tok/s
+Step   21550 | LR 2.294107e-04 | Loss 3.61753 | PPL 37.25 | 31,720 tok/s
+Step   21600 | LR 2.290847e-04 | Loss 3.40364 | PPL 30.07 | 31,722 tok/s
+Step   21650 | LR 2.287582e-04 | Loss 3.54255 | PPL 34.55 | 31,723 tok/s
+Step   21700 | LR 2.284313e-04 | Loss 3.64826 | PPL 38.41 | 31,724 tok/s
+Step   21750 | LR 2.281039e-04 | Loss 3.48692 | PPL 32.69 | 31,726 tok/s
+Step   21800 | LR 2.277760e-04 | Loss 3.62910 | PPL 37.68 | 31,727 tok/s
+Step   21850 | LR 2.274476e-04 | Loss 3.50294 | PPL 33.21 | 31,728 tok/s
+Step   21900 | LR 2.271188e-04 | Loss 3.60799 | PPL 36.89 | 31,730 tok/s
+Step   21950 | LR 2.267895e-04 | Loss 3.27499 | PPL 26.44 | 31,731 tok/s
+Step   22000 | LR 2.264597e-04 | Loss 3.49391 | PPL 32.91 | 31,733 tok/s
+Validation | Loss 3.24011 | PPL 25.54
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_022000.pt
+Step   22050 | LR 2.261295e-04 | Loss 3.67831 | PPL 39.58 | 31,680 tok/s
+Step   22100 | LR 2.257988e-04 | Loss 3.36449 | PPL 28.92 | 31,681 tok/s
+Step   22150 | LR 2.254676e-04 | Loss 3.68126 | PPL 39.70 | 31,683 tok/s
+Step   22200 | LR 2.251360e-04 | Loss 3.42355 | PPL 30.68 | 31,684 tok/s
+Step   22250 | LR 2.248040e-04 | Loss 3.52087 | PPL 33.81 | 31,685 tok/s
+Step   22300 | LR 2.244715e-04 | Loss 3.19990 | PPL 24.53 | 31,687 tok/s
+Step   22350 | LR 2.241385e-04 | Loss 3.59664 | PPL 36.48 | 31,688 tok/s
+Step   22400 | LR 2.238051e-04 | Loss 3.74057 | PPL 42.12 | 31,689 tok/s
+Step   22450 | LR 2.234712e-04 | Loss 3.63998 | PPL 38.09 | 31,691 tok/s
+Step   22500 | LR 2.231370e-04 | Loss 3.25398 | PPL 25.89 | 31,692 tok/s
+Step   22550 | LR 2.228022e-04 | Loss 3.77465 | PPL 43.58 | 31,694 tok/s
+Step   22600 | LR 2.224671e-04 | Loss 3.45098 | PPL 31.53 | 31,695 tok/s
+Step   22650 | LR 2.221315e-04 | Loss 3.60371 | PPL 36.73 | 31,696 tok/s
+Step   22700 | LR 2.217954e-04 | Loss 3.44856 | PPL 31.46 | 31,698 tok/s
+Step   22750 | LR 2.214590e-04 | Loss 3.43496 | PPL 31.03 | 31,699 tok/s
+Step   22800 | LR 2.211221e-04 | Loss 3.42438 | PPL 30.70 | 31,700 tok/s
+Step   22850 | LR 2.207848e-04 | Loss 3.55765 | PPL 35.08 | 31,702 tok/s
+Step   22900 | LR 2.204471e-04 | Loss 3.62504 | PPL 37.53 | 31,703 tok/s
+Step   22950 | LR 2.201089e-04 | Loss 3.52803 | PPL 34.06 | 31,704 tok/s
+Step   23000 | LR 2.197704e-04 | Loss 3.47976 | PPL 32.45 | 31,705 tok/s
+Step   23050 | LR 2.194314e-04 | Loss 3.55012 | PPL 34.82 | 31,707 tok/s
+Step   23100 | LR 2.190920e-04 | Loss 3.43033 | PPL 30.89 | 31,708 tok/s
+Step   23150 | LR 2.187522e-04 | Loss 3.46239 | PPL 31.89 | 31,709 tok/s
+Step   23200 | LR 2.184120e-04 | Loss 3.88547 | PPL 48.69 | 31,711 tok/s
+Step   23250 | LR 2.180714e-04 | Loss 3.51563 | PPL 33.64 | 31,712 tok/s
+Step   23300 | LR 2.177304e-04 | Loss 3.50429 | PPL 33.26 | 31,713 tok/s
+Step   23350 | LR 2.173890e-04 | Loss 3.52232 | PPL 33.86 | 31,715 tok/s
+Step   23400 | LR 2.170472e-04 | Loss 3.35949 | PPL 28.77 | 31,716 tok/s
+Step   23450 | LR 2.167051e-04 | Loss 3.71466 | PPL 41.04 | 31,717 tok/s
+Step   23500 | LR 2.163625e-04 | Loss 3.51119 | PPL 33.49 | 31,718 tok/s
+Step   23550 | LR 2.160195e-04 | Loss 3.31876 | PPL 27.63 | 31,720 tok/s
+Step   23600 | LR 2.156762e-04 | Loss 3.35990 | PPL 28.79 | 31,721 tok/s
+Step   23650 | LR 2.153325e-04 | Loss 3.49436 | PPL 32.93 | 31,722 tok/s
+Step   23700 | LR 2.149884e-04 | Loss 3.54315 | PPL 34.58 | 31,723 tok/s
+Step   23750 | LR 2.146439e-04 | Loss 3.32366 | PPL 27.76 | 31,725 tok/s
+Step   23800 | LR 2.142990e-04 | Loss 3.52486 | PPL 33.95 | 31,726 tok/s
+Step   23850 | LR 2.139538e-04 | Loss 3.38493 | PPL 29.52 | 31,727 tok/s
+Step   23900 | LR 2.136082e-04 | Loss 3.38265 | PPL 29.45 | 31,728 tok/s
+Step   23950 | LR 2.132622e-04 | Loss 3.60385 | PPL 36.74 | 31,729 tok/s
+Step   24000 | LR 2.129159e-04 | Loss 3.56647 | PPL 35.39 | 31,731 tok/s
+Validation | Loss 3.21848 | PPL 24.99
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_024000.pt
+Step   24050 | LR 2.125692e-04 | Loss 3.69187 | PPL 40.12 | 31,684 tok/s
+Step   24100 | LR 2.122222e-04 | Loss 3.65760 | PPL 38.77 | 31,685 tok/s
+Step   24150 | LR 2.118748e-04 | Loss 3.45487 | PPL 31.65 | 31,686 tok/s
+Step   24200 | LR 2.115270e-04 | Loss 3.48598 | PPL 32.65 | 31,688 tok/s
+Step   24250 | LR 2.111789e-04 | Loss 3.41399 | PPL 30.39 | 31,689 tok/s
+Step   24300 | LR 2.108305e-04 | Loss 3.47221 | PPL 32.21 | 31,690 tok/s
+Step   24350 | LR 2.104817e-04 | Loss 3.28689 | PPL 26.76 | 31,691 tok/s
+Step   24400 | LR 2.101325e-04 | Loss 3.45104 | PPL 31.53 | 31,693 tok/s
+Step   24450 | LR 2.097830e-04 | Loss 3.24822 | PPL 25.74 | 31,694 tok/s
+Step   24500 | LR 2.094332e-04 | Loss 3.38547 | PPL 29.53 | 31,695 tok/s
+Step   24550 | LR 2.090831e-04 | Loss 3.58467 | PPL 36.04 | 31,696 tok/s
+Step   24600 | LR 2.087326e-04 | Loss 3.57872 | PPL 35.83 | 31,697 tok/s
+Step   24650 | LR 2.083818e-04 | Loss 3.37438 | PPL 29.21 | 31,698 tok/s
+Step   24700 | LR 2.080306e-04 | Loss 3.38012 | PPL 29.37 | 31,700 tok/s
+Step   24750 | LR 2.076791e-04 | Loss 3.70847 | PPL 40.79 | 31,701 tok/s
+Step   24800 | LR 2.073273e-04 | Loss 3.70856 | PPL 40.80 | 31,702 tok/s
+Step   24850 | LR 2.069752e-04 | Loss 3.40242 | PPL 30.04 | 31,703 tok/s
+Step   24900 | LR 2.066228e-04 | Loss 3.41069 | PPL 30.29 | 31,704 tok/s
+Step   24950 | LR 2.062701e-04 | Loss 3.50986 | PPL 33.44 | 31,705 tok/s
+Step   25000 | LR 2.059170e-04 | Loss 3.58821 | PPL 36.17 | 31,706 tok/s
+Step   25050 | LR 2.055637e-04 | Loss 3.45478 | PPL 31.65 | 31,708 tok/s
+Step   25100 | LR 2.052100e-04 | Loss 3.60531 | PPL 36.79 | 31,709 tok/s
+Step   25150 | LR 2.048560e-04 | Loss 3.99098 | PPL 54.11 | 31,710 tok/s
+Step   25200 | LR 2.045018e-04 | Loss 3.67408 | PPL 39.41 | 31,711 tok/s
+Step   25250 | LR 2.041472e-04 | Loss 3.81228 | PPL 45.25 | 31,713 tok/s
+Step   25300 | LR 2.037923e-04 | Loss 3.33841 | PPL 28.17 | 31,714 tok/s
+Step   25350 | LR 2.034372e-04 | Loss 3.09226 | PPL 22.03 | 31,715 tok/s
+Step   25400 | LR 2.030817e-04 | Loss 3.52466 | PPL 33.94 | 31,716 tok/s
+Step   25450 | LR 2.027260e-04 | Loss 3.71746 | PPL 41.16 | 31,717 tok/s
+Step   25500 | LR 2.023700e-04 | Loss 3.46227 | PPL 31.89 | 31,718 tok/s
+Step   25550 | LR 2.020137e-04 | Loss 3.58859 | PPL 36.18 | 31,720 tok/s
+Step   25600 | LR 2.016571e-04 | Loss 3.42891 | PPL 30.84 | 31,721 tok/s
+Step   25650 | LR 2.013003e-04 | Loss 3.44892 | PPL 31.47 | 31,722 tok/s
+Step   25700 | LR 2.009431e-04 | Loss 3.28420 | PPL 26.69 | 31,723 tok/s
+Step   25750 | LR 2.005858e-04 | Loss 3.59396 | PPL 36.38 | 31,725 tok/s
+Step   25800 | LR 2.002281e-04 | Loss 3.54233 | PPL 34.55 | 31,726 tok/s
+Step   25850 | LR 1.998702e-04 | Loss 3.41948 | PPL 30.55 | 31,727 tok/s
+Step   25900 | LR 1.995120e-04 | Loss 3.34853 | PPL 28.46 | 31,728 tok/s
+Step   25950 | LR 1.991535e-04 | Loss 3.50583 | PPL 33.31 | 31,729 tok/s
+Step   26000 | LR 1.987948e-04 | Loss 3.55321 | PPL 34.93 | 31,731 tok/s
+Validation | Loss 3.19269 | PPL 24.35
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_026000.pt
+Step   26050 | LR 1.984358e-04 | Loss 3.34671 | PPL 28.41 | 31,688 tok/s
+Step   26100 | LR 1.980766e-04 | Loss 3.36870 | PPL 29.04 | 31,690 tok/s
+Step   26150 | LR 1.977172e-04 | Loss 3.41787 | PPL 30.50 | 31,691 tok/s
+Step   26200 | LR 1.973574e-04 | Loss 3.46561 | PPL 32.00 | 31,692 tok/s
+Step   26250 | LR 1.969975e-04 | Loss 3.63228 | PPL 37.80 | 31,693 tok/s
+Step   26300 | LR 1.966373e-04 | Loss 3.59657 | PPL 36.47 | 31,694 tok/s
+Step   26350 | LR 1.962768e-04 | Loss 3.36431 | PPL 28.91 | 31,695 tok/s
+Step   26400 | LR 1.959162e-04 | Loss 3.73344 | PPL 41.82 | 31,696 tok/s
+Step   26450 | LR 1.955553e-04 | Loss 3.29033 | PPL 26.85 | 31,697 tok/s
+Step   26500 | LR 1.951941e-04 | Loss 3.28909 | PPL 26.82 | 31,699 tok/s
+Step   26550 | LR 1.948328e-04 | Loss 3.39082 | PPL 29.69 | 31,700 tok/s
+Step   26600 | LR 1.944712e-04 | Loss 3.60813 | PPL 36.90 | 31,701 tok/s
+Step   26650 | LR 1.941094e-04 | Loss 3.63181 | PPL 37.78 | 31,702 tok/s
+Step   26700 | LR 1.937473e-04 | Loss 3.51664 | PPL 33.67 | 31,703 tok/s
+Step   26750 | LR 1.933851e-04 | Loss 3.46470 | PPL 31.97 | 31,704 tok/s
+Step   26800 | LR 1.930226e-04 | Loss 3.63004 | PPL 37.71 | 31,705 tok/s
+Step   26850 | LR 1.926600e-04 | Loss 3.47205 | PPL 32.20 | 31,706 tok/s
+Step   26900 | LR 1.922971e-04 | Loss 3.56978 | PPL 35.51 | 31,707 tok/s
+Step   26950 | LR 1.919340e-04 | Loss 3.68529 | PPL 39.86 | 31,709 tok/s
+Step   27000 | LR 1.915707e-04 | Loss 3.42284 | PPL 30.66 | 31,710 tok/s
+Step   27050 | LR 1.912072e-04 | Loss 3.26052 | PPL 26.06 | 31,711 tok/s
+Step   27100 | LR 1.908435e-04 | Loss 3.48873 | PPL 32.74 | 31,712 tok/s
+Step   27150 | LR 1.904797e-04 | Loss 3.43540 | PPL 31.04 | 31,713 tok/s
+Step   27200 | LR 1.901156e-04 | Loss 3.62132 | PPL 37.39 | 31,714 tok/s
+Step   27250 | LR 1.897513e-04 | Loss 3.42780 | PPL 30.81 | 31,716 tok/s
+Step   27300 | LR 1.893869e-04 | Loss 3.50563 | PPL 33.30 | 31,717 tok/s
+Step   27350 | LR 1.890222e-04 | Loss 3.52358 | PPL 33.91 | 31,718 tok/s
+Step   27400 | LR 1.886574e-04 | Loss 3.37242 | PPL 29.15 | 31,719 tok/s
+Step   27450 | LR 1.882924e-04 | Loss 3.29627 | PPL 27.01 | 31,720 tok/s
+Step   27500 | LR 1.879273e-04 | Loss 3.67071 | PPL 39.28 | 31,721 tok/s
+Step   27550 | LR 1.875619e-04 | Loss 3.32532 | PPL 27.81 | 31,722 tok/s
+Step   27600 | LR 1.871964e-04 | Loss 3.35157 | PPL 28.55 | 31,723 tok/s
+Step   27650 | LR 1.868307e-04 | Loss 3.60499 | PPL 36.78 | 31,724 tok/s
+Step   27700 | LR 1.864649e-04 | Loss 3.53529 | PPL 34.30 | 31,725 tok/s
+Step   27750 | LR 1.860989e-04 | Loss 3.59904 | PPL 36.56 | 31,727 tok/s
+Step   27800 | LR 1.857327e-04 | Loss 3.48165 | PPL 32.51 | 31,728 tok/s
+Step   27850 | LR 1.853664e-04 | Loss 3.26981 | PPL 26.31 | 31,729 tok/s
+Step   27900 | LR 1.849999e-04 | Loss 3.46135 | PPL 31.86 | 31,730 tok/s
+Step   27950 | LR 1.846333e-04 | Loss 3.44019 | PPL 31.19 | 31,731 tok/s
+Step   28000 | LR 1.842665e-04 | Loss 3.51051 | PPL 33.47 | 31,732 tok/s
+Validation | Loss 3.17321 | PPL 23.88
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_028000.pt
+Step   28050 | LR 1.838996e-04 | Loss 3.41885 | PPL 30.53 | 31,692 tok/s
+Step   28100 | LR 1.835326e-04 | Loss 3.72240 | PPL 41.36 | 31,693 tok/s
+Step   28150 | LR 1.831654e-04 | Loss 3.32832 | PPL 27.89 | 31,694 tok/s
+Step   28200 | LR 1.827980e-04 | Loss 3.40542 | PPL 30.13 | 31,695 tok/s
+Step   28250 | LR 1.824305e-04 | Loss 3.17497 | PPL 23.93 | 31,696 tok/s
+Step   28300 | LR 1.820629e-04 | Loss 3.43447 | PPL 31.01 | 31,697 tok/s
+Step   28350 | LR 1.816952e-04 | Loss 3.42893 | PPL 30.84 | 31,698 tok/s
+Step   28400 | LR 1.813274e-04 | Loss 3.22535 | PPL 25.16 | 31,699 tok/s
+Step   28450 | LR 1.809594e-04 | Loss 3.47634 | PPL 32.34 | 31,700 tok/s
+Step   28500 | LR 1.805913e-04 | Loss 3.41035 | PPL 30.28 | 31,701 tok/s
+Step   28550 | LR 1.802231e-04 | Loss 3.43992 | PPL 31.18 | 31,702 tok/s
+Step   28600 | LR 1.798547e-04 | Loss 3.53375 | PPL 34.25 | 31,703 tok/s
+Step   28650 | LR 1.794863e-04 | Loss 3.55922 | PPL 35.14 | 31,704 tok/s
+Step   28700 | LR 1.791177e-04 | Loss 3.32071 | PPL 27.68 | 31,705 tok/s
+Step   28750 | LR 1.787491e-04 | Loss 3.38965 | PPL 29.66 | 31,706 tok/s
+Step   28800 | LR 1.783803e-04 | Loss 3.47591 | PPL 32.33 | 31,707 tok/s
+Step   28850 | LR 1.780114e-04 | Loss 3.28154 | PPL 26.62 | 31,708 tok/s
+Step   28900 | LR 1.776425e-04 | Loss 3.16234 | PPL 23.63 | 31,709 tok/s
+Step   28950 | LR 1.772734e-04 | Loss 3.48702 | PPL 32.69 | 31,710 tok/s
+Step   29000 | LR 1.769043e-04 | Loss 3.56786 | PPL 35.44 | 31,711 tok/s
+Step   29050 | LR 1.765350e-04 | Loss 3.31496 | PPL 27.52 | 31,712 tok/s
+Step   29100 | LR 1.761657e-04 | Loss 3.74356 | PPL 42.25 | 31,713 tok/s
+Step   29150 | LR 1.757963e-04 | Loss 3.51650 | PPL 33.67 | 31,714 tok/s
+Step   29200 | LR 1.754268e-04 | Loss 3.51689 | PPL 33.68 | 31,715 tok/s
+Step   29250 | LR 1.750572e-04 | Loss 3.36563 | PPL 28.95 | 31,716 tok/s
+Step   29300 | LR 1.746876e-04 | Loss 3.38580 | PPL 29.54 | 31,717 tok/s
+Step   29350 | LR 1.743179e-04 | Loss 3.44939 | PPL 31.48 | 31,718 tok/s
+Step   29400 | LR 1.739481e-04 | Loss 3.64215 | PPL 38.17 | 31,719 tok/s
+Step   29450 | LR 1.735782e-04 | Loss 3.52656 | PPL 34.01 | 31,720 tok/s
+Step   29500 | LR 1.732083e-04 | Loss 3.40101 | PPL 29.99 | 31,721 tok/s
+Step   29550 | LR 1.728383e-04 | Loss 3.58354 | PPL 36.00 | 31,722 tok/s
+Step   29600 | LR 1.724683e-04 | Loss 3.09610 | PPL 22.11 | 31,723 tok/s
+Step   29650 | LR 1.720982e-04 | Loss 3.52818 | PPL 34.06 | 31,724 tok/s
+Step   29700 | LR 1.717280e-04 | Loss 3.28365 | PPL 26.67 | 31,725 tok/s
+Step   29750 | LR 1.713578e-04 | Loss 3.42799 | PPL 30.81 | 31,726 tok/s
+Step   29800 | LR 1.709876e-04 | Loss 3.52331 | PPL 33.90 | 31,727 tok/s
+Step   29850 | LR 1.706173e-04 | Loss 3.69310 | PPL 40.17 | 31,728 tok/s
+Step   29900 | LR 1.702469e-04 | Loss 3.25045 | PPL 25.80 | 31,729 tok/s
+Step   29950 | LR 1.698766e-04 | Loss 3.46110 | PPL 31.85 | 31,730 tok/s
+Step   30000 | LR 1.695061e-04 | Loss 3.52353 | PPL 33.90 | 31,731 tok/s
+Validation | Loss 3.15615 | PPL 23.48
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_030000.pt
+Step   30050 | LR 1.691357e-04 | Loss 3.16866 | PPL 23.78 | 31,694 tok/s
+Step   30100 | LR 1.687652e-04 | Loss 3.55345 | PPL 34.93 | 31,695 tok/s
+Step   30150 | LR 1.683947e-04 | Loss 3.43232 | PPL 30.95 | 31,696 tok/s
+Step   30200 | LR 1.680242e-04 | Loss 3.12695 | PPL 22.80 | 31,697 tok/s
+Step   30250 | LR 1.676536e-04 | Loss 3.45362 | PPL 31.61 | 31,698 tok/s
+Step   30300 | LR 1.672830e-04 | Loss 3.34059 | PPL 28.24 | 31,699 tok/s
+Step   30350 | LR 1.669124e-04 | Loss 3.24119 | PPL 25.56 | 31,700 tok/s
+Step   30400 | LR 1.665418e-04 | Loss 3.43089 | PPL 30.90 | 31,701 tok/s
+Step   30450 | LR 1.661712e-04 | Loss 3.54507 | PPL 34.64 | 31,702 tok/s
+Step   30500 | LR 1.658006e-04 | Loss 3.40917 | PPL 30.24 | 31,703 tok/s
+Step   30550 | LR 1.654299e-04 | Loss 3.92223 | PPL 50.51 | 31,704 tok/s
+Step   30600 | LR 1.650593e-04 | Loss 3.45519 | PPL 31.66 | 31,705 tok/s
+Step   30650 | LR 1.646887e-04 | Loss 3.40592 | PPL 30.14 | 31,706 tok/s
+Step   30700 | LR 1.643180e-04 | Loss 3.40911 | PPL 30.24 | 31,707 tok/s
+Step   30750 | LR 1.639474e-04 | Loss 3.58453 | PPL 36.04 | 31,707 tok/s
+Step   30800 | LR 1.635768e-04 | Loss 3.33254 | PPL 28.01 | 31,708 tok/s
+Step   30850 | LR 1.632062e-04 | Loss 3.53488 | PPL 34.29 | 31,709 tok/s
+Step   30900 | LR 1.628356e-04 | Loss 3.15819 | PPL 23.53 | 31,710 tok/s
+Step   30950 | LR 1.624650e-04 | Loss 3.55047 | PPL 34.83 | 31,711 tok/s
+Step   31000 | LR 1.620944e-04 | Loss 3.15551 | PPL 23.46 | 31,712 tok/s
+Step   31050 | LR 1.617239e-04 | Loss 3.50326 | PPL 33.22 | 31,713 tok/s
+Step   31100 | LR 1.613534e-04 | Loss 3.39982 | PPL 29.96 | 31,714 tok/s
+Step   31150 | LR 1.609829e-04 | Loss 3.45309 | PPL 31.60 | 31,715 tok/s
+Step   31200 | LR 1.606124e-04 | Loss 3.30093 | PPL 27.14 | 31,716 tok/s
+Step   31250 | LR 1.602420e-04 | Loss 3.21616 | PPL 24.93 | 31,717 tok/s
+Step   31300 | LR 1.598716e-04 | Loss 3.54131 | PPL 34.51 | 31,718 tok/s
+Step   31350 | LR 1.595012e-04 | Loss 3.55315 | PPL 34.92 | 31,719 tok/s
+Step   31400 | LR 1.591309e-04 | Loss 3.30013 | PPL 27.12 | 31,720 tok/s
+Step   31450 | LR 1.587607e-04 | Loss 3.63843 | PPL 38.03 | 31,720 tok/s
+Step   31500 | LR 1.583904e-04 | Loss 3.29184 | PPL 26.89 | 31,721 tok/s
+Step   31550 | LR 1.580203e-04 | Loss 3.39853 | PPL 29.92 | 31,722 tok/s
+Step   31600 | LR 1.576502e-04 | Loss 3.30212 | PPL 27.17 | 31,723 tok/s
+Step   31650 | LR 1.572801e-04 | Loss 3.28432 | PPL 26.69 | 31,724 tok/s
+Step   31700 | LR 1.569101e-04 | Loss 3.46454 | PPL 31.96 | 31,725 tok/s
+Step   31750 | LR 1.565401e-04 | Loss 3.39971 | PPL 29.96 | 31,726 tok/s
+Step   31800 | LR 1.561703e-04 | Loss 3.37112 | PPL 29.11 | 31,727 tok/s
+Step   31850 | LR 1.558005e-04 | Loss 3.33909 | PPL 28.19 | 31,728 tok/s
+Step   31900 | LR 1.554307e-04 | Loss 3.51939 | PPL 33.76 | 31,729 tok/s
+Step   31950 | LR 1.550610e-04 | Loss 3.29989 | PPL 27.11 | 31,730 tok/s
+Step   32000 | LR 1.546914e-04 | Loss 3.44935 | PPL 31.48 | 31,730 tok/s
+Validation | Loss 3.13818 | PPL 23.06
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_032000.pt
+Step   32050 | LR 1.543219e-04 | Loss 3.40261 | PPL 30.04 | 31,696 tok/s
+Step   32100 | LR 1.539525e-04 | Loss 3.14316 | PPL 23.18 | 31,697 tok/s
+Step   32150 | LR 1.535831e-04 | Loss 3.33084 | PPL 27.96 | 31,697 tok/s
+Step   32200 | LR 1.532139e-04 | Loss 3.48314 | PPL 32.56 | 31,698 tok/s
+Step   32250 | LR 1.528447e-04 | Loss 2.99395 | PPL 19.96 | 31,699 tok/s
+Step   32300 | LR 1.524756e-04 | Loss 3.90703 | PPL 49.75 | 31,700 tok/s
+Step   32350 | LR 1.521066e-04 | Loss 3.32829 | PPL 27.89 | 31,701 tok/s
+Step   32400 | LR 1.517377e-04 | Loss 3.36473 | PPL 28.93 | 31,702 tok/s
+Step   32450 | LR 1.513689e-04 | Loss 3.43811 | PPL 31.13 | 31,703 tok/s
+Step   32500 | LR 1.510002e-04 | Loss 3.45120 | PPL 31.54 | 31,704 tok/s
+Step   32550 | LR 1.506316e-04 | Loss 3.41866 | PPL 30.53 | 31,705 tok/s
+Step   32600 | LR 1.502632e-04 | Loss 3.34189 | PPL 28.27 | 31,706 tok/s
+Step   32650 | LR 1.498948e-04 | Loss 3.44842 | PPL 31.45 | 31,707 tok/s
+Step   32700 | LR 1.495265e-04 | Loss 3.36132 | PPL 28.83 | 31,707 tok/s
+Step   32750 | LR 1.491584e-04 | Loss 3.37943 | PPL 29.35 | 31,708 tok/s
+Step   32800 | LR 1.487904e-04 | Loss 3.43476 | PPL 31.02 | 31,709 tok/s
+Step   32850 | LR 1.484225e-04 | Loss 3.55793 | PPL 35.09 | 31,710 tok/s
+Step   32900 | LR 1.480547e-04 | Loss 3.39892 | PPL 29.93 | 31,711 tok/s
+Step   32950 | LR 1.476871e-04 | Loss 3.23437 | PPL 25.39 | 31,712 tok/s
+Step   33000 | LR 1.473196e-04 | Loss 3.28244 | PPL 26.64 | 31,713 tok/s
+Step   33050 | LR 1.469522e-04 | Loss 3.64725 | PPL 38.37 | 31,713 tok/s
+Step   33100 | LR 1.465849e-04 | Loss 3.47381 | PPL 32.26 | 31,714 tok/s
+Step   33150 | LR 1.462178e-04 | Loss 3.57580 | PPL 35.72 | 31,715 tok/s
+Step   33200 | LR 1.458509e-04 | Loss 3.31464 | PPL 27.51 | 31,716 tok/s
+Step   33250 | LR 1.454840e-04 | Loss 3.29059 | PPL 26.86 | 31,717 tok/s
+Step   33300 | LR 1.451174e-04 | Loss 3.42902 | PPL 30.85 | 31,718 tok/s
+Step   33350 | LR 1.447509e-04 | Loss 3.23931 | PPL 25.52 | 31,719 tok/s
+Step   33400 | LR 1.443845e-04 | Loss 3.38056 | PPL 29.39 | 31,720 tok/s
+Step   33450 | LR 1.440183e-04 | Loss 3.09288 | PPL 22.04 | 31,720 tok/s
+Step   33500 | LR 1.436522e-04 | Loss 3.27578 | PPL 26.46 | 31,721 tok/s
+Step   33550 | LR 1.432863e-04 | Loss 3.15544 | PPL 23.46 | 31,722 tok/s
+Step   33600 | LR 1.429206e-04 | Loss 3.28463 | PPL 26.70 | 31,723 tok/s
+Step   33650 | LR 1.425550e-04 | Loss 3.56114 | PPL 35.20 | 31,724 tok/s
+Step   33700 | LR 1.421896e-04 | Loss 3.19865 | PPL 24.50 | 31,725 tok/s
+Step   33750 | LR 1.418244e-04 | Loss 3.46427 | PPL 31.95 | 31,725 tok/s
+Step   33800 | LR 1.414594e-04 | Loss 3.56991 | PPL 35.51 | 31,726 tok/s
+Step   33850 | LR 1.410945e-04 | Loss 3.29258 | PPL 26.91 | 31,727 tok/s
+Step   33900 | LR 1.407298e-04 | Loss 3.45971 | PPL 31.81 | 31,728 tok/s
+Step   33950 | LR 1.403653e-04 | Loss 3.31734 | PPL 27.59 | 31,729 tok/s
+Step   34000 | LR 1.400010e-04 | Loss 3.54975 | PPL 34.80 | 31,730 tok/s
+Validation | Loss 3.12247 | PPL 22.70
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_034000.pt
+Step   34050 | LR 1.396368e-04 | Loss 3.24074 | PPL 25.55 | 31,681 tok/s
+Step   34100 | LR 1.392729e-04 | Loss 3.45166 | PPL 31.55 | 31,681 tok/s
+Step   34150 | LR 1.389091e-04 | Loss 3.28220 | PPL 26.63 | 31,682 tok/s
+Step   34200 | LR 1.385456e-04 | Loss 3.58728 | PPL 36.14 | 31,683 tok/s
+Step   34250 | LR 1.381822e-04 | Loss 3.38115 | PPL 29.40 | 31,684 tok/s
+Step   34300 | LR 1.378191e-04 | Loss 3.76278 | PPL 43.07 | 31,685 tok/s
+Step   34350 | LR 1.374561e-04 | Loss 3.45679 | PPL 31.72 | 31,686 tok/s
+Step   34400 | LR 1.370934e-04 | Loss 3.29228 | PPL 26.90 | 31,687 tok/s
+Step   34450 | LR 1.367309e-04 | Loss 3.28208 | PPL 26.63 | 31,688 tok/s
+Step   34500 | LR 1.363686e-04 | Loss 3.46685 | PPL 32.04 | 31,689 tok/s
+Step   34550 | LR 1.360065e-04 | Loss 3.35886 | PPL 28.76 | 31,689 tok/s
+Step   34600 | LR 1.356446e-04 | Loss 3.39689 | PPL 29.87 | 31,690 tok/s
+Step   34650 | LR 1.352829e-04 | Loss 3.54227 | PPL 34.55 | 31,691 tok/s
+Step   34700 | LR 1.349215e-04 | Loss 3.42171 | PPL 30.62 | 31,692 tok/s
+Step   34750 | LR 1.345603e-04 | Loss 3.21450 | PPL 24.89 | 31,693 tok/s
+Step   34800 | LR 1.341993e-04 | Loss 3.05958 | PPL 21.32 | 31,694 tok/s
+Step   34850 | LR 1.338385e-04 | Loss 3.29046 | PPL 26.86 | 31,695 tok/s
+Step   34900 | LR 1.334780e-04 | Loss 3.25769 | PPL 25.99 | 31,696 tok/s
+Step   34950 | LR 1.331178e-04 | Loss 3.44538 | PPL 31.36 | 31,697 tok/s
+Step   35000 | LR 1.327577e-04 | Loss 3.64712 | PPL 38.36 | 31,698 tok/s
+Step   35050 | LR 1.323979e-04 | Loss 3.29425 | PPL 26.96 | 31,699 tok/s
+Step   35100 | LR 1.320384e-04 | Loss 3.24351 | PPL 25.62 | 31,700 tok/s
+Step   35150 | LR 1.316791e-04 | Loss 3.75675 | PPL 42.81 | 31,701 tok/s
+Step   35200 | LR 1.313200e-04 | Loss 3.81935 | PPL 45.57 | 31,702 tok/s
+Step   35250 | LR 1.309612e-04 | Loss 3.61917 | PPL 37.31 | 31,702 tok/s
+Step   35300 | LR 1.306027e-04 | Loss 3.43601 | PPL 31.06 | 31,703 tok/s
+Step   35350 | LR 1.302444e-04 | Loss 3.29606 | PPL 27.01 | 31,704 tok/s
+Step   35400 | LR 1.298864e-04 | Loss 2.98140 | PPL 19.72 | 31,705 tok/s
+Step   35450 | LR 1.295287e-04 | Loss 3.36094 | PPL 28.82 | 31,706 tok/s
+Step   35500 | LR 1.291712e-04 | Loss 3.41935 | PPL 30.55 | 31,707 tok/s
+Step   35550 | LR 1.288140e-04 | Loss 3.38540 | PPL 29.53 | 31,708 tok/s
+Step   35600 | LR 1.284570e-04 | Loss 2.96050 | PPL 19.31 | 31,708 tok/s
+Step   35650 | LR 1.281004e-04 | Loss 3.29460 | PPL 26.97 | 31,709 tok/s
+Step   35700 | LR 1.277440e-04 | Loss 3.29368 | PPL 26.94 | 31,710 tok/s
+Step   35750 | LR 1.273879e-04 | Loss 3.27365 | PPL 26.41 | 31,711 tok/s
+Step   35800 | LR 1.270321e-04 | Loss 3.15730 | PPL 23.51 | 31,712 tok/s
+Step   35850 | LR 1.266765e-04 | Loss 3.49850 | PPL 33.07 | 31,713 tok/s
+Step   35900 | LR 1.263213e-04 | Loss 3.36036 | PPL 28.80 | 31,714 tok/s
+Step   35950 | LR 1.259663e-04 | Loss 3.32021 | PPL 27.67 | 31,714 tok/s
+Step   36000 | LR 1.256117e-04 | Loss 3.36806 | PPL 29.02 | 31,715 tok/s
+Validation | Loss 3.10841 | PPL 22.39
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_036000.pt
+Step   36050 | LR 1.252573e-04 | Loss 3.12379 | PPL 22.73 | 31,685 tok/s
+Step   36100 | LR 1.249032e-04 | Loss 3.24822 | PPL 25.74 | 31,685 tok/s
+Step   36150 | LR 1.245495e-04 | Loss 3.46761 | PPL 32.06 | 31,686 tok/s
+Step   36200 | LR 1.241960e-04 | Loss 3.50850 | PPL 33.40 | 31,687 tok/s
+Step   36250 | LR 1.238429e-04 | Loss 3.55273 | PPL 34.91 | 31,688 tok/s
+Step   36300 | LR 1.234900e-04 | Loss 3.30277 | PPL 27.19 | 31,689 tok/s
+Step   36350 | LR 1.231375e-04 | Loss 3.32800 | PPL 27.88 | 31,690 tok/s
+Step   36400 | LR 1.227853e-04 | Loss 3.34196 | PPL 28.27 | 31,691 tok/s
+Step   36450 | LR 1.224334e-04 | Loss 3.42983 | PPL 30.87 | 31,692 tok/s
+Step   36500 | LR 1.220818e-04 | Loss 3.12674 | PPL 22.80 | 31,692 tok/s
+Step   36550 | LR 1.217306e-04 | Loss 3.59264 | PPL 36.33 | 31,693 tok/s
+Step   36600 | LR 1.213797e-04 | Loss 3.35804 | PPL 28.73 | 31,694 tok/s
+Step   36650 | LR 1.210291e-04 | Loss 3.38406 | PPL 29.49 | 31,695 tok/s
+Step   36700 | LR 1.206788e-04 | Loss 3.19784 | PPL 24.48 | 31,696 tok/s
+Step   36750 | LR 1.203289e-04 | Loss 3.34371 | PPL 28.32 | 31,697 tok/s
+Step   36800 | LR 1.199793e-04 | Loss 3.60685 | PPL 36.85 | 31,697 tok/s
+Step   36850 | LR 1.196300e-04 | Loss 3.45518 | PPL 31.66 | 31,698 tok/s
+Step   36900 | LR 1.192811e-04 | Loss 3.31526 | PPL 27.53 | 31,699 tok/s
+Step   36950 | LR 1.189326e-04 | Loss 3.17493 | PPL 23.93 | 31,700 tok/s
+Step   37000 | LR 1.185843e-04 | Loss 3.24045 | PPL 25.55 | 31,701 tok/s
+Step   37050 | LR 1.182365e-04 | Loss 3.68384 | PPL 39.80 | 31,702 tok/s
+Step   37100 | LR 1.178890e-04 | Loss 3.51761 | PPL 33.70 | 31,702 tok/s
+Step   37150 | LR 1.175418e-04 | Loss 3.01881 | PPL 20.47 | 31,703 tok/s
+Step   37200 | LR 1.171950e-04 | Loss 3.34621 | PPL 28.40 | 31,704 tok/s
+Step   37250 | LR 1.168485e-04 | Loss 3.08932 | PPL 21.96 | 31,705 tok/s
+Step   37300 | LR 1.165025e-04 | Loss 3.48149 | PPL 32.51 | 31,706 tok/s
+Step   37350 | LR 1.161568e-04 | Loss 3.19770 | PPL 24.48 | 31,706 tok/s
+Step   37400 | LR 1.158114e-04 | Loss 3.35098 | PPL 28.53 | 31,707 tok/s
+Step   37450 | LR 1.154664e-04 | Loss 3.57472 | PPL 35.68 | 31,708 tok/s
+Step   37500 | LR 1.151218e-04 | Loss 3.37091 | PPL 29.11 | 31,709 tok/s
+Step   37550 | LR 1.147776e-04 | Loss 3.20313 | PPL 24.61 | 31,710 tok/s
+Step   37600 | LR 1.144338e-04 | Loss 3.28758 | PPL 26.78 | 31,711 tok/s
+Step   37650 | LR 1.140903e-04 | Loss 3.43475 | PPL 31.02 | 31,711 tok/s
+Step   37700 | LR 1.137472e-04 | Loss 3.42416 | PPL 30.70 | 31,712 tok/s
+Step   37750 | LR 1.134045e-04 | Loss 3.39034 | PPL 29.68 | 31,713 tok/s
+Step   37800 | LR 1.130622e-04 | Loss 3.65918 | PPL 38.83 | 31,714 tok/s
+Step   37850 | LR 1.127203e-04 | Loss 3.01954 | PPL 20.48 | 31,714 tok/s
+Step   37900 | LR 1.123788e-04 | Loss 3.22073 | PPL 25.05 | 31,715 tok/s
+Step   37950 | LR 1.120376e-04 | Loss 3.75698 | PPL 42.82 | 31,716 tok/s
+Step   38000 | LR 1.116969e-04 | Loss 3.43641 | PPL 31.08 | 31,717 tok/s
+Validation | Loss 3.09407 | PPL 22.07
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_038000.pt
+Step   38050 | LR 1.113566e-04 | Loss 3.32900 | PPL 27.91 | 31,688 tok/s
+Step   38100 | LR 1.110167e-04 | Loss 3.32213 | PPL 27.72 | 31,689 tok/s
+Step   38150 | LR 1.106772e-04 | Loss 2.94204 | PPL 18.95 | 31,690 tok/s
+Step   38200 | LR 1.103381e-04 | Loss 3.57635 | PPL 35.74 | 31,691 tok/s
+Step   38250 | LR 1.099994e-04 | Loss 3.15631 | PPL 23.48 | 31,691 tok/s
+Step   38300 | LR 1.096611e-04 | Loss 3.56362 | PPL 35.29 | 31,692 tok/s
+Step   38350 | LR 1.093232e-04 | Loss 3.31792 | PPL 27.60 | 31,693 tok/s
+Step   38400 | LR 1.089858e-04 | Loss 3.21709 | PPL 24.96 | 31,694 tok/s
+Step   38450 | LR 1.086488e-04 | Loss 3.49733 | PPL 33.03 | 31,695 tok/s
+Step   38500 | LR 1.083122e-04 | Loss 3.21458 | PPL 24.89 | 31,696 tok/s
+Step   38550 | LR 1.079760e-04 | Loss 3.72506 | PPL 41.47 | 31,696 tok/s
+Step   38600 | LR 1.076403e-04 | Loss 3.40646 | PPL 30.16 | 31,697 tok/s
+Step   38650 | LR 1.073050e-04 | Loss 3.04688 | PPL 21.05 | 31,698 tok/s
+Step   38700 | LR 1.069701e-04 | Loss 3.27246 | PPL 26.38 | 31,699 tok/s
+Step   38750 | LR 1.066357e-04 | Loss 3.71730 | PPL 41.15 | 31,700 tok/s
+Step   38800 | LR 1.063017e-04 | Loss 3.60293 | PPL 36.71 | 31,700 tok/s
+Step   38850 | LR 1.059681e-04 | Loss 3.54908 | PPL 34.78 | 31,701 tok/s
+Step   38900 | LR 1.056350e-04 | Loss 3.34011 | PPL 28.22 | 31,702 tok/s
+Step   38950 | LR 1.053024e-04 | Loss 3.38948 | PPL 29.65 | 31,703 tok/s
+Step   39000 | LR 1.049702e-04 | Loss 3.44826 | PPL 31.45 | 31,704 tok/s
+Step   39050 | LR 1.046384e-04 | Loss 3.26670 | PPL 26.22 | 31,704 tok/s
+Step   39100 | LR 1.043071e-04 | Loss 3.17821 | PPL 24.00 | 31,705 tok/s
+Step   39150 | LR 1.039763e-04 | Loss 3.46840 | PPL 32.09 | 31,706 tok/s
+Step   39200 | LR 1.036459e-04 | Loss 3.39750 | PPL 29.89 | 31,707 tok/s
+Step   39250 | LR 1.033160e-04 | Loss 3.30213 | PPL 27.17 | 31,708 tok/s
+Step   39300 | LR 1.029865e-04 | Loss 3.32191 | PPL 27.71 | 31,708 tok/s
+Step   39350 | LR 1.026575e-04 | Loss 3.34564 | PPL 28.38 | 31,709 tok/s
+Step   39400 | LR 1.023290e-04 | Loss 3.39699 | PPL 29.87 | 31,710 tok/s
+Step   39450 | LR 1.020010e-04 | Loss 3.42013 | PPL 30.57 | 31,711 tok/s
+Step   39500 | LR 1.016734e-04 | Loss 3.43055 | PPL 30.89 | 31,711 tok/s
+Step   39550 | LR 1.013463e-04 | Loss 3.30205 | PPL 27.17 | 31,712 tok/s
+Step   39600 | LR 1.010197e-04 | Loss 3.43881 | PPL 31.15 | 31,713 tok/s
+Step   39650 | LR 1.006936e-04 | Loss 3.65331 | PPL 38.60 | 31,714 tok/s
+Step   39700 | LR 1.003679e-04 | Loss 3.24046 | PPL 25.55 | 31,714 tok/s
+Step   39750 | LR 1.000428e-04 | Loss 3.25216 | PPL 25.85 | 31,715 tok/s
+Step   39800 | LR 9.971811e-05 | Loss 3.19383 | PPL 24.38 | 31,716 tok/s
+Step   39850 | LR 9.939393e-05 | Loss 3.33044 | PPL 27.95 | 31,717 tok/s
+Step   39900 | LR 9.907025e-05 | Loss 3.13181 | PPL 22.92 | 31,717 tok/s
+Step   39950 | LR 9.874707e-05 | Loss 3.19233 | PPL 24.35 | 31,718 tok/s
+Step   40000 | LR 9.842438e-05 | Loss 3.25735 | PPL 25.98 | 31,719 tok/s
+Validation | Loss 3.08052 | PPL 21.77
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_040000.pt
+Step   40050 | LR 9.810220e-05 | Loss 3.41429 | PPL 30.40 | 31,682 tok/s
+Step   40100 | LR 9.778052e-05 | Loss 3.33456 | PPL 28.07 | 31,682 tok/s
+Step   40150 | LR 9.745935e-05 | Loss 3.28264 | PPL 26.65 | 31,683 tok/s
+Step   40200 | LR 9.713868e-05 | Loss 3.28463 | PPL 26.70 | 31,684 tok/s
+Step   40250 | LR 9.681853e-05 | Loss 3.07953 | PPL 21.75 | 31,685 tok/s
+Step   40300 | LR 9.649889e-05 | Loss 3.33932 | PPL 28.20 | 31,686 tok/s
+Step   40350 | LR 9.617977e-05 | Loss 3.47902 | PPL 32.43 | 31,686 tok/s
+Step   40400 | LR 9.586117e-05 | Loss 3.43029 | PPL 30.89 | 31,687 tok/s
+Step   40450 | LR 9.554309e-05 | Loss 3.17988 | PPL 24.04 | 31,688 tok/s
+Step   40500 | LR 9.522553e-05 | Loss 3.49794 | PPL 33.05 | 31,689 tok/s
+Step   40550 | LR 9.490850e-05 | Loss 3.43131 | PPL 30.92 | 31,689 tok/s
+Step   40600 | LR 9.459199e-05 | Loss 3.26120 | PPL 26.08 | 31,690 tok/s
+Step   40650 | LR 9.427602e-05 | Loss 3.40555 | PPL 30.13 | 31,691 tok/s
+Step   40700 | LR 9.396058e-05 | Loss 3.20720 | PPL 24.71 | 31,692 tok/s
+Step   40750 | LR 9.364567e-05 | Loss 3.26777 | PPL 26.25 | 31,693 tok/s
+Step   40800 | LR 9.333131e-05 | Loss 3.40623 | PPL 30.15 | 31,693 tok/s
+Step   40850 | LR 9.301748e-05 | Loss 3.21817 | PPL 24.98 | 31,694 tok/s
+Step   40900 | LR 9.270419e-05 | Loss 3.18843 | PPL 24.25 | 31,695 tok/s
+Step   40950 | LR 9.239146e-05 | Loss 3.37745 | PPL 29.30 | 31,696 tok/s
+Step   41000 | LR 9.207926e-05 | Loss 3.35443 | PPL 28.63 | 31,697 tok/s
+Step   41050 | LR 9.176762e-05 | Loss 3.21848 | PPL 24.99 | 31,697 tok/s
+Step   41100 | LR 9.145653e-05 | Loss 3.14128 | PPL 23.13 | 31,698 tok/s
+Step   41150 | LR 9.114600e-05 | Loss 3.69035 | PPL 40.06 | 31,699 tok/s
+Step   41200 | LR 9.083602e-05 | Loss 3.27055 | PPL 26.33 | 31,700 tok/s
+Step   41250 | LR 9.052660e-05 | Loss 3.46352 | PPL 31.93 | 31,700 tok/s
+Step   41300 | LR 9.021774e-05 | Loss 3.48046 | PPL 32.47 | 31,701 tok/s
+Step   41350 | LR 8.990944e-05 | Loss 3.30670 | PPL 27.29 | 31,702 tok/s
+Step   41400 | LR 8.960171e-05 | Loss 3.52554 | PPL 33.97 | 31,703 tok/s
+Step   41450 | LR 8.929455e-05 | Loss 3.41031 | PPL 30.27 | 31,703 tok/s
+Step   41500 | LR 8.898796e-05 | Loss 3.27895 | PPL 26.55 | 31,704 tok/s
+Step   41550 | LR 8.868194e-05 | Loss 3.31236 | PPL 27.45 | 31,705 tok/s
+Step   41600 | LR 8.837650e-05 | Loss 3.46141 | PPL 31.86 | 31,705 tok/s
+Step   41650 | LR 8.807164e-05 | Loss 3.20260 | PPL 24.60 | 31,706 tok/s
+Step   41700 | LR 8.776735e-05 | Loss 3.33585 | PPL 28.10 | 31,707 tok/s
+Step   41750 | LR 8.746365e-05 | Loss 3.49420 | PPL 32.92 | 31,708 tok/s
+Step   41800 | LR 8.716053e-05 | Loss 3.56621 | PPL 35.38 | 31,708 tok/s
+Step   41850 | LR 8.685800e-05 | Loss 3.44719 | PPL 31.41 | 31,709 tok/s
+Step   41900 | LR 8.655606e-05 | Loss 3.09741 | PPL 22.14 | 31,710 tok/s
+Step   41950 | LR 8.625471e-05 | Loss 3.11123 | PPL 22.45 | 31,711 tok/s
+Step   42000 | LR 8.595395e-05 | Loss 3.20761 | PPL 24.72 | 31,711 tok/s
+Validation | Loss 3.07072 | PPL 21.56
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_042000.pt
+Step   42050 | LR 8.565379e-05 | Loss 3.23290 | PPL 25.35 | 31,685 tok/s
+Step   42100 | LR 8.535423e-05 | Loss 3.45805 | PPL 31.75 | 31,686 tok/s
+Step   42150 | LR 8.505526e-05 | Loss 3.37572 | PPL 29.25 | 31,687 tok/s
+Step   42200 | LR 8.475690e-05 | Loss 3.24593 | PPL 25.69 | 31,687 tok/s
+Step   42250 | LR 8.445915e-05 | Loss 3.30536 | PPL 27.26 | 31,688 tok/s
+Step   42300 | LR 8.416200e-05 | Loss 3.25931 | PPL 26.03 | 31,689 tok/s
+Step   42350 | LR 8.386546e-05 | Loss 3.19418 | PPL 24.39 | 31,689 tok/s
+Step   42400 | LR 8.356953e-05 | Loss 3.28062 | PPL 26.59 | 31,690 tok/s
+Step   42450 | LR 8.327422e-05 | Loss 3.27249 | PPL 26.38 | 31,691 tok/s
+Step   42500 | LR 8.297952e-05 | Loss 3.67223 | PPL 39.34 | 31,692 tok/s
+Step   42550 | LR 8.268544e-05 | Loss 3.28530 | PPL 26.72 | 31,693 tok/s
+Step   42600 | LR 8.239198e-05 | Loss 3.37528 | PPL 29.23 | 31,693 tok/s
+Step   42650 | LR 8.209914e-05 | Loss 3.34960 | PPL 28.49 | 31,694 tok/s
+Step   42700 | LR 8.180693e-05 | Loss 3.47575 | PPL 32.32 | 31,695 tok/s
+Step   42750 | LR 8.151535e-05 | Loss 3.20091 | PPL 24.55 | 31,696 tok/s
+Step   42800 | LR 8.122439e-05 | Loss 3.17843 | PPL 24.01 | 31,697 tok/s
+Step   42850 | LR 8.093407e-05 | Loss 3.02087 | PPL 20.51 | 31,697 tok/s
+Step   42900 | LR 8.064438e-05 | Loss 3.37722 | PPL 29.29 | 31,698 tok/s
+Step   42950 | LR 8.035532e-05 | Loss 3.19261 | PPL 24.35 | 31,699 tok/s
+Step   43000 | LR 8.006691e-05 | Loss 3.19216 | PPL 24.34 | 31,700 tok/s
+Step   43050 | LR 7.977913e-05 | Loss 3.07704 | PPL 21.69 | 31,700 tok/s
+Step   43100 | LR 7.949200e-05 | Loss 3.08807 | PPL 21.93 | 31,701 tok/s
+Step   43150 | LR 7.920551e-05 | Loss 3.20803 | PPL 24.73 | 31,702 tok/s
+Step   43200 | LR 7.891966e-05 | Loss 3.33421 | PPL 28.06 | 31,703 tok/s
+Step   43250 | LR 7.863447e-05 | Loss 3.55511 | PPL 34.99 | 31,703 tok/s
+Step   43300 | LR 7.834993e-05 | Loss 3.42687 | PPL 30.78 | 31,704 tok/s
+Step   43350 | LR 7.806604e-05 | Loss 3.33524 | PPL 28.09 | 31,705 tok/s
+Step   43400 | LR 7.778280e-05 | Loss 3.26049 | PPL 26.06 | 31,705 tok/s
+Step   43450 | LR 7.750023e-05 | Loss 3.32566 | PPL 27.82 | 31,706 tok/s
+Step   43500 | LR 7.721831e-05 | Loss 3.42376 | PPL 30.68 | 31,707 tok/s
+Step   43550 | LR 7.693705e-05 | Loss 3.22465 | PPL 25.14 | 31,707 tok/s
+Step   43600 | LR 7.665646e-05 | Loss 3.42642 | PPL 30.77 | 31,708 tok/s
+Step   43650 | LR 7.637653e-05 | Loss 3.38263 | PPL 29.45 | 31,709 tok/s
+Step   43700 | LR 7.609728e-05 | Loss 3.27644 | PPL 26.48 | 31,709 tok/s
+Step   43750 | LR 7.581869e-05 | Loss 3.42698 | PPL 30.78 | 31,710 tok/s
+Step   43800 | LR 7.554077e-05 | Loss 3.18870 | PPL 24.26 | 31,711 tok/s
+Step   43850 | LR 7.526353e-05 | Loss 3.42395 | PPL 30.69 | 31,711 tok/s
+Step   43900 | LR 7.498697e-05 | Loss 3.62035 | PPL 37.35 | 31,712 tok/s
+Step   43950 | LR 7.471108e-05 | Loss 3.51199 | PPL 33.51 | 31,713 tok/s
+Step   44000 | LR 7.443587e-05 | Loss 3.44413 | PPL 31.32 | 31,714 tok/s
+Validation | Loss 3.06241 | PPL 21.38
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_044000.pt
+Step   44050 | LR 7.416135e-05 | Loss 3.25174 | PPL 25.84 | 31,689 tok/s
+Step   44100 | LR 7.388751e-05 | Loss 3.56088 | PPL 35.19 | 31,689 tok/s
+Step   44150 | LR 7.361436e-05 | Loss 3.16113 | PPL 23.60 | 31,690 tok/s
+Step   44200 | LR 7.334190e-05 | Loss 3.18131 | PPL 24.08 | 31,691 tok/s
+Step   44250 | LR 7.307012e-05 | Loss 3.39147 | PPL 29.71 | 31,691 tok/s
+Step   44300 | LR 7.279905e-05 | Loss 3.40692 | PPL 30.17 | 31,692 tok/s
+Step   44350 | LR 7.252866e-05 | Loss 3.25932 | PPL 26.03 | 31,693 tok/s
+Step   44400 | LR 7.225897e-05 | Loss 3.35505 | PPL 28.65 | 31,694 tok/s
+Step   44450 | LR 7.198999e-05 | Loss 3.41542 | PPL 30.43 | 31,694 tok/s
+Step   44500 | LR 7.172170e-05 | Loss 3.46635 | PPL 32.02 | 31,695 tok/s
+Step   44550 | LR 7.145411e-05 | Loss 3.22812 | PPL 25.23 | 31,696 tok/s
+Step   44600 | LR 7.118724e-05 | Loss 3.41195 | PPL 30.32 | 31,696 tok/s
+Step   44650 | LR 7.092106e-05 | Loss 3.41461 | PPL 30.41 | 31,697 tok/s
+Step   44700 | LR 7.065560e-05 | Loss 3.25468 | PPL 25.91 | 31,697 tok/s
+Step   44750 | LR 7.039085e-05 | Loss 3.39228 | PPL 29.73 | 31,698 tok/s
+Step   44800 | LR 7.012681e-05 | Loss 3.37175 | PPL 29.13 | 31,699 tok/s
+Step   44850 | LR 6.986349e-05 | Loss 3.49467 | PPL 32.94 | 31,699 tok/s
+Step   44900 | LR 6.960088e-05 | Loss 3.13787 | PPL 23.05 | 31,700 tok/s
+Step   44950 | LR 6.933900e-05 | Loss 3.26923 | PPL 26.29 | 31,701 tok/s
+Step   45000 | LR 6.907783e-05 | Loss 3.22835 | PPL 25.24 | 31,701 tok/s
+Step   45050 | LR 6.881739e-05 | Loss 3.35459 | PPL 28.63 | 31,702 tok/s
+Step   45100 | LR 6.855767e-05 | Loss 3.23456 | PPL 25.40 | 31,703 tok/s
+Step   45150 | LR 6.829868e-05 | Loss 3.29173 | PPL 26.89 | 31,704 tok/s
+Step   45200 | LR 6.804042e-05 | Loss 3.30577 | PPL 27.27 | 31,704 tok/s
+Step   45250 | LR 6.778288e-05 | Loss 3.26304 | PPL 26.13 | 31,705 tok/s
+Step   45300 | LR 6.752609e-05 | Loss 3.40797 | PPL 30.20 | 31,706 tok/s
+Step   45350 | LR 6.727002e-05 | Loss 3.31492 | PPL 27.52 | 31,706 tok/s
+Step   45400 | LR 6.701469e-05 | Loss 3.07741 | PPL 21.70 | 31,707 tok/s
+Step   45450 | LR 6.676011e-05 | Loss 3.38483 | PPL 29.51 | 31,708 tok/s
+Step   45500 | LR 6.650626e-05 | Loss 3.41741 | PPL 30.49 | 31,709 tok/s
+Step   45550 | LR 6.625315e-05 | Loss 3.27790 | PPL 26.52 | 31,709 tok/s
+Step   45600 | LR 6.600079e-05 | Loss 3.28674 | PPL 26.76 | 31,710 tok/s
+Step   45650 | LR 6.574918e-05 | Loss 3.30992 | PPL 27.38 | 31,711 tok/s
+Step   45700 | LR 6.549831e-05 | Loss 3.35958 | PPL 28.78 | 31,711 tok/s
+Step   45750 | LR 6.524819e-05 | Loss 3.17464 | PPL 23.92 | 31,712 tok/s
+Step   45800 | LR 6.499883e-05 | Loss 3.61325 | PPL 37.09 | 31,713 tok/s
+Step   45850 | LR 6.475022e-05 | Loss 3.27669 | PPL 26.49 | 31,713 tok/s
+Step   45900 | LR 6.450236e-05 | Loss 3.24174 | PPL 25.58 | 31,714 tok/s
+Step   45950 | LR 6.425526e-05 | Loss 3.08263 | PPL 21.82 | 31,715 tok/s
+Step   46000 | LR 6.400892e-05 | Loss 3.39009 | PPL 29.67 | 31,715 tok/s
+Validation | Loss 3.04863 | PPL 21.09
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_046000.pt
+Step   46050 | LR 6.376335e-05 | Loss 3.36051 | PPL 28.80 | 31,691 tok/s
+Step   46100 | LR 6.351853e-05 | Loss 3.22968 | PPL 25.27 | 31,692 tok/s
+Step   46150 | LR 6.327448e-05 | Loss 3.50554 | PPL 33.30 | 31,693 tok/s
+Step   46200 | LR 6.303120e-05 | Loss 3.26426 | PPL 26.16 | 31,694 tok/s
+Step   46250 | LR 6.278868e-05 | Loss 3.39727 | PPL 29.88 | 31,694 tok/s
+Step   46300 | LR 6.254694e-05 | Loss 3.48539 | PPL 32.64 | 31,695 tok/s
+Step   46350 | LR 6.230597e-05 | Loss 3.16732 | PPL 23.74 | 31,696 tok/s
+Step   46400 | LR 6.206577e-05 | Loss 3.23349 | PPL 25.37 | 31,696 tok/s
+Step   46450 | LR 6.182635e-05 | Loss 3.69928 | PPL 40.42 | 31,697 tok/s
+Step   46500 | LR 6.158771e-05 | Loss 3.60124 | PPL 36.64 | 31,698 tok/s
+Step   46550 | LR 6.134984e-05 | Loss 3.61723 | PPL 37.23 | 31,699 tok/s
+Step   46600 | LR 6.111276e-05 | Loss 3.17163 | PPL 23.85 | 31,699 tok/s
+Step   46650 | LR 6.087646e-05 | Loss 3.33480 | PPL 28.07 | 31,700 tok/s
+Step   46700 | LR 6.064094e-05 | Loss 3.73694 | PPL 41.97 | 31,701 tok/s
+Step   46750 | LR 6.040622e-05 | Loss 3.41711 | PPL 30.48 | 31,701 tok/s
+Step   46800 | LR 6.017227e-05 | Loss 3.58137 | PPL 35.92 | 31,702 tok/s
+Step   46850 | LR 5.993912e-05 | Loss 3.35081 | PPL 28.53 | 31,703 tok/s
+Step   46900 | LR 5.970677e-05 | Loss 3.24892 | PPL 25.76 | 31,703 tok/s
+Step   46950 | LR 5.947520e-05 | Loss 3.46276 | PPL 31.90 | 31,704 tok/s
+Step   47000 | LR 5.924443e-05 | Loss 2.93352 | PPL 18.79 | 31,705 tok/s
+Step   47050 | LR 5.901446e-05 | Loss 3.50341 | PPL 33.23 | 31,705 tok/s
+Step   47100 | LR 5.878529e-05 | Loss 3.57272 | PPL 35.61 | 31,706 tok/s
+Step   47150 | LR 5.855692e-05 | Loss 3.55464 | PPL 34.98 | 31,707 tok/s
+Step   47200 | LR 5.832935e-05 | Loss 3.46653 | PPL 32.03 | 31,707 tok/s
+Step   47250 | LR 5.810258e-05 | Loss 3.34510 | PPL 28.36 | 31,708 tok/s
+Step   47300 | LR 5.787662e-05 | Loss 3.47837 | PPL 32.41 | 31,709 tok/s
+Step   47350 | LR 5.765147e-05 | Loss 3.34879 | PPL 28.47 | 31,710 tok/s
+Step   47400 | LR 5.742712e-05 | Loss 3.43890 | PPL 31.15 | 31,710 tok/s
+Step   47450 | LR 5.720359e-05 | Loss 3.29825 | PPL 27.07 | 31,711 tok/s
+Step   47500 | LR 5.698087e-05 | Loss 3.33783 | PPL 28.16 | 31,712 tok/s
+Step   47550 | LR 5.675896e-05 | Loss 3.40631 | PPL 30.15 | 31,712 tok/s
+Step   47600 | LR 5.653787e-05 | Loss 3.33597 | PPL 28.11 | 31,713 tok/s
+Step   47650 | LR 5.631760e-05 | Loss 3.26364 | PPL 26.14 | 31,714 tok/s
+Step   47700 | LR 5.609815e-05 | Loss 3.26256 | PPL 26.12 | 31,714 tok/s
+Step   47750 | LR 5.587952e-05 | Loss 3.41276 | PPL 30.35 | 31,715 tok/s
+Step   47800 | LR 5.566170e-05 | Loss 3.11407 | PPL 22.51 | 31,716 tok/s
+Step   47850 | LR 5.544472e-05 | Loss 3.23852 | PPL 25.50 | 31,716 tok/s
+Step   47900 | LR 5.522856e-05 | Loss 3.27644 | PPL 26.48 | 31,717 tok/s
+Step   47950 | LR 5.501323e-05 | Loss 3.34749 | PPL 28.43 | 31,718 tok/s
+Step   48000 | LR 5.479872e-05 | Loss 3.13241 | PPL 22.93 | 31,718 tok/s
+Validation | Loss 3.04243 | PPL 20.96
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_048000.pt
+Step   48050 | LR 5.458505e-05 | Loss 3.41111 | PPL 30.30 | 31,689 tok/s
+Step   48100 | LR 5.437221e-05 | Loss 3.43118 | PPL 30.91 | 31,690 tok/s
+Step   48150 | LR 5.416020e-05 | Loss 3.17991 | PPL 24.04 | 31,690 tok/s
+Step   48200 | LR 5.394903e-05 | Loss 3.24999 | PPL 25.79 | 31,691 tok/s
+Step   48250 | LR 5.373870e-05 | Loss 3.17034 | PPL 23.82 | 31,692 tok/s
+Step   48300 | LR 5.352920e-05 | Loss 3.22508 | PPL 25.16 | 31,692 tok/s
+Step   48350 | LR 5.332054e-05 | Loss 3.35660 | PPL 28.69 | 31,693 tok/s
+Step   48400 | LR 5.311273e-05 | Loss 3.25813 | PPL 26.00 | 31,694 tok/s
+Step   48450 | LR 5.290576e-05 | Loss 3.27281 | PPL 26.39 | 31,694 tok/s
+Step   48500 | LR 5.269964e-05 | Loss 3.44810 | PPL 31.44 | 31,695 tok/s
+Step   48550 | LR 5.249436e-05 | Loss 3.26297 | PPL 26.13 | 31,696 tok/s
+Step   48600 | LR 5.228993e-05 | Loss 3.19733 | PPL 24.47 | 31,696 tok/s
+Step   48650 | LR 5.208634e-05 | Loss 3.38705 | PPL 29.58 | 31,697 tok/s
+Step   48700 | LR 5.188361e-05 | Loss 3.72891 | PPL 41.63 | 31,698 tok/s
+Step   48750 | LR 5.168174e-05 | Loss 3.24316 | PPL 25.61 | 31,698 tok/s
+Step   48800 | LR 5.148071e-05 | Loss 3.34845 | PPL 28.46 | 31,699 tok/s
+Step   48850 | LR 5.128055e-05 | Loss 3.45449 | PPL 31.64 | 31,700 tok/s
+Step   48900 | LR 5.108123e-05 | Loss 3.41471 | PPL 30.41 | 31,700 tok/s
+Step   48950 | LR 5.088278e-05 | Loss 3.24620 | PPL 25.69 | 31,701 tok/s
+Step   49000 | LR 5.068519e-05 | Loss 3.32473 | PPL 27.79 | 31,702 tok/s
+Step   49050 | LR 5.048846e-05 | Loss 3.39156 | PPL 29.71 | 31,702 tok/s
+Step   49100 | LR 5.029259e-05 | Loss 3.14149 | PPL 23.14 | 31,703 tok/s
+Step   49150 | LR 5.009759e-05 | Loss 3.18812 | PPL 24.24 | 31,704 tok/s
+Step   49200 | LR 4.990346e-05 | Loss 3.38148 | PPL 29.41 | 31,704 tok/s
+Step   49250 | LR 4.971019e-05 | Loss 3.39995 | PPL 29.96 | 31,705 tok/s
+Step   49300 | LR 4.951779e-05 | Loss 3.28329 | PPL 26.66 | 31,705 tok/s
+Step   49350 | LR 4.932626e-05 | Loss 3.28229 | PPL 26.64 | 31,706 tok/s
+Step   49400 | LR 4.913560e-05 | Loss 3.23594 | PPL 25.43 | 31,707 tok/s
+Step   49450 | LR 4.894582e-05 | Loss 3.33597 | PPL 28.11 | 31,707 tok/s
+Step   49500 | LR 4.875691e-05 | Loss 3.38967 | PPL 29.66 | 31,708 tok/s
+Step   49550 | LR 4.856887e-05 | Loss 3.06865 | PPL 21.51 | 31,709 tok/s
+Step   49600 | LR 4.838172e-05 | Loss 3.11066 | PPL 22.44 | 31,709 tok/s
+Step   49650 | LR 4.819544e-05 | Loss 3.37414 | PPL 29.20 | 31,710 tok/s
+Step   49700 | LR 4.801005e-05 | Loss 3.54379 | PPL 34.60 | 31,710 tok/s
+Step   49750 | LR 4.782553e-05 | Loss 3.20386 | PPL 24.63 | 31,711 tok/s
+Step   49800 | LR 4.764190e-05 | Loss 3.30030 | PPL 27.12 | 31,712 tok/s
+Step   49850 | LR 4.745916e-05 | Loss 3.32000 | PPL 27.66 | 31,712 tok/s
+Step   49900 | LR 4.727730e-05 | Loss 3.40267 | PPL 30.04 | 31,713 tok/s
+Step   49950 | LR 4.709632e-05 | Loss 3.34737 | PPL 28.43 | 31,714 tok/s
+Step   50000 | LR 4.691624e-05 | Loss 3.47002 | PPL 32.14 | 31,714 tok/s
+Validation | Loss 3.03558 | PPL 20.81
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_050000.pt
+Step   50050 | LR 4.673704e-05 | Loss 3.28764 | PPL 26.78 | 31,692 tok/s
+Step   50100 | LR 4.655874e-05 | Loss 3.28932 | PPL 26.82 | 31,693 tok/s
+Step   50150 | LR 4.638133e-05 | Loss 3.41949 | PPL 30.55 | 31,693 tok/s
+Step   50200 | LR 4.620482e-05 | Loss 3.25469 | PPL 25.91 | 31,694 tok/s
+Step   50250 | LR 4.602920e-05 | Loss 3.19194 | PPL 24.34 | 31,694 tok/s
+Step   50300 | LR 4.585447e-05 | Loss 3.55960 | PPL 35.15 | 31,695 tok/s
+Step   50350 | LR 4.568065e-05 | Loss 3.39997 | PPL 29.96 | 31,695 tok/s
+Step   50400 | LR 4.550772e-05 | Loss 3.24337 | PPL 25.62 | 31,696 tok/s
+Step   50450 | LR 4.533569e-05 | Loss 3.36011 | PPL 28.79 | 31,697 tok/s
+Step   50500 | LR 4.516457e-05 | Loss 3.37110 | PPL 29.11 | 31,697 tok/s
+Step   50550 | LR 4.499435e-05 | Loss 3.29227 | PPL 26.90 | 31,698 tok/s
+Step   50600 | LR 4.482503e-05 | Loss 3.33367 | PPL 28.04 | 31,698 tok/s
+Step   50650 | LR 4.465663e-05 | Loss 3.41229 | PPL 30.33 | 31,699 tok/s
+Step   50700 | LR 4.448912e-05 | Loss 3.36164 | PPL 28.84 | 31,700 tok/s
+Step   50750 | LR 4.432253e-05 | Loss 3.21580 | PPL 24.92 | 31,700 tok/s
+Step   50800 | LR 4.415684e-05 | Loss 3.42720 | PPL 30.79 | 31,701 tok/s
+Step   50850 | LR 4.399207e-05 | Loss 3.21600 | PPL 24.93 | 31,701 tok/s
+Step   50900 | LR 4.382821e-05 | Loss 3.39556 | PPL 29.83 | 31,702 tok/s
+Step   50950 | LR 4.366526e-05 | Loss 2.91727 | PPL 18.49 | 31,702 tok/s
+Step   51000 | LR 4.350323e-05 | Loss 3.08504 | PPL 21.87 | 31,703 tok/s
+Step   51050 | LR 4.334211e-05 | Loss 3.24575 | PPL 25.68 | 31,704 tok/s
+Step   51100 | LR 4.318191e-05 | Loss 3.48416 | PPL 32.59 | 31,704 tok/s
+Step   51150 | LR 4.302262e-05 | Loss 3.29139 | PPL 26.88 | 31,705 tok/s
+Step   51200 | LR 4.286426e-05 | Loss 3.30630 | PPL 27.28 | 31,705 tok/s
+Step   51250 | LR 4.270682e-05 | Loss 3.32531 | PPL 27.81 | 31,706 tok/s
+Step   51300 | LR 4.255030e-05 | Loss 3.36609 | PPL 28.97 | 31,707 tok/s
+Step   51350 | LR 4.239470e-05 | Loss 3.50800 | PPL 33.38 | 31,707 tok/s
+Step   51400 | LR 4.224002e-05 | Loss 2.85952 | PPL 17.45 | 31,708 tok/s
+Step   51450 | LR 4.208628e-05 | Loss 3.49936 | PPL 33.09 | 31,708 tok/s
+Step   51500 | LR 4.193345e-05 | Loss 3.37295 | PPL 29.16 | 31,709 tok/s
+Step   51550 | LR 4.178156e-05 | Loss 3.14114 | PPL 23.13 | 31,709 tok/s
+Step   51600 | LR 4.163059e-05 | Loss 2.93373 | PPL 18.80 | 31,710 tok/s
+Step   51650 | LR 4.148056e-05 | Loss 3.28709 | PPL 26.76 | 31,710 tok/s
+Step   51700 | LR 4.133145e-05 | Loss 3.50488 | PPL 33.28 | 31,711 tok/s
+Step   51750 | LR 4.118328e-05 | Loss 3.28140 | PPL 26.61 | 31,711 tok/s
+Step   51800 | LR 4.103604e-05 | Loss 2.94330 | PPL 18.98 | 31,712 tok/s
+Step   51850 | LR 4.088974e-05 | Loss 3.41770 | PPL 30.50 | 31,713 tok/s
+Step   51900 | LR 4.074437e-05 | Loss 3.37649 | PPL 29.27 | 31,713 tok/s
+Step   51950 | LR 4.059993e-05 | Loss 3.39442 | PPL 29.80 | 31,714 tok/s
+Step   52000 | LR 4.045644e-05 | Loss 3.29986 | PPL 27.11 | 31,714 tok/s
+Validation | Loss 3.03032 | PPL 20.70
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_052000.pt
+Step   52050 | LR 4.031388e-05 | Loss 3.24824 | PPL 25.75 | 31,693 tok/s
+Step   52100 | LR 4.017227e-05 | Loss 3.04608 | PPL 21.03 | 31,693 tok/s
+Step   52150 | LR 4.003159e-05 | Loss 3.33279 | PPL 28.02 | 31,694 tok/s
+Step   52200 | LR 3.989186e-05 | Loss 3.48640 | PPL 32.67 | 31,694 tok/s
+Step   52250 | LR 3.975307e-05 | Loss 3.19341 | PPL 24.37 | 31,695 tok/s
+Step   52300 | LR 3.961522e-05 | Loss 3.05518 | PPL 21.22 | 31,695 tok/s
+Step   52350 | LR 3.947832e-05 | Loss 3.22774 | PPL 25.22 | 31,696 tok/s
+Step   52400 | LR 3.934236e-05 | Loss 3.21284 | PPL 24.85 | 31,697 tok/s
+Step   52450 | LR 3.920736e-05 | Loss 3.48046 | PPL 32.47 | 31,697 tok/s
+Step   52500 | LR 3.907330e-05 | Loss 3.22233 | PPL 25.09 | 31,698 tok/s
+Step   52550 | LR 3.894018e-05 | Loss 3.19024 | PPL 24.29 | 31,698 tok/s
+Step   52600 | LR 3.880802e-05 | Loss 3.36819 | PPL 29.03 | 31,699 tok/s
+Step   52650 | LR 3.867681e-05 | Loss 3.31332 | PPL 27.48 | 31,699 tok/s
+Step   52700 | LR 3.854656e-05 | Loss 3.54402 | PPL 34.61 | 31,700 tok/s
+Step   52750 | LR 3.841725e-05 | Loss 3.40801 | PPL 30.21 | 31,700 tok/s
+Step   52800 | LR 3.828890e-05 | Loss 3.13906 | PPL 23.08 | 31,701 tok/s
+Step   52850 | LR 3.816151e-05 | Loss 2.99628 | PPL 20.01 | 31,701 tok/s
+Step   52900 | LR 3.803507e-05 | Loss 3.02444 | PPL 20.58 | 31,702 tok/s
+Step   52950 | LR 3.790959e-05 | Loss 3.19526 | PPL 24.42 | 31,703 tok/s
+Step   53000 | LR 3.778506e-05 | Loss 3.37272 | PPL 29.16 | 31,703 tok/s
+Step   53050 | LR 3.766150e-05 | Loss 3.33075 | PPL 27.96 | 31,704 tok/s
+Step   53100 | LR 3.753889e-05 | Loss 3.35344 | PPL 28.60 | 31,704 tok/s
+Step   53150 | LR 3.741725e-05 | Loss 3.75033 | PPL 42.54 | 31,705 tok/s
+Step   53200 | LR 3.729657e-05 | Loss 3.17925 | PPL 24.03 | 31,705 tok/s
+Step   53250 | LR 3.717685e-05 | Loss 3.57170 | PPL 35.58 | 31,706 tok/s
+Step   53300 | LR 3.705809e-05 | Loss 3.71231 | PPL 40.95 | 31,706 tok/s
+Step   53350 | LR 3.694030e-05 | Loss 3.40785 | PPL 30.20 | 31,707 tok/s
+Step   53400 | LR 3.682347e-05 | Loss 3.34582 | PPL 28.38 | 31,707 tok/s
+Step   53450 | LR 3.670761e-05 | Loss 3.23105 | PPL 25.31 | 31,708 tok/s
+Step   53500 | LR 3.659272e-05 | Loss 3.29766 | PPL 27.05 | 31,709 tok/s
+Step   53550 | LR 3.647879e-05 | Loss 3.30667 | PPL 27.29 | 31,709 tok/s
+Step   53600 | LR 3.636583e-05 | Loss 3.05406 | PPL 21.20 | 31,710 tok/s
+Step   53650 | LR 3.625385e-05 | Loss 3.27587 | PPL 26.47 | 31,710 tok/s
+Step   53700 | LR 3.614283e-05 | Loss 3.28534 | PPL 26.72 | 31,711 tok/s
+Step   53750 | LR 3.603278e-05 | Loss 3.38890 | PPL 29.63 | 31,712 tok/s
+Step   53800 | LR 3.592371e-05 | Loss 3.14071 | PPL 23.12 | 31,712 tok/s
+Step   53850 | LR 3.581561e-05 | Loss 3.83442 | PPL 46.27 | 31,713 tok/s
+Step   53900 | LR 3.570848e-05 | Loss 3.40814 | PPL 30.21 | 31,713 tok/s
+Step   53950 | LR 3.560233e-05 | Loss 3.08077 | PPL 21.78 | 31,714 tok/s
+Step   54000 | LR 3.549715e-05 | Loss 3.33359 | PPL 28.04 | 31,715 tok/s
+Validation | Loss 3.02539 | PPL 20.60
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_054000.pt
+Step   54050 | LR 3.539295e-05 | Loss 3.20563 | PPL 24.67 | 31,694 tok/s
+Step   54100 | LR 3.528973e-05 | Loss 3.11654 | PPL 22.57 | 31,695 tok/s
+Step   54150 | LR 3.518748e-05 | Loss 3.80656 | PPL 45.00 | 31,696 tok/s
+Step   54200 | LR 3.508621e-05 | Loss 3.36237 | PPL 28.86 | 31,696 tok/s
+Step   54250 | LR 3.498593e-05 | Loss 3.55032 | PPL 34.82 | 31,697 tok/s
+Step   54300 | LR 3.488662e-05 | Loss 3.22590 | PPL 25.18 | 31,697 tok/s
+Step   54350 | LR 3.478829e-05 | Loss 3.26966 | PPL 26.30 | 31,698 tok/s
+Step   54400 | LR 3.469094e-05 | Loss 3.60216 | PPL 36.68 | 31,699 tok/s
+Step   54450 | LR 3.459458e-05 | Loss 3.39226 | PPL 29.73 | 31,699 tok/s
+Step   54500 | LR 3.449920e-05 | Loss 3.42972 | PPL 30.87 | 31,700 tok/s
+Step   54550 | LR 3.440480e-05 | Loss 3.34588 | PPL 28.39 | 31,700 tok/s
+Step   54600 | LR 3.431139e-05 | Loss 3.45035 | PPL 31.51 | 31,701 tok/s
+Step   54650 | LR 3.421896e-05 | Loss 3.30083 | PPL 27.14 | 31,701 tok/s
+Step   54700 | LR 3.412752e-05 | Loss 3.51715 | PPL 33.69 | 31,702 tok/s
+Step   54750 | LR 3.403706e-05 | Loss 3.25490 | PPL 25.92 | 31,702 tok/s
+Step   54800 | LR 3.394759e-05 | Loss 3.67446 | PPL 39.43 | 31,703 tok/s
+Step   54850 | LR 3.385911e-05 | Loss 3.07755 | PPL 21.71 | 31,703 tok/s
+Step   54900 | LR 3.377162e-05 | Loss 3.24393 | PPL 25.63 | 31,704 tok/s
+Step   54950 | LR 3.368512e-05 | Loss 3.65640 | PPL 38.72 | 31,704 tok/s
+Step   55000 | LR 3.359960e-05 | Loss 3.40132 | PPL 30.00 | 31,705 tok/s
+Step   55050 | LR 3.351508e-05 | Loss 3.03467 | PPL 20.79 | 31,706 tok/s
+Step   55100 | LR 3.343155e-05 | Loss 3.20570 | PPL 24.67 | 31,706 tok/s
+Step   55150 | LR 3.334901e-05 | Loss 3.39089 | PPL 29.69 | 31,707 tok/s
+Step   55200 | LR 3.326746e-05 | Loss 3.29048 | PPL 26.86 | 31,707 tok/s
+Step   55250 | LR 3.318691e-05 | Loss 3.29462 | PPL 26.97 | 31,708 tok/s
+Step   55300 | LR 3.310734e-05 | Loss 3.06586 | PPL 21.45 | 31,708 tok/s
+Step   55350 | LR 3.302878e-05 | Loss 2.95407 | PPL 19.18 | 31,709 tok/s
+Step   55400 | LR 3.295120e-05 | Loss 3.41948 | PPL 30.55 | 31,709 tok/s
+Step   55450 | LR 3.287463e-05 | Loss 3.49678 | PPL 33.01 | 31,710 tok/s
+Step   55500 | LR 3.279905e-05 | Loss 3.45822 | PPL 31.76 | 31,710 tok/s
+Step   55550 | LR 3.272446e-05 | Loss 3.42047 | PPL 30.58 | 31,711 tok/s
+Step   55600 | LR 3.265087e-05 | Loss 3.47412 | PPL 32.27 | 31,711 tok/s
+Step   55650 | LR 3.257828e-05 | Loss 3.31141 | PPL 27.42 | 31,712 tok/s
+Step   55700 | LR 3.250669e-05 | Loss 3.66076 | PPL 38.89 | 31,712 tok/s
+Step   55750 | LR 3.243610e-05 | Loss 3.60604 | PPL 36.82 | 31,713 tok/s
+Step   55800 | LR 3.236650e-05 | Loss 3.30563 | PPL 27.27 | 31,713 tok/s
+Step   55850 | LR 3.229791e-05 | Loss 3.18269 | PPL 24.11 | 31,714 tok/s
+Step   55900 | LR 3.223032e-05 | Loss 3.46268 | PPL 31.90 | 31,714 tok/s
+Step   55950 | LR 3.216372e-05 | Loss 3.65831 | PPL 38.80 | 31,715 tok/s
+Step   56000 | LR 3.209813e-05 | Loss 3.37316 | PPL 29.17 | 31,715 tok/s
+Validation | Loss 3.02091 | PPL 20.51
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_056000.pt
+Step   56050 | LR 3.203354e-05 | Loss 3.35020 | PPL 28.51 | 31,695 tok/s
+Step   56100 | LR 3.196995e-05 | Loss 3.32233 | PPL 27.73 | 31,696 tok/s
+Step   56150 | LR 3.190737e-05 | Loss 3.24503 | PPL 25.66 | 31,696 tok/s
+Step   56200 | LR 3.184579e-05 | Loss 3.27891 | PPL 26.55 | 31,697 tok/s
+Step   56250 | LR 3.178521e-05 | Loss 3.30604 | PPL 27.28 | 31,697 tok/s
+Step   56300 | LR 3.172563e-05 | Loss 3.48303 | PPL 32.56 | 31,698 tok/s
+Step   56350 | LR 3.166706e-05 | Loss 3.34026 | PPL 28.23 | 31,698 tok/s
+Step   56400 | LR 3.160950e-05 | Loss 3.23029 | PPL 25.29 | 31,699 tok/s
+Step   56450 | LR 3.155294e-05 | Loss 3.16728 | PPL 23.74 | 31,699 tok/s
+Step   56500 | LR 3.149739e-05 | Loss 3.29564 | PPL 26.99 | 31,700 tok/s
+Step   56550 | LR 3.144284e-05 | Loss 3.12626 | PPL 22.79 | 31,700 tok/s
+Step   56600 | LR 3.138930e-05 | Loss 3.31581 | PPL 27.54 | 31,701 tok/s
+Step   56650 | LR 3.133677e-05 | Loss 3.55407 | PPL 34.96 | 31,701 tok/s
+Step   56700 | LR 3.128524e-05 | Loss 3.23010 | PPL 25.28 | 31,702 tok/s
+Step   56750 | LR 3.123472e-05 | Loss 3.33686 | PPL 28.13 | 31,702 tok/s
+Step   56800 | LR 3.118521e-05 | Loss 3.56721 | PPL 35.42 | 31,703 tok/s
+Step   56850 | LR 3.113671e-05 | Loss 3.11489 | PPL 22.53 | 31,703 tok/s
+Step   56900 | LR 3.108922e-05 | Loss 3.31980 | PPL 27.65 | 31,704 tok/s
+Step   56950 | LR 3.104274e-05 | Loss 3.28515 | PPL 26.71 | 31,704 tok/s
+Step   57000 | LR 3.099727e-05 | Loss 3.34929 | PPL 28.48 | 31,705 tok/s
+Step   57050 | LR 3.095280e-05 | Loss 3.62465 | PPL 37.51 | 31,705 tok/s
+Step   57100 | LR 3.090935e-05 | Loss 3.22574 | PPL 25.17 | 31,706 tok/s
+Step   57150 | LR 3.086691e-05 | Loss 3.31508 | PPL 27.52 | 31,707 tok/s
+Step   57200 | LR 3.082548e-05 | Loss 3.49239 | PPL 32.86 | 31,707 tok/s
+Step   57250 | LR 3.078506e-05 | Loss 3.18309 | PPL 24.12 | 31,708 tok/s
+Step   57300 | LR 3.074565e-05 | Loss 3.30434 | PPL 27.23 | 31,708 tok/s
+Step   57350 | LR 3.070726e-05 | Loss 3.22794 | PPL 25.23 | 31,709 tok/s
+Step   57400 | LR 3.066987e-05 | Loss 3.12266 | PPL 22.71 | 31,709 tok/s
+Step   57450 | LR 3.063350e-05 | Loss 3.24046 | PPL 25.55 | 31,710 tok/s
+Step   57500 | LR 3.059814e-05 | Loss 3.40921 | PPL 30.24 | 31,710 tok/s
+Step   57550 | LR 3.056380e-05 | Loss 3.14789 | PPL 23.29 | 31,711 tok/s
+Step   57600 | LR 3.053047e-05 | Loss 3.09691 | PPL 22.13 | 31,711 tok/s
+Step   57650 | LR 3.049815e-05 | Loss 3.19471 | PPL 24.40 | 31,712 tok/s
+Step   57700 | LR 3.046685e-05 | Loss 3.30864 | PPL 27.35 | 31,712 tok/s
+Step   57750 | LR 3.043656e-05 | Loss 3.47657 | PPL 32.35 | 31,713 tok/s
+Step   57800 | LR 3.040728e-05 | Loss 3.02498 | PPL 20.59 | 31,713 tok/s
+Step   57850 | LR 3.037902e-05 | Loss 3.19672 | PPL 24.45 | 31,714 tok/s
+Step   57900 | LR 3.035177e-05 | Loss 3.02541 | PPL 20.60 | 31,714 tok/s
+Step   57950 | LR 3.032554e-05 | Loss 3.06301 | PPL 21.39 | 31,715 tok/s
+Step   58000 | LR 3.030032e-05 | Loss 3.17274 | PPL 23.87 | 31,715 tok/s
+Validation | Loss 3.01765 | PPL 20.44
+Saved checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/step_058000.pt
+Step   58050 | LR 3.027612e-05 | Loss 3.15493 | PPL 23.45 | 31,696 tok/s
+Step   58100 | LR 3.025294e-05 | Loss 3.61562 | PPL 37.17 | 31,697 tok/s
+Step   58150 | LR 3.023077e-05 | Loss 3.54488 | PPL 34.64 | 31,698 tok/s
+Step   58200 | LR 3.020961e-05 | Loss 3.34803 | PPL 28.45 | 31,698 tok/s
+Step   58250 | LR 3.018947e-05 | Loss 3.22759 | PPL 25.22 | 31,699 tok/s
+Step   58300 | LR 3.017035e-05 | Loss 3.27450 | PPL 26.43 | 31,699 tok/s
+Step   58350 | LR 3.015225e-05 | Loss 3.22770 | PPL 25.22 | 31,700 tok/s
+Step   58400 | LR 3.013516e-05 | Loss 3.43144 | PPL 30.92 | 31,700 tok/s
+Step   58450 | LR 3.011909e-05 | Loss 3.31031 | PPL 27.39 | 31,701 tok/s
+Step   58500 | LR 3.010403e-05 | Loss 3.33320 | PPL 28.03 | 31,701 tok/s
+Step   58550 | LR 3.008999e-05 | Loss 3.52337 | PPL 33.90 | 31,702 tok/s
+Step   58600 | LR 3.007697e-05 | Loss 3.24534 | PPL 25.67 | 31,702 tok/s
+Step   58650 | LR 3.006496e-05 | Loss 3.20129 | PPL 24.56 | 31,703 tok/s
+Step   58700 | LR 3.005397e-05 | Loss 3.40066 | PPL 29.98 | 31,703 tok/s
+Step   58750 | LR 3.004400e-05 | Loss 3.41104 | PPL 30.30 | 31,704 tok/s
+Step   58800 | LR 3.003505e-05 | Loss 3.28235 | PPL 26.64 | 31,704 tok/s
+Step   58850 | LR 3.002711e-05 | Loss 3.36635 | PPL 28.97 | 31,705 tok/s
+Step   58900 | LR 3.002019e-05 | Loss 3.47362 | PPL 32.25 | 31,705 tok/s
+Step   58950 | LR 3.001429e-05 | Loss 3.19575 | PPL 24.43 | 31,706 tok/s
+Step   59000 | LR 3.000941e-05 | Loss 3.11800 | PPL 22.60 | 31,706 tok/s
+Step   59050 | LR 3.000554e-05 | Loss 3.21198 | PPL 24.83 | 31,707 tok/s
+Step   59100 | LR 3.000269e-05 | Loss 3.57091 | PPL 35.55 | 31,707 tok/s
+Step   59150 | LR 3.000086e-05 | Loss 3.44066 | PPL 31.21 | 31,707 tok/s
+Step   59200 | LR 3.000005e-05 | Loss 3.16917 | PPL 23.79 | 31,708 tok/s
+
+Running final validation...
+
+Final validation loss : 3.01554
+Final validation PPL  : 20.40
+Training time         : 4.25 hours
+Final checkpoint:
+/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt
+
+================================================================================
+TELUGU COLAB TRAINING COMPLETE
+================================================================================

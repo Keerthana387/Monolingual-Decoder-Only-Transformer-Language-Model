@@ -1,0 +1,37 @@
+{
+  "selection_rule": "Prefer transitive/order comparative-reasoning tasks; among a short list of readable prompts, choose deterministically using the supplied seed.",
+  "seed": 42,
+  "example": {
+    "id": "telugu_test_001059",
+    "language": "te",
+    "language_name": "Telugu",
+    "split": "test",
+    "task_type": "transitive_2",
+    "difficulty": "medium",
+    "prompt": "సాయి కిరణ్ యొక్క వయస్సు కార్తిక్ కంటే ఎక్కువగా ఉంది. కార్తిక్ యొక్క వయస్సు కిరణ్ కుమార్ కంటే ఎక్కువగా ఉంది. కార్తిక్, సాయి కిరణ్, కిరణ్ కుమార్ — వీరిలో అత్యధిక వయస్సు ఉన్నది ఎవరు?",
+    "answer": "సాయి కిరణ్",
+    "entities": [
+      "సాయి కిరణ్",
+      "కార్తిక్",
+      "కిరణ్ కుమార్"
+    ],
+    "attribute": "age",
+    "entity_type": "person",
+    "values": {
+      "సాయి కిరణ్": 60,
+      "కార్తిక్": 53,
+      "కిరణ్ కుమార్": 52
+    },
+    "template_ids": [
+      "transitive2_test_01",
+      "transitive2_test_02"
+    ],
+    "reasoning_steps": 2,
+    "chain": [
+      "సాయి కిరణ్",
+      "కార్తిక్",
+      "కిరణ్ కుమార్"
+    ],
+    "query_direction": "largest"
+  }
+}

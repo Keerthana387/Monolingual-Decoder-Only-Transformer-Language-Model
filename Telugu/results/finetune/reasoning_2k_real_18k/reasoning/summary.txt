@@ -1,0 +1,30 @@
+TELUGU PHASE 3 REASONING EVALUATION
+====================================
+
+Test examples: 3,000
+
+Pretrained:
+    Correct:  0
+    Accuracy: 0.00%
+    Mean answer-token accuracy:
+              6.75%
+
+Fine-tuned:
+    Correct:  932
+    Accuracy: 31.07%
+    Mean answer-token accuracy:
+              34.78%
+
+Improvement:
+    Absolute: 31.07
+              percentage points
+    Relative: N/A
+
+Paired outcomes:
+    Both correct:          0
+    Pretrained only:       0
+    Fine-tuned only:       932
+    Both wrong:            2,068
+
+Primary metric:
+    Exact-match reasoning accuracy on the held-out test set.

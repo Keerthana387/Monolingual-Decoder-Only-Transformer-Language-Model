@@ -1,0 +1,402 @@
+[
+  {
+    "layer": 0,
+    "head": 0,
+    "attention_entropy": 3.1337766647338867
+  },
+  {
+    "layer": 0,
+    "head": 1,
+    "attention_entropy": 2.9666147232055664
+  },
+  {
+    "layer": 0,
+    "head": 2,
+    "attention_entropy": 3.120516538619995
+  },
+  {
+    "layer": 0,
+    "head": 3,
+    "attention_entropy": 3.1331944465637207
+  },
+  {
+    "layer": 0,
+    "head": 4,
+    "attention_entropy": 3.135345458984375
+  },
+  {
+    "layer": 0,
+    "head": 5,
+    "attention_entropy": 3.1205191612243652
+  },
+  {
+    "layer": 0,
+    "head": 6,
+    "attention_entropy": 3.1221089363098145
+  },
+  {
+    "layer": 0,
+    "head": 7,
+    "attention_entropy": 3.106640338897705
+  },
+  {
+    "layer": 1,
+    "head": 0,
+    "attention_entropy": 3.010927200317383
+  },
+  {
+    "layer": 1,
+    "head": 1,
+    "attention_entropy": 2.770425796508789
+  },
+  {
+    "layer": 1,
+    "head": 2,
+    "attention_entropy": 3.072953939437866
+  },
+  {
+    "layer": 1,
+    "head": 3,
+    "attention_entropy": 2.8824737071990967
+  },
+  {
+    "layer": 1,
+    "head": 4,
+    "attention_entropy": 2.9094624519348145
+  },
+  {
+    "layer": 1,
+    "head": 5,
+    "attention_entropy": 3.094722032546997
+  },
+  {
+    "layer": 1,
+    "head": 6,
+    "attention_entropy": 2.994774341583252
+  },
+  {
+    "layer": 1,
+    "head": 7,
+    "attention_entropy": 2.8660027980804443
+  },
+  {
+    "layer": 2,
+    "head": 0,
+    "attention_entropy": 2.5089569091796875
+  },
+  {
+    "layer": 2,
+    "head": 1,
+    "attention_entropy": 2.1185595989227295
+  },
+  {
+    "layer": 2,
+    "head": 2,
+    "attention_entropy": 2.765145778656006
+  },
+  {
+    "layer": 2,
+    "head": 3,
+    "attention_entropy": 3.0842599868774414
+  },
+  {
+    "layer": 2,
+    "head": 4,
+    "attention_entropy": 2.8894007205963135
+  },
+  {
+    "layer": 2,
+    "head": 5,
+    "attention_entropy": 2.7502121925354004
+  },
+  {
+    "layer": 2,
+    "head": 6,
+    "attention_entropy": 2.797325372695923
+  },
+  {
+    "layer": 2,
+    "head": 7,
+    "attention_entropy": 2.4690959453582764
+  },
+  {
+    "layer": 3,
+    "head": 0,
+    "attention_entropy": 2.7605597972869873
+  },
+  {
+    "layer": 3,
+    "head": 1,
+    "attention_entropy": 1.3168164491653442
+  },
+  {
+    "layer": 3,
+    "head": 2,
+    "attention_entropy": 1.585498332977295
+  },
+  {
+    "layer": 3,
+    "head": 3,
+    "attention_entropy": 1.6709895133972168
+  },
+  {
+    "layer": 3,
+    "head": 4,
+    "attention_entropy": 2.4218366146087646
+  },
+  {
+    "layer": 3,
+    "head": 5,
+    "attention_entropy": 2.17169189453125
+  },
+  {
+    "layer": 3,
+    "head": 6,
+    "attention_entropy": 2.011195659637451
+  },
+  {
+    "layer": 3,
+    "head": 7,
+    "attention_entropy": 3.06815505027771
+  },
+  {
+    "layer": 4,
+    "head": 0,
+    "attention_entropy": 1.7338967323303223
+  },
+  {
+    "layer": 4,
+    "head": 1,
+    "attention_entropy": 1.8904832601547241
+  },
+  {
+    "layer": 4,
+    "head": 2,
+    "attention_entropy": 2.4915823936462402
+  },
+  {
+    "layer": 4,
+    "head": 3,
+    "attention_entropy": 1.83429753780365
+  },
+  {
+    "layer": 4,
+    "head": 4,
+    "attention_entropy": 2.663921356201172
+  },
+  {
+    "layer": 4,
+    "head": 5,
+    "attention_entropy": 1.0916938781738281
+  },
+  {
+    "layer": 4,
+    "head": 6,
+    "attention_entropy": 2.0168800354003906
+  },
+  {
+    "layer": 4,
+    "head": 7,
+    "attention_entropy": 0.8324465751647949
+  },
+  {
+    "layer": 5,
+    "head": 0,
+    "attention_entropy": 1.8126347064971924
+  },
+  {
+    "layer": 5,
+    "head": 1,
+    "attention_entropy": 0.0471297949552536
+  },
+  {
+    "layer": 5,
+    "head": 2,
+    "attention_entropy": 2.157876491546631
+  },
+  {
+    "layer": 5,
+    "head": 3,
+    "attention_entropy": 2.8080997467041016
+  },
+  {
+    "layer": 5,
+    "head": 4,
+    "attention_entropy": 1.1559183597564697
+  },
+  {
+    "layer": 5,
+    "head": 5,
+    "attention_entropy": 1.2426323890686035
+  },
+  {
+    "layer": 5,
+    "head": 6,
+    "attention_entropy": 2.477421283721924
+  },
+  {
+    "layer": 5,
+    "head": 7,
+    "attention_entropy": 2.436227321624756
+  },
+  {
+    "layer": 6,
+    "head": 0,
+    "attention_entropy": 1.5242838859558105
+  },
+  {
+    "layer": 6,
+    "head": 1,
+    "attention_entropy": 2.6663978099823
+  },
+  {
+    "layer": 6,
+    "head": 2,
+    "attention_entropy": 2.24922513961792
+  },
+  {
+    "layer": 6,
+    "head": 3,
+    "attention_entropy": 0.17032629251480103
+  },
+  {
+    "layer": 6,
+    "head": 4,
+    "attention_entropy": 1.4316891431808472
+  },
+  {
+    "layer": 6,
+    "head": 5,
+    "attention_entropy": 1.6212303638458252
+  },
+  {
+    "layer": 6,
+    "head": 6,
+    "attention_entropy": 2.0514988899230957
+  },
+  {
+    "layer": 6,
+    "head": 7,
+    "attention_entropy": 2.006439208984375
+  },
+  {
+    "layer": 7,
+    "head": 0,
+    "attention_entropy": 2.072035312652588
+  },
+  {
+    "layer": 7,
+    "head": 1,
+    "attention_entropy": 1.4963430166244507
+  },
+  {
+    "layer": 7,
+    "head": 2,
+    "attention_entropy": 2.0557117462158203
+  },
+  {
+    "layer": 7,
+    "head": 3,
+    "attention_entropy": 2.031622886657715
+  },
+  {
+    "layer": 7,
+    "head": 4,
+    "attention_entropy": 1.6006419658660889
+  },
+  {
+    "layer": 7,
+    "head": 5,
+    "attention_entropy": 2.248004913330078
+  },
+  {
+    "layer": 7,
+    "head": 6,
+    "attention_entropy": 0.8708723187446594
+  },
+  {
+    "layer": 7,
+    "head": 7,
+    "attention_entropy": 1.9748579263687134
+  },
+  {
+    "layer": 8,
+    "head": 0,
+    "attention_entropy": 2.2177650928497314
+  },
+  {
+    "layer": 8,
+    "head": 1,
+    "attention_entropy": 1.749373197555542
+  },
+  {
+    "layer": 8,
+    "head": 2,
+    "attention_entropy": 2.4232966899871826
+  },
+  {
+    "layer": 8,
+    "head": 3,
+    "attention_entropy": 1.820371150970459
+  },
+  {
+    "layer": 8,
+    "head": 4,
+    "attention_entropy": 2.0731186866760254
+  },
+  {
+    "layer": 8,
+    "head": 5,
+    "attention_entropy": 2.3560843467712402
+  },
+  {
+    "layer": 8,
+    "head": 6,
+    "attention_entropy": 1.9272561073303223
+  },
+  {
+    "layer": 8,
+    "head": 7,
+    "attention_entropy": 2.1914525032043457
+  },
+  {
+    "layer": 9,
+    "head": 0,
+    "attention_entropy": 2.0411252975463867
+  },
+  {
+    "layer": 9,
+    "head": 1,
+    "attention_entropy": 1.8107893466949463
+  },
+  {
+    "layer": 9,
+    "head": 2,
+    "attention_entropy": 2.4320425987243652
+  },
+  {
+    "layer": 9,
+    "head": 3,
+    "attention_entropy": 2.308908462524414
+  },
+  {
+    "layer": 9,
+    "head": 4,
+    "attention_entropy": 2.666292190551758
+  },
+  {
+    "layer": 9,
+    "head": 5,
+    "attention_entropy": 2.5260095596313477
+  },
+  {
+    "layer": 9,
+    "head": 6,
+    "attention_entropy": 2.462822437286377
+  },
+  {
+    "layer": 9,
+    "head": 7,
+    "attention_entropy": 1.9780910015106201
+  }
+]

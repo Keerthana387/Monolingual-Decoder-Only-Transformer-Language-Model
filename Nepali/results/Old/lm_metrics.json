@@ -1,0 +1,18 @@
+{
+  "language": "Nepali",
+  "phase": 2,
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "mixed_precision": "FP16 autocast",
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Nepali/checkpoints/final.pt",
+  "parameters": 25950848,
+  "vocab_size": 8000,
+  "context_length": 512,
+  "validation_loss": 3.404168560674471,
+  "perplexity": 30.08926792018422,
+  "bpb": 0.8296948775174812,
+  "evaluated_target_tokens": 9999872,
+  "validation_tokens": 10000000,
+  "validation_blocks": 19531,
+  "validation_utf8_bytes": 59191811
+}

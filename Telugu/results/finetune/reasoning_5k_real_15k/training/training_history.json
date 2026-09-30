@@ -1,0 +1,63 @@
+{
+  "run": "reasoning_5k_real_15k",
+  "config": {
+    "phase": "phase3_reasoning_finetuning",
+    "language": "Telugu",
+    "base_pretrained_checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt",
+    "tokenizer": "/content/drive/MyDrive/LMA_IP/Telugu/data/tokenizer/telugu_bpe_6000.model",
+    "data_dir": "/content/drive/MyDrive/LMA_IP/Telugu/finetune/mixed_data_size/reasoning_5k_real_15k/data",
+    "output_dir": "/content/drive/MyDrive/LMA_IP/Telugu/finetune/mixed_data_size/reasoning_5k_real_15k",
+    "vocab_size": 6000,
+    "pad_token_id": 1,
+    "eos_token_id": 3,
+    "max_seq_len": 512,
+    "batch_size": 16,
+    "max_steps": 1250,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "warmup_steps": 100,
+    "min_learning_rate_ratio": 0.1,
+    "log_every": 50,
+    "eval_every": 250,
+    "checkpoint_every": 250,
+    "validation_steps": 100,
+    "seed": 42,
+    "loss_masking": "answer_tokens_and_eos_only",
+    "scheduler": {
+      "type": "warmup_cosine_manual",
+      "warmup_steps": 100,
+      "min_learning_rate_ratio": 0.1
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 250,
+      "loss": 3.2336015701293945,
+      "validation_loss": 1.1809819173812866
+    },
+    {
+      "step": 500,
+      "loss": 2.993873119354248,
+      "validation_loss": 0.6767657360434532
+    },
+    {
+      "step": 750,
+      "loss": 3.4231228828430176,
+      "validation_loss": 0.6398497012257576
+    },
+    {
+      "step": 1000,
+      "loss": 3.342942476272583,
+      "validation_loss": 0.6134485536813736
+    },
+    {
+      "step": 1250,
+      "loss": 3.6046040058135986,
+      "validation_loss": 0.6042284685373306
+    }
+  ],
+  "note": "Training/validation losses are read from the saved resumable checkpoints. Learning rate is reconstructed from the exact manual warmup+cosine schedule in the config."
+}

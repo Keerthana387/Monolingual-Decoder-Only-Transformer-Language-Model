@@ -1,0 +1,37 @@
+{
+  "test_examples": 3000,
+  "pretrained": {
+    "correct": 0,
+    "accuracy_percent": 0.0,
+    "mean_answer_token_accuracy_percent": 6.752777777777777
+  },
+  "finetuned": {
+    "correct": 932,
+    "accuracy_percent": 31.066666666666666,
+    "mean_answer_token_accuracy_percent": 34.781190476190474
+  },
+  "improvement": {
+    "absolute_percentage_points": 31.066666666666666,
+    "relative_percent": null
+  },
+  "paired_outcomes": {
+    "both_correct": 0,
+    "pretrained_only_correct": 0,
+    "finetuned_only_correct": 932,
+    "both_wrong": 2068
+  },
+  "configuration": {
+    "test_file": "/content/drive/MyDrive/LMA_IP/Telugu/reasoning/data/test.jsonl",
+    "pretrained_checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt",
+    "finetuned_checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/finetune/mixed_data_size/reasoning_2k_real_18k/final.pt",
+    "tokenizer": "/content/drive/MyDrive/LMA_IP/Telugu/data/tokenizer/telugu_bpe_6000.model",
+    "max_new_tokens": 32,
+    "seed": 42,
+    "device": "cuda",
+    "tokenizer_vocab_size": 6000
+  },
+  "model_parameters": {
+    "pretrained": 23042432,
+    "finetuned": 23042432
+  }
+}

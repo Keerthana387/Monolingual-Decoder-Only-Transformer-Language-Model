@@ -1,0 +1,1366 @@
+================================================================================
+NEPALI — COLAB TRAINING LAUNCHER
+================================================================================
+
+Project root        : /content/drive/MyDrive/LMA_IP
+Local training data: /content/LMA_IP_DATA/train
+Local validation   : /content/LMA_IP_DATA/validation
+Drive checkpoints  : /content/drive/MyDrive/LMA_IP/Nepali/checkpoints
+Training shards    : 50
+Validation shards  : 1
+Resume checkpoint  : none
+
+✓ Colab environment verified
+
+================================================================================
+STARTING NEPALI TRAINING
+================================================================================
+
+Input data:
+  Train      : /content/LMA_IP_DATA/train
+  Validation : /content/LMA_IP_DATA/validation
+
+Persistent output:
+  Checkpoints: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints
+
+Training implementation:
+  Nepali/train.py
+
+--------------------------------------------------------------------------------
+================================================================================
+NEPALI — PRETRAINING
+================================================================================
+
+Device          : cuda
+GPU             : Tesla T4
+
+Vocabulary size : 8000
+d_model         : 448
+Layers          : 11
+Heads           : 8
+FFN dimension   : 1344
+Context length  : 512
+Peak learning rate : 2.00e-04
+
+Training data   : /content/LMA_IP_DATA/train
+Validation data : /content/LMA_IP_DATA/validation
+
+Training tokens : 500,000,000
+Training samples: 499,974,400
+Validation tokens : 10,000,000
+Validation samples: 9,999,488
+
+Trainable parameters: 25,950,848
+
+Training:
+--------------------------------------------------------------------------------
+Step      1 | LR 1.000000e-07 | Loss 9.07082 | PPL 8697.74
+Step     50 | LR 5.000000e-06 | Loss 8.76474 | PPL 6404.40
+Step    100 | LR 1.000000e-05 | Loss 8.51824 | PPL 5005.26
+Step    150 | LR 1.500000e-05 | Loss 8.24910 | PPL 3824.18
+Step    200 | LR 2.000000e-05 | Loss 7.94209 | PPL 2813.25
+Step    250 | LR 2.500000e-05 | Loss 7.66623 | PPL 2135.01
+Step    300 | LR 3.000000e-05 | Loss 7.42785 | PPL 1682.19
+Step    350 | LR 3.500000e-05 | Loss 7.39879 | PPL 1634.01
+Step    400 | LR 4.000000e-05 | Loss 7.16763 | PPL 1296.76
+Step    450 | LR 4.500000e-05 | Loss 7.08407 | PPL 1192.81
+Step    500 | LR 5.000000e-05 | Loss 7.08257 | PPL 1191.02
+Step    550 | LR 5.500000e-05 | Loss 7.02319 | PPL 1122.36
+Step    600 | LR 6.000000e-05 | Loss 6.96319 | PPL 1057.00
+Step    650 | LR 6.500000e-05 | Loss 6.84975 | PPL 943.65
+Step    700 | LR 7.000000e-05 | Loss 6.82064 | PPL 916.57
+Step    750 | LR 7.500000e-05 | Loss 6.66178 | PPL 781.94
+Step    800 | LR 8.000000e-05 | Loss 6.54787 | PPL 697.75
+Step    850 | LR 8.500000e-05 | Loss 6.55921 | PPL 705.71
+Step    900 | LR 9.000000e-05 | Loss 6.39272 | PPL 597.48
+Step    950 | LR 9.500000e-05 | Loss 6.44092 | PPL 626.98
+Step   1000 | LR 1.000000e-04 | Loss 6.38421 | PPL 592.41
+Step   1050 | LR 1.050000e-04 | Loss 6.30074 | PPL 544.98
+Step   1100 | LR 1.100000e-04 | Loss 6.24024 | PPL 512.98
+Step   1150 | LR 1.150000e-04 | Loss 6.18075 | PPL 483.35
+Step   1200 | LR 1.200000e-04 | Loss 6.19468 | PPL 490.13
+Step   1250 | LR 1.250000e-04 | Loss 6.07712 | PPL 435.77
+Step   1300 | LR 1.300000e-04 | Loss 5.93594 | PPL 378.39
+Step   1350 | LR 1.350000e-04 | Loss 5.95142 | PPL 384.30
+Step   1400 | LR 1.400000e-04 | Loss 5.95777 | PPL 386.75
+Step   1450 | LR 1.450000e-04 | Loss 5.89233 | PPL 362.25
+Step   1500 | LR 1.500000e-04 | Loss 5.89070 | PPL 361.66
+Step   1550 | LR 1.550000e-04 | Loss 5.63164 | PPL 279.12
+Step   1600 | LR 1.600000e-04 | Loss 5.63975 | PPL 281.39
+Step   1650 | LR 1.650000e-04 | Loss 5.78785 | PPL 326.31
+Step   1700 | LR 1.700000e-04 | Loss 5.72783 | PPL 307.30
+Step   1750 | LR 1.750000e-04 | Loss 5.72039 | PPL 305.02
+Step   1800 | LR 1.800000e-04 | Loss 5.67183 | PPL 290.57
+Step   1850 | LR 1.850000e-04 | Loss 5.63948 | PPL 281.32
+Step   1900 | LR 1.900000e-04 | Loss 5.56977 | PPL 262.37
+Step   1950 | LR 1.950000e-04 | Loss 5.59151 | PPL 268.14
+Step   2000 | LR 2.000000e-04 | Loss 5.63302 | PPL 279.51
+Validation | Loss 5.88905 | PPL 361.06
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_002000.pt
+Step   2050 | LR 1.999997e-04 | Loss 5.58767 | PPL 267.11
+Step   2100 | LR 1.999987e-04 | Loss 5.53021 | PPL 252.20
+Step   2150 | LR 1.999971e-04 | Loss 5.31275 | PPL 202.91
+Step   2200 | LR 1.999949e-04 | Loss 5.50360 | PPL 245.57
+Step   2250 | LR 1.999920e-04 | Loss 5.46427 | PPL 236.10
+Step   2300 | LR 1.999885e-04 | Loss 5.39805 | PPL 220.97
+Step   2350 | LR 1.999844e-04 | Loss 5.38093 | PPL 217.22
+Step   2400 | LR 1.999796e-04 | Loss 5.40340 | PPL 222.16
+Step   2450 | LR 1.999742e-04 | Loss 5.32954 | PPL 206.34
+Step   2500 | LR 1.999681e-04 | Loss 5.18862 | PPL 179.22
+Step   2550 | LR 1.999615e-04 | Loss 5.45345 | PPL 233.56
+Step   2600 | LR 1.999541e-04 | Loss 5.43888 | PPL 230.18
+Step   2650 | LR 1.999462e-04 | Loss 5.30225 | PPL 200.79
+Step   2700 | LR 1.999376e-04 | Loss 5.26901 | PPL 194.22
+Step   2750 | LR 1.999283e-04 | Loss 5.27042 | PPL 194.50
+Step   2800 | LR 1.999185e-04 | Loss 5.38322 | PPL 217.72
+Step   2850 | LR 1.999079e-04 | Loss 5.31340 | PPL 203.04
+Step   2900 | LR 1.998968e-04 | Loss 5.31832 | PPL 204.04
+Step   2950 | LR 1.998850e-04 | Loss 5.13482 | PPL 169.83
+Step   3000 | LR 1.998726e-04 | Loss 5.25243 | PPL 191.03
+Step   3050 | LR 1.998595e-04 | Loss 5.30984 | PPL 202.32
+Step   3100 | LR 1.998459e-04 | Loss 5.23862 | PPL 188.41
+Step   3150 | LR 1.998315e-04 | Loss 5.10955 | PPL 165.60
+Step   3200 | LR 1.998166e-04 | Loss 5.18156 | PPL 177.96
+Step   3250 | LR 1.998010e-04 | Loss 5.18942 | PPL 179.37
+Step   3300 | LR 1.997847e-04 | Loss 5.05256 | PPL 156.42
+Step   3350 | LR 1.997679e-04 | Loss 5.11022 | PPL 165.71
+Step   3400 | LR 1.997503e-04 | Loss 4.83482 | PPL 125.82
+Step   3450 | LR 1.997322e-04 | Loss 4.95838 | PPL 142.36
+Step   3500 | LR 1.997134e-04 | Loss 5.14612 | PPL 171.76
+Step   3550 | LR 1.996940e-04 | Loss 5.05945 | PPL 157.50
+Step   3600 | LR 1.996740e-04 | Loss 4.98610 | PPL 146.36
+Step   3650 | LR 1.996533e-04 | Loss 5.18099 | PPL 177.86
+Step   3700 | LR 1.996320e-04 | Loss 4.95270 | PPL 141.56
+Step   3750 | LR 1.996100e-04 | Loss 5.11936 | PPL 167.23
+Step   3800 | LR 1.995874e-04 | Loss 4.83281 | PPL 125.56
+Step   3850 | LR 1.995642e-04 | Loss 4.85579 | PPL 128.48
+Step   3900 | LR 1.995404e-04 | Loss 4.93418 | PPL 138.96
+Step   3950 | LR 1.995159e-04 | Loss 4.75897 | PPL 116.63
+Step   4000 | LR 1.994908e-04 | Loss 4.96088 | PPL 142.72
+Validation | Loss 5.26999 | PPL 194.41
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_004000.pt
+Step   4050 | LR 1.994650e-04 | Loss 4.86480 | PPL 129.65
+Step   4100 | LR 1.994386e-04 | Loss 4.95154 | PPL 141.39
+Step   4150 | LR 1.994116e-04 | Loss 4.90935 | PPL 135.55
+Step   4200 | LR 1.993839e-04 | Loss 5.05408 | PPL 156.66
+Step   4250 | LR 1.993556e-04 | Loss 5.12280 | PPL 167.80
+Step   4300 | LR 1.993267e-04 | Loss 4.91916 | PPL 136.89
+Step   4350 | LR 1.992972e-04 | Loss 4.87014 | PPL 130.34
+Step   4400 | LR 1.992670e-04 | Loss 4.81223 | PPL 123.01
+Step   4450 | LR 1.992362e-04 | Loss 4.73929 | PPL 114.35
+Step   4500 | LR 1.992047e-04 | Loss 4.74660 | PPL 115.19
+Step   4550 | LR 1.991726e-04 | Loss 4.86329 | PPL 129.45
+Step   4600 | LR 1.991399e-04 | Loss 4.83145 | PPL 125.39
+Step   4650 | LR 1.991066e-04 | Loss 4.74844 | PPL 115.40
+Step   4700 | LR 1.990726e-04 | Loss 4.74488 | PPL 114.99
+Step   4750 | LR 1.990380e-04 | Loss 4.82190 | PPL 124.20
+Step   4800 | LR 1.990028e-04 | Loss 4.90095 | PPL 134.42
+Step   4850 | LR 1.989669e-04 | Loss 4.77130 | PPL 118.07
+Step   4900 | LR 1.989304e-04 | Loss 4.87007 | PPL 130.33
+Step   4950 | LR 1.988933e-04 | Loss 4.53174 | PPL 92.92
+Step   5000 | LR 1.988555e-04 | Loss 4.71724 | PPL 111.86
+Step   5050 | LR 1.988172e-04 | Loss 4.85091 | PPL 127.86
+Step   5100 | LR 1.987782e-04 | Loss 4.91387 | PPL 136.17
+Step   5150 | LR 1.987385e-04 | Loss 4.75329 | PPL 115.97
+Step   5200 | LR 1.986982e-04 | Loss 4.44376 | PPL 85.09
+Step   5250 | LR 1.986574e-04 | Loss 4.78855 | PPL 120.13
+Step   5300 | LR 1.986158e-04 | Loss 4.55701 | PPL 95.30
+Step   5350 | LR 1.985737e-04 | Loss 4.69141 | PPL 109.01
+Step   5400 | LR 1.985309e-04 | Loss 4.78812 | PPL 120.07
+Step   5450 | LR 1.984875e-04 | Loss 4.66257 | PPL 105.91
+Step   5500 | LR 1.984435e-04 | Loss 4.65818 | PPL 105.44
+Step   5550 | LR 1.983988e-04 | Loss 4.53264 | PPL 93.00
+Step   5600 | LR 1.983535e-04 | Loss 4.53481 | PPL 93.21
+Step   5650 | LR 1.983076e-04 | Loss 4.66134 | PPL 105.78
+Step   5700 | LR 1.982611e-04 | Loss 4.61353 | PPL 100.84
+Step   5750 | LR 1.982139e-04 | Loss 4.64210 | PPL 103.76
+Step   5800 | LR 1.981661e-04 | Loss 4.37590 | PPL 79.51
+Step   5850 | LR 1.981177e-04 | Loss 4.68438 | PPL 108.24
+Step   5900 | LR 1.980687e-04 | Loss 4.40249 | PPL 81.65
+Step   5950 | LR 1.980191e-04 | Loss 4.62367 | PPL 101.87
+Step   6000 | LR 1.979688e-04 | Loss 4.66451 | PPL 106.11
+Validation | Loss 4.86018 | PPL 129.05
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_006000.pt
+Step   6050 | LR 1.979179e-04 | Loss 4.43860 | PPL 84.66
+Step   6100 | LR 1.978664e-04 | Loss 4.50842 | PPL 90.78
+Step   6150 | LR 1.978142e-04 | Loss 4.64001 | PPL 103.55
+Step   6200 | LR 1.977614e-04 | Loss 4.49714 | PPL 89.76
+Step   6250 | LR 1.977081e-04 | Loss 4.41201 | PPL 82.44
+Step   6300 | LR 1.976540e-04 | Loss 4.54529 | PPL 94.19
+Step   6350 | LR 1.975994e-04 | Loss 4.75721 | PPL 116.42
+Step   6400 | LR 1.975442e-04 | Loss 4.50224 | PPL 90.22
+Step   6450 | LR 1.974883e-04 | Loss 4.41892 | PPL 83.01
+Step   6500 | LR 1.974318e-04 | Loss 4.25421 | PPL 70.40
+Step   6550 | LR 1.973747e-04 | Loss 4.50463 | PPL 90.44
+Step   6600 | LR 1.973170e-04 | Loss 4.48733 | PPL 88.88
+Step   6650 | LR 1.972586e-04 | Loss 4.59648 | PPL 99.13
+Step   6700 | LR 1.971997e-04 | Loss 4.35818 | PPL 78.11
+Step   6750 | LR 1.971401e-04 | Loss 4.33914 | PPL 76.64
+Step   6800 | LR 1.970799e-04 | Loss 4.38468 | PPL 80.21
+Step   6850 | LR 1.970191e-04 | Loss 4.48940 | PPL 89.07
+WARNING: non-finite gradient at training step 6857. Skipping optimizer update and reducing AMP scale.
+Step   6900 | LR 1.969577e-04 | Loss 4.51564 | PPL 91.44
+Step   6950 | LR 1.968956e-04 | Loss 4.33699 | PPL 76.48
+Step   7000 | LR 1.968330e-04 | Loss 4.42217 | PPL 83.28
+Step   7050 | LR 1.967697e-04 | Loss 4.35684 | PPL 78.01
+Step   7100 | LR 1.967058e-04 | Loss 4.52997 | PPL 92.76
+Step   7150 | LR 1.966413e-04 | Loss 4.47557 | PPL 87.84
+Step   7200 | LR 1.965762e-04 | Loss 4.53224 | PPL 92.97
+Step   7250 | LR 1.965104e-04 | Loss 4.33233 | PPL 76.12
+Step   7300 | LR 1.964441e-04 | Loss 4.59758 | PPL 99.24
+Step   7350 | LR 1.963771e-04 | Loss 4.40924 | PPL 82.21
+Step   7400 | LR 1.963096e-04 | Loss 4.40991 | PPL 82.26
+Step   7450 | LR 1.962414e-04 | Loss 4.27234 | PPL 71.69
+Step   7500 | LR 1.961726e-04 | Loss 4.35807 | PPL 78.11
+Step   7550 | LR 1.961032e-04 | Loss 4.40613 | PPL 81.95
+Step   7600 | LR 1.960332e-04 | Loss 4.42979 | PPL 83.91
+Step   7650 | LR 1.959626e-04 | Loss 4.51887 | PPL 91.73
+Step   7700 | LR 1.958914e-04 | Loss 4.29456 | PPL 73.30
+Step   7750 | LR 1.958196e-04 | Loss 4.35200 | PPL 77.63
+Step   7800 | LR 1.957471e-04 | Loss 4.34479 | PPL 77.08
+Step   7850 | LR 1.956741e-04 | Loss 4.29967 | PPL 73.68
+Step   7900 | LR 1.956004e-04 | Loss 4.41826 | PPL 82.95
+Step   7950 | LR 1.955262e-04 | Loss 4.30504 | PPL 74.07
+Step   8000 | LR 1.954513e-04 | Loss 4.18138 | PPL 65.46
+Validation | Loss 4.50669 | PPL 90.62
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_008000.pt
+Step   8050 | LR 1.953758e-04 | Loss 4.23162 | PPL 68.83
+Step   8100 | LR 1.952997e-04 | Loss 4.42095 | PPL 83.18
+Step   8150 | LR 1.952231e-04 | Loss 4.20646 | PPL 67.12
+Step   8200 | LR 1.951458e-04 | Loss 4.39537 | PPL 81.07
+Step   8250 | LR 1.950679e-04 | Loss 4.31816 | PPL 75.05
+Step   8300 | LR 1.949894e-04 | Loss 4.58486 | PPL 97.99
+Step   8350 | LR 1.949103e-04 | Loss 4.23298 | PPL 68.92
+Step   8400 | LR 1.948306e-04 | Loss 4.34546 | PPL 77.13
+Step   8450 | LR 1.947504e-04 | Loss 4.17215 | PPL 64.85
+Step   8500 | LR 1.946695e-04 | Loss 4.47931 | PPL 88.17
+Step   8550 | LR 1.945880e-04 | Loss 4.23531 | PPL 69.08
+Step   8600 | LR 1.945059e-04 | Loss 4.28325 | PPL 72.48
+Step   8650 | LR 1.944232e-04 | Loss 4.16047 | PPL 64.10
+Step   8700 | LR 1.943399e-04 | Loss 4.33179 | PPL 76.08
+Step   8750 | LR 1.942560e-04 | Loss 4.44152 | PPL 84.90
+Step   8800 | LR 1.941716e-04 | Loss 4.52030 | PPL 91.86
+Step   8850 | LR 1.940865e-04 | Loss 4.23735 | PPL 69.22
+Step   8900 | LR 1.940008e-04 | Loss 4.33853 | PPL 76.59
+WARNING: non-finite gradient at training step 8940. Skipping optimizer update and reducing AMP scale.
+Step   8950 | LR 1.939146e-04 | Loss 4.11660 | PPL 61.35
+Step   9000 | LR 1.938277e-04 | Loss 4.30757 | PPL 74.26
+Step   9050 | LR 1.937403e-04 | Loss 4.18425 | PPL 65.64
+Step   9100 | LR 1.936522e-04 | Loss 3.96389 | PPL 52.66
+Step   9150 | LR 1.935636e-04 | Loss 4.14391 | PPL 63.05
+Step   9200 | LR 1.934743e-04 | Loss 4.10224 | PPL 60.48
+Step   9250 | LR 1.933845e-04 | Loss 3.99963 | PPL 54.58
+Step   9300 | LR 1.932941e-04 | Loss 3.97758 | PPL 53.39
+Step   9350 | LR 1.932031e-04 | Loss 4.40099 | PPL 81.53
+Step   9400 | LR 1.931115e-04 | Loss 4.18356 | PPL 65.60
+Step   9450 | LR 1.930194e-04 | Loss 3.99627 | PPL 54.39
+Step   9500 | LR 1.929266e-04 | Loss 4.17481 | PPL 65.03
+Step   9550 | LR 1.928332e-04 | Loss 4.36346 | PPL 78.53
+Step   9600 | LR 1.927393e-04 | Loss 4.32130 | PPL 75.29
+Step   9650 | LR 1.926448e-04 | Loss 4.20025 | PPL 66.70
+Step   9700 | LR 1.925497e-04 | Loss 4.21997 | PPL 68.03
+Step   9750 | LR 1.924540e-04 | Loss 4.12910 | PPL 62.12
+Step   9800 | LR 1.923577e-04 | Loss 4.16556 | PPL 64.43
+Step   9850 | LR 1.922609e-04 | Loss 4.29147 | PPL 73.07
+Step   9900 | LR 1.921634e-04 | Loss 4.24609 | PPL 69.83
+Step   9950 | LR 1.920654e-04 | Loss 4.19045 | PPL 66.05
+Step  10000 | LR 1.919668e-04 | Loss 4.08927 | PPL 59.70
+Validation | Loss 4.36982 | PPL 79.03
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_010000.pt
+Step  10050 | LR 1.918676e-04 | Loss 4.38567 | PPL 80.29
+Step  10100 | LR 1.917678e-04 | Loss 4.13134 | PPL 62.26
+Step  10150 | LR 1.916675e-04 | Loss 4.23560 | PPL 69.10
+Step  10200 | LR 1.915666e-04 | Loss 3.83183 | PPL 46.15
+Step  10250 | LR 1.914651e-04 | Loss 4.23107 | PPL 68.79
+Step  10300 | LR 1.913630e-04 | Loss 4.08904 | PPL 59.68
+Step  10350 | LR 1.912604e-04 | Loss 4.35113 | PPL 77.57
+Step  10400 | LR 1.911571e-04 | Loss 4.09983 | PPL 60.33
+Step  10450 | LR 1.910533e-04 | Loss 4.11125 | PPL 61.02
+WARNING: non-finite gradient at training step 10458. Skipping optimizer update and reducing AMP scale.
+Step  10500 | LR 1.909490e-04 | Loss 4.10574 | PPL 60.69
+Step  10550 | LR 1.908440e-04 | Loss 4.16300 | PPL 64.26
+Step  10600 | LR 1.907385e-04 | Loss 3.99606 | PPL 54.38
+Step  10650 | LR 1.906324e-04 | Loss 4.03792 | PPL 56.71
+Step  10700 | LR 1.905257e-04 | Loss 4.12977 | PPL 62.16
+Step  10750 | LR 1.904185e-04 | Loss 3.81872 | PPL 45.55
+Step  10800 | LR 1.903107e-04 | Loss 4.18339 | PPL 65.59
+Step  10850 | LR 1.902023e-04 | Loss 3.94269 | PPL 51.56
+Step  10900 | LR 1.900934e-04 | Loss 3.99208 | PPL 54.17
+Step  10950 | LR 1.899839e-04 | Loss 4.16643 | PPL 64.49
+Step  11000 | LR 1.898738e-04 | Loss 4.34922 | PPL 77.42
+Step  11050 | LR 1.897632e-04 | Loss 4.17995 | PPL 65.36
+Step  11100 | LR 1.896520e-04 | Loss 3.95296 | PPL 52.09
+Step  11150 | LR 1.895402e-04 | Loss 4.36706 | PPL 78.81
+Step  11200 | LR 1.894279e-04 | Loss 3.83737 | PPL 46.40
+Step  11250 | LR 1.893150e-04 | Loss 4.07217 | PPL 58.68
+Step  11300 | LR 1.892015e-04 | Loss 3.94097 | PPL 51.47
+Step  11350 | LR 1.890875e-04 | Loss 3.65326 | PPL 38.60
+Step  11400 | LR 1.889729e-04 | Loss 4.01171 | PPL 55.24
+Step  11450 | LR 1.888578e-04 | Loss 4.10467 | PPL 60.62
+Step  11500 | LR 1.887421e-04 | Loss 3.85379 | PPL 47.17
+Step  11550 | LR 1.886259e-04 | Loss 3.88947 | PPL 48.89
+Step  11600 | LR 1.885091e-04 | Loss 4.02172 | PPL 55.80
+Step  11650 | LR 1.883917e-04 | Loss 3.93621 | PPL 51.22
+Step  11700 | LR 1.882738e-04 | Loss 4.19793 | PPL 66.55
+Step  11750 | LR 1.881553e-04 | Loss 4.13193 | PPL 62.30
+Step  11800 | LR 1.880363e-04 | Loss 3.85476 | PPL 47.22
+Step  11850 | LR 1.879167e-04 | Loss 3.99740 | PPL 54.46
+Step  11900 | LR 1.877966e-04 | Loss 3.72294 | PPL 41.39
+Step  11950 | LR 1.876759e-04 | Loss 4.24005 | PPL 69.41
+Step  12000 | LR 1.875547e-04 | Loss 4.04224 | PPL 56.95
+Validation | Loss 4.28023 | PPL 72.26
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_012000.pt
+Step  12050 | LR 1.874329e-04 | Loss 4.11661 | PPL 61.35
+Step  12100 | LR 1.873106e-04 | Loss 4.14668 | PPL 63.22
+Step  12150 | LR 1.871877e-04 | Loss 4.14161 | PPL 62.90
+Step  12200 | LR 1.870643e-04 | Loss 3.94079 | PPL 51.46
+Step  12250 | LR 1.869403e-04 | Loss 4.10262 | PPL 60.50
+Step  12300 | LR 1.868158e-04 | Loss 3.96991 | PPL 52.98
+Step  12350 | LR 1.866908e-04 | Loss 3.73820 | PPL 42.02
+Step  12400 | LR 1.865652e-04 | Loss 3.77870 | PPL 43.76
+Step  12450 | LR 1.864390e-04 | Loss 4.06591 | PPL 58.32
+Step  12500 | LR 1.863124e-04 | Loss 4.01388 | PPL 55.36
+Step  12550 | LR 1.861852e-04 | Loss 3.99237 | PPL 54.18
+Step  12600 | LR 1.860574e-04 | Loss 3.88642 | PPL 48.74
+Step  12650 | LR 1.859291e-04 | Loss 3.95024 | PPL 51.95
+Step  12700 | LR 1.858003e-04 | Loss 3.99711 | PPL 54.44
+Step  12750 | LR 1.856709e-04 | Loss 4.00613 | PPL 54.93
+Step  12800 | LR 1.855410e-04 | Loss 3.90075 | PPL 49.44
+Step  12850 | LR 1.854105e-04 | Loss 4.01081 | PPL 55.19
+Step  12900 | LR 1.852796e-04 | Loss 4.01412 | PPL 55.37
+Step  12950 | LR 1.851481e-04 | Loss 4.05025 | PPL 57.41
+Step  13000 | LR 1.850160e-04 | Loss 4.32131 | PPL 75.29
+Step  13050 | LR 1.848834e-04 | Loss 4.11578 | PPL 61.30
+Step  13100 | LR 1.847503e-04 | Loss 3.95688 | PPL 52.29
+Step  13150 | LR 1.846167e-04 | Loss 3.97436 | PPL 53.22
+Step  13200 | LR 1.844826e-04 | Loss 4.15132 | PPL 63.52
+Step  13250 | LR 1.843479e-04 | Loss 3.95120 | PPL 52.00
+Step  13300 | LR 1.842127e-04 | Loss 4.03495 | PPL 56.54
+Step  13350 | LR 1.840769e-04 | Loss 3.98257 | PPL 53.65
+Step  13400 | LR 1.839407e-04 | Loss 3.94497 | PPL 51.67
+Step  13450 | LR 1.838039e-04 | Loss 3.91255 | PPL 50.03
+Step  13500 | LR 1.836666e-04 | Loss 4.17697 | PPL 65.17
+Step  13550 | LR 1.835287e-04 | Loss 3.86062 | PPL 47.49
+Step  13600 | LR 1.833904e-04 | Loss 4.01059 | PPL 55.18
+Step  13650 | LR 1.832515e-04 | Loss 4.03560 | PPL 56.58
+Step  13700 | LR 1.831121e-04 | Loss 3.92067 | PPL 50.43
+Step  13750 | LR 1.829722e-04 | Loss 3.79903 | PPL 44.66
+Step  13800 | LR 1.828318e-04 | Loss 3.92756 | PPL 50.78
+Step  13850 | LR 1.826909e-04 | Loss 3.90881 | PPL 49.84
+Step  13900 | LR 1.825494e-04 | Loss 3.98695 | PPL 53.89
+Step  13950 | LR 1.824074e-04 | Loss 3.88227 | PPL 48.53
+Step  14000 | LR 1.822650e-04 | Loss 3.59631 | PPL 36.46
+Validation | Loss 4.20122 | PPL 66.77
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_014000.pt
+Step  14050 | LR 1.821220e-04 | Loss 4.05660 | PPL 57.78
+Step  14100 | LR 1.819785e-04 | Loss 3.63222 | PPL 37.80
+Step  14150 | LR 1.818345e-04 | Loss 4.01832 | PPL 55.61
+Step  14200 | LR 1.816899e-04 | Loss 3.80722 | PPL 45.03
+Step  14250 | LR 1.815449e-04 | Loss 3.88522 | PPL 48.68
+Step  14300 | LR 1.813994e-04 | Loss 3.97315 | PPL 53.15
+Step  14350 | LR 1.812533e-04 | Loss 3.95027 | PPL 51.95
+Step  14400 | LR 1.811068e-04 | Loss 4.00093 | PPL 54.65
+Step  14450 | LR 1.809597e-04 | Loss 3.83578 | PPL 46.33
+Step  14500 | LR 1.808122e-04 | Loss 4.15148 | PPL 63.53
+Step  14550 | LR 1.806641e-04 | Loss 3.56873 | PPL 35.47
+Step  14600 | LR 1.805156e-04 | Loss 4.11205 | PPL 61.07
+WARNING: non-finite gradient at training step 14615. Skipping optimizer update and reducing AMP scale.
+Step  14650 | LR 1.803665e-04 | Loss 4.18552 | PPL 65.73
+Step  14700 | LR 1.802170e-04 | Loss 4.03981 | PPL 56.82
+Step  14750 | LR 1.800669e-04 | Loss 3.90093 | PPL 49.45
+Step  14800 | LR 1.799164e-04 | Loss 3.96956 | PPL 52.96
+Step  14850 | LR 1.797654e-04 | Loss 3.94261 | PPL 51.55
+Step  14900 | LR 1.796138e-04 | Loss 3.70044 | PPL 40.47
+Step  14950 | LR 1.794618e-04 | Loss 3.59748 | PPL 36.51
+Step  15000 | LR 1.793093e-04 | Loss 3.97145 | PPL 53.06
+Step  15050 | LR 1.791563e-04 | Loss 3.88924 | PPL 48.87
+Step  15100 | LR 1.790028e-04 | Loss 4.07105 | PPL 58.62
+Step  15150 | LR 1.788488e-04 | Loss 4.03918 | PPL 56.78
+Step  15200 | LR 1.786943e-04 | Loss 4.01933 | PPL 55.66
+Step  15250 | LR 1.785394e-04 | Loss 3.91063 | PPL 49.93
+Step  15300 | LR 1.783839e-04 | Loss 3.80719 | PPL 45.02
+Step  15350 | LR 1.782280e-04 | Loss 3.81169 | PPL 45.23
+Step  15400 | LR 1.780716e-04 | Loss 4.18190 | PPL 65.49
+Step  15450 | LR 1.779147e-04 | Loss 3.71969 | PPL 41.25
+Step  15500 | LR 1.777573e-04 | Loss 4.05806 | PPL 57.86
+Step  15550 | LR 1.775995e-04 | Loss 3.79261 | PPL 44.37
+Step  15600 | LR 1.774412e-04 | Loss 3.90443 | PPL 49.62
+Step  15650 | LR 1.772824e-04 | Loss 4.01121 | PPL 55.21
+Step  15700 | LR 1.771231e-04 | Loss 4.00744 | PPL 55.01
+Step  15750 | LR 1.769633e-04 | Loss 4.08006 | PPL 59.15
+Step  15800 | LR 1.768031e-04 | Loss 4.07462 | PPL 58.83
+Step  15850 | LR 1.766424e-04 | Loss 3.93940 | PPL 51.39
+Step  15900 | LR 1.764812e-04 | Loss 3.94246 | PPL 51.55
+Step  15950 | LR 1.763195e-04 | Loss 4.02024 | PPL 55.71
+Step  16000 | LR 1.761574e-04 | Loss 3.79643 | PPL 44.54
+Validation | Loss 4.14444 | PPL 63.08
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_016000.pt
+Step  16050 | LR 1.759948e-04 | Loss 3.93605 | PPL 51.22
+Step  16100 | LR 1.758318e-04 | Loss 3.76079 | PPL 42.98
+Step  16150 | LR 1.756683e-04 | Loss 3.73154 | PPL 41.74
+Step  16200 | LR 1.755043e-04 | Loss 4.08422 | PPL 59.40
+Step  16250 | LR 1.753398e-04 | Loss 3.72128 | PPL 41.32
+Step  16300 | LR 1.751749e-04 | Loss 3.91386 | PPL 50.09
+Step  16350 | LR 1.750095e-04 | Loss 4.08146 | PPL 59.23
+Step  16400 | LR 1.748437e-04 | Loss 4.06265 | PPL 58.13
+Step  16450 | LR 1.746774e-04 | Loss 3.81615 | PPL 45.43
+Step  16500 | LR 1.745107e-04 | Loss 4.10666 | PPL 60.74
+Step  16550 | LR 1.743435e-04 | Loss 3.71281 | PPL 40.97
+Step  16600 | LR 1.741758e-04 | Loss 4.16351 | PPL 64.30
+Step  16650 | LR 1.740077e-04 | Loss 3.91153 | PPL 49.98
+Step  16700 | LR 1.738391e-04 | Loss 4.05324 | PPL 57.58
+Step  16750 | LR 1.736701e-04 | Loss 3.84483 | PPL 46.75
+Step  16800 | LR 1.735006e-04 | Loss 3.91761 | PPL 50.28
+WARNING: non-finite gradient at training step 16836. Skipping optimizer update and reducing AMP scale.
+Step  16850 | LR 1.733307e-04 | Loss 3.85146 | PPL 47.06
+Step  16900 | LR 1.731603e-04 | Loss 3.99980 | PPL 54.59
+Step  16950 | LR 1.729895e-04 | Loss 3.97794 | PPL 53.41
+Step  17000 | LR 1.728182e-04 | Loss 4.08884 | PPL 59.67
+Step  17050 | LR 1.726465e-04 | Loss 3.66022 | PPL 38.87
+Step  17100 | LR 1.724744e-04 | Loss 3.78418 | PPL 44.00
+Step  17150 | LR 1.723018e-04 | Loss 3.80360 | PPL 44.86
+Step  17200 | LR 1.721287e-04 | Loss 3.92438 | PPL 50.62
+Step  17250 | LR 1.719553e-04 | Loss 3.86332 | PPL 47.62
+Step  17300 | LR 1.717814e-04 | Loss 4.07340 | PPL 58.76
+Step  17350 | LR 1.716070e-04 | Loss 3.71582 | PPL 41.09
+Step  17400 | LR 1.714322e-04 | Loss 4.02994 | PPL 56.26
+Step  17450 | LR 1.712570e-04 | Loss 3.77108 | PPL 43.43
+Step  17500 | LR 1.710813e-04 | Loss 4.10461 | PPL 60.62
+Step  17550 | LR 1.709053e-04 | Loss 3.93403 | PPL 51.11
+Step  17600 | LR 1.707287e-04 | Loss 4.15735 | PPL 63.90
+Step  17650 | LR 1.705518e-04 | Loss 3.97434 | PPL 53.21
+Step  17700 | LR 1.703744e-04 | Loss 3.86273 | PPL 47.60
+Step  17750 | LR 1.701966e-04 | Loss 4.16115 | PPL 64.15
+Step  17800 | LR 1.700184e-04 | Loss 3.92686 | PPL 50.75
+Step  17850 | LR 1.698397e-04 | Loss 4.01133 | PPL 55.22
+Step  17900 | LR 1.696606e-04 | Loss 3.97451 | PPL 53.22
+Step  17950 | LR 1.694811e-04 | Loss 3.91997 | PPL 50.40
+Step  18000 | LR 1.693012e-04 | Loss 3.63726 | PPL 37.99
+Validation | Loss 4.12873 | PPL 62.10
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_018000.pt
+Step  18050 | LR 1.691209e-04 | Loss 3.70676 | PPL 40.72
+Step  18100 | LR 1.689401e-04 | Loss 3.97929 | PPL 53.48
+Step  18150 | LR 1.687589e-04 | Loss 4.00580 | PPL 54.92
+Step  18200 | LR 1.685773e-04 | Loss 4.03042 | PPL 56.28
+Step  18250 | LR 1.683953e-04 | Loss 3.75027 | PPL 42.53
+Step  18300 | LR 1.682129e-04 | Loss 3.86165 | PPL 47.54
+Step  18350 | LR 1.680301e-04 | Loss 3.56724 | PPL 35.42
+Step  18400 | LR 1.678468e-04 | Loss 4.03151 | PPL 56.35
+Step  18450 | LR 1.676632e-04 | Loss 3.88273 | PPL 48.56
+Step  18500 | LR 1.674791e-04 | Loss 3.90973 | PPL 49.89
+Step  18550 | LR 1.672946e-04 | Loss 3.97354 | PPL 53.17
+Step  18600 | LR 1.671097e-04 | Loss 3.90149 | PPL 49.48
+Step  18650 | LR 1.669245e-04 | Loss 3.78473 | PPL 44.02
+Step  18700 | LR 1.667388e-04 | Loss 4.01395 | PPL 55.36
+Step  18750 | LR 1.665527e-04 | Loss 3.87974 | PPL 48.41
+Step  18800 | LR 1.663662e-04 | Loss 4.09193 | PPL 59.86
+Step  18850 | LR 1.661793e-04 | Loss 3.66419 | PPL 39.02
+Step  18900 | LR 1.659920e-04 | Loss 3.87975 | PPL 48.41
+Step  18950 | LR 1.658044e-04 | Loss 3.64068 | PPL 38.12
+WARNING: non-finite gradient at training step 18990. Skipping optimizer update and reducing AMP scale.
+Step  19000 | LR 1.656163e-04 | Loss 3.95050 | PPL 51.96
+Step  19050 | LR 1.654278e-04 | Loss 3.79417 | PPL 44.44
+Step  19100 | LR 1.652390e-04 | Loss 3.79043 | PPL 44.28
+Step  19150 | LR 1.650497e-04 | Loss 3.70167 | PPL 40.52
+Step  19200 | LR 1.648601e-04 | Loss 4.01116 | PPL 55.21
+Step  19250 | LR 1.646700e-04 | Loss 3.74641 | PPL 42.37
+Step  19300 | LR 1.644796e-04 | Loss 3.86601 | PPL 47.75
+Step  19350 | LR 1.642888e-04 | Loss 3.88925 | PPL 48.87
+Step  19400 | LR 1.640976e-04 | Loss 3.98784 | PPL 53.94
+Step  19450 | LR 1.639061e-04 | Loss 4.22277 | PPL 68.22
+Step  19500 | LR 1.637141e-04 | Loss 4.10390 | PPL 60.58
+WARNING: non-finite gradient at training step 19540. Skipping optimizer update and reducing AMP scale.
+Step  19550 | LR 1.635218e-04 | Loss 3.68215 | PPL 39.73
+Step  19600 | LR 1.633291e-04 | Loss 3.77001 | PPL 43.38
+Step  19650 | LR 1.631360e-04 | Loss 4.08472 | PPL 59.43
+Step  19700 | LR 1.629425e-04 | Loss 3.73837 | PPL 42.03
+Step  19750 | LR 1.627487e-04 | Loss 3.92001 | PPL 50.40
+Step  19800 | LR 1.625545e-04 | Loss 3.95712 | PPL 52.31
+Step  19850 | LR 1.623599e-04 | Loss 3.76081 | PPL 42.98
+Step  19900 | LR 1.621649e-04 | Loss 3.66323 | PPL 38.99
+Step  19950 | LR 1.619696e-04 | Loss 3.84721 | PPL 46.86
+Step  20000 | LR 1.617739e-04 | Loss 3.59539 | PPL 36.43
+Validation | Loss 4.08910 | PPL 59.69
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_020000.pt
+Step  20050 | LR 1.615778e-04 | Loss 3.92264 | PPL 50.53
+Step  20100 | LR 1.613814e-04 | Loss 3.80447 | PPL 44.90
+Step  20150 | LR 1.611846e-04 | Loss 3.93686 | PPL 51.26
+Step  20200 | LR 1.609875e-04 | Loss 3.74708 | PPL 42.40
+Step  20250 | LR 1.607900e-04 | Loss 3.88611 | PPL 48.72
+Step  20300 | LR 1.605921e-04 | Loss 3.64193 | PPL 38.17
+Step  20350 | LR 1.603939e-04 | Loss 3.73061 | PPL 41.70
+Step  20400 | LR 1.601953e-04 | Loss 3.81742 | PPL 45.49
+Step  20450 | LR 1.599963e-04 | Loss 3.67449 | PPL 39.43
+Step  20500 | LR 1.597970e-04 | Loss 3.99745 | PPL 54.46
+Step  20550 | LR 1.595974e-04 | Loss 3.78287 | PPL 43.94
+Step  20600 | LR 1.593974e-04 | Loss 3.76535 | PPL 43.18
+Step  20650 | LR 1.591971e-04 | Loss 4.11494 | PPL 61.25
+Step  20700 | LR 1.589964e-04 | Loss 3.70738 | PPL 40.75
+Step  20750 | LR 1.587953e-04 | Loss 3.76993 | PPL 43.38
+Step  20800 | LR 1.585939e-04 | Loss 3.93511 | PPL 51.17
+Step  20850 | LR 1.583922e-04 | Loss 3.72550 | PPL 41.49
+Step  20900 | LR 1.581901e-04 | Loss 3.82064 | PPL 45.63
+Step  20950 | LR 1.579877e-04 | Loss 3.95867 | PPL 52.39
+Step  21000 | LR 1.577849e-04 | Loss 3.85994 | PPL 47.46
+Step  21050 | LR 1.575818e-04 | Loss 4.02505 | PPL 55.98
+Step  21100 | LR 1.573784e-04 | Loss 3.71801 | PPL 41.18
+Step  21150 | LR 1.571746e-04 | Loss 3.92088 | PPL 50.44
+Step  21200 | LR 1.569705e-04 | Loss 3.83200 | PPL 46.15
+Step  21250 | LR 1.567661e-04 | Loss 3.85263 | PPL 47.12
+Step  21300 | LR 1.565613e-04 | Loss 4.05133 | PPL 57.47
+Step  21350 | LR 1.563563e-04 | Loss 3.69081 | PPL 40.08
+Step  21400 | LR 1.561508e-04 | Loss 3.85690 | PPL 47.32
+Step  21450 | LR 1.559451e-04 | Loss 3.75012 | PPL 42.53
+Step  21500 | LR 1.557390e-04 | Loss 3.78944 | PPL 44.23
+Step  21550 | LR 1.555326e-04 | Loss 3.75799 | PPL 42.86
+Step  21600 | LR 1.553259e-04 | Loss 3.76327 | PPL 43.09
+Step  21650 | LR 1.551188e-04 | Loss 3.88102 | PPL 48.47
+Step  21700 | LR 1.549115e-04 | Loss 3.98790 | PPL 53.94
+Step  21750 | LR 1.547038e-04 | Loss 3.78384 | PPL 43.98
+Step  21800 | LR 1.544958e-04 | Loss 3.94083 | PPL 51.46
+Step  21850 | LR 1.542875e-04 | Loss 3.84696 | PPL 46.85
+Step  21900 | LR 1.540789e-04 | Loss 3.81996 | PPL 45.60
+Step  21950 | LR 1.538699e-04 | Loss 3.74099 | PPL 42.14
+Step  22000 | LR 1.536607e-04 | Loss 3.79806 | PPL 44.61
+Validation | Loss 4.05929 | PPL 57.93
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_022000.pt
+Step  22050 | LR 1.534511e-04 | Loss 3.70082 | PPL 40.48
+Step  22100 | LR 1.532413e-04 | Loss 3.83962 | PPL 46.51
+Step  22150 | LR 1.530311e-04 | Loss 3.88329 | PPL 48.58
+Step  22200 | LR 1.528206e-04 | Loss 3.73165 | PPL 41.75
+Step  22250 | LR 1.526099e-04 | Loss 3.80597 | PPL 44.97
+Step  22300 | LR 1.523988e-04 | Loss 3.81757 | PPL 45.49
+Step  22350 | LR 1.521874e-04 | Loss 3.79767 | PPL 44.60
+Step  22400 | LR 1.519757e-04 | Loss 3.68181 | PPL 39.72
+Step  22450 | LR 1.517637e-04 | Loss 3.63791 | PPL 38.01
+Step  22500 | LR 1.515515e-04 | Loss 3.74431 | PPL 42.28
+Step  22550 | LR 1.513389e-04 | Loss 3.97750 | PPL 53.38
+Step  22600 | LR 1.511261e-04 | Loss 3.75161 | PPL 42.59
+Step  22650 | LR 1.509129e-04 | Loss 3.74211 | PPL 42.19
+Step  22700 | LR 1.506995e-04 | Loss 3.96387 | PPL 52.66
+Step  22750 | LR 1.504857e-04 | Loss 3.81485 | PPL 45.37
+Step  22800 | LR 1.502717e-04 | Loss 3.78148 | PPL 43.88
+Step  22850 | LR 1.500574e-04 | Loss 4.07708 | PPL 58.97
+Step  22900 | LR 1.498428e-04 | Loss 3.65206 | PPL 38.55
+Step  22950 | LR 1.496280e-04 | Loss 3.89107 | PPL 48.96
+Step  23000 | LR 1.494128e-04 | Loss 3.67288 | PPL 39.37
+Step  23050 | LR 1.491974e-04 | Loss 3.81086 | PPL 45.19
+Step  23100 | LR 1.489817e-04 | Loss 3.47927 | PPL 32.44
+Step  23150 | LR 1.487657e-04 | Loss 3.62169 | PPL 37.40
+Step  23200 | LR 1.485495e-04 | Loss 3.67115 | PPL 39.30
+Step  23250 | LR 1.483330e-04 | Loss 3.64834 | PPL 38.41
+Step  23300 | LR 1.481162e-04 | Loss 3.56598 | PPL 35.37
+Step  23350 | LR 1.478991e-04 | Loss 3.72032 | PPL 41.28
+Step  23400 | LR 1.476818e-04 | Loss 3.78479 | PPL 44.03
+Step  23450 | LR 1.474642e-04 | Loss 4.17310 | PPL 64.92
+Step  23500 | LR 1.472463e-04 | Loss 4.02236 | PPL 55.83
+Step  23550 | LR 1.470282e-04 | Loss 3.54444 | PPL 34.62
+Step  23600 | LR 1.468098e-04 | Loss 3.77417 | PPL 43.56
+Step  23650 | LR 1.465911e-04 | Loss 3.89119 | PPL 48.97
+Step  23700 | LR 1.463722e-04 | Loss 3.85795 | PPL 47.37
+Step  23750 | LR 1.461530e-04 | Loss 4.02566 | PPL 56.02
+Step  23800 | LR 1.459336e-04 | Loss 3.82864 | PPL 46.00
+Step  23850 | LR 1.457139e-04 | Loss 3.82451 | PPL 45.81
+Step  23900 | LR 1.454940e-04 | Loss 3.72615 | PPL 41.52
+Step  23950 | LR 1.452738e-04 | Loss 4.15507 | PPL 63.76
+WARNING: non-finite gradient at training step 23978. Skipping optimizer update and reducing AMP scale.
+Step  24000 | LR 1.450534e-04 | Loss 3.64441 | PPL 38.26
+Validation | Loss 4.00636 | PPL 54.95
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_024000.pt
+Step  24050 | LR 1.448327e-04 | Loss 3.68486 | PPL 39.84
+Step  24100 | LR 1.446118e-04 | Loss 3.51691 | PPL 33.68
+Step  24150 | LR 1.443906e-04 | Loss 3.94292 | PPL 51.57
+Step  24200 | LR 1.441692e-04 | Loss 4.07018 | PPL 58.57
+Step  24250 | LR 1.439475e-04 | Loss 3.94114 | PPL 51.48
+Step  24300 | LR 1.437256e-04 | Loss 3.91622 | PPL 50.21
+Step  24350 | LR 1.435035e-04 | Loss 3.74038 | PPL 42.11
+Step  24400 | LR 1.432811e-04 | Loss 3.48411 | PPL 32.59
+Step  24450 | LR 1.430585e-04 | Loss 3.64808 | PPL 38.40
+Step  24500 | LR 1.428357e-04 | Loss 3.66630 | PPL 39.11
+Step  24550 | LR 1.426126e-04 | Loss 3.84502 | PPL 46.76
+Step  24600 | LR 1.423893e-04 | Loss 3.64514 | PPL 38.29
+Step  24650 | LR 1.421658e-04 | Loss 3.86266 | PPL 47.59
+Step  24700 | LR 1.419420e-04 | Loss 3.69996 | PPL 40.45
+Step  24750 | LR 1.417180e-04 | Loss 3.70361 | PPL 40.59
+WARNING: non-finite gradient at training step 24757. Skipping optimizer update and reducing AMP scale.
+Step  24800 | LR 1.414938e-04 | Loss 3.65308 | PPL 38.59
+Step  24850 | LR 1.412694e-04 | Loss 3.86902 | PPL 47.90
+Step  24900 | LR 1.410447e-04 | Loss 3.70189 | PPL 40.52
+Step  24950 | LR 1.408198e-04 | Loss 3.88187 | PPL 48.51
+Step  25000 | LR 1.405947e-04 | Loss 3.84131 | PPL 46.59
+Step  25050 | LR 1.403694e-04 | Loss 3.73645 | PPL 41.95
+Step  25100 | LR 1.401439e-04 | Loss 3.55175 | PPL 34.87
+Step  25150 | LR 1.399181e-04 | Loss 3.82504 | PPL 45.83
+Step  25200 | LR 1.396922e-04 | Loss 3.93700 | PPL 51.26
+Step  25250 | LR 1.394660e-04 | Loss 3.64996 | PPL 38.47
+Step  25300 | LR 1.392396e-04 | Loss 3.60430 | PPL 36.76
+Step  25350 | LR 1.390131e-04 | Loss 3.86987 | PPL 47.94
+Step  25400 | LR 1.387863e-04 | Loss 3.80429 | PPL 44.89
+Step  25450 | LR 1.385593e-04 | Loss 3.92767 | PPL 50.79
+Step  25500 | LR 1.383321e-04 | Loss 3.57784 | PPL 35.80
+Step  25550 | LR 1.381047e-04 | Loss 3.87774 | PPL 48.32
+Step  25600 | LR 1.378771e-04 | Loss 3.90287 | PPL 49.54
+Step  25650 | LR 1.376493e-04 | Loss 3.74025 | PPL 42.11
+Step  25700 | LR 1.374213e-04 | Loss 3.80010 | PPL 44.71
+Step  25750 | LR 1.371932e-04 | Loss 3.59890 | PPL 36.56
+Step  25800 | LR 1.369648e-04 | Loss 3.92576 | PPL 50.69
+Step  25850 | LR 1.367362e-04 | Loss 3.97139 | PPL 53.06
+Step  25900 | LR 1.365075e-04 | Loss 3.72176 | PPL 41.34
+Step  25950 | LR 1.362785e-04 | Loss 3.61504 | PPL 37.15
+Step  26000 | LR 1.360494e-04 | Loss 3.95442 | PPL 52.17
+Validation | Loss 4.00949 | PPL 55.12
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_026000.pt
+Step  26050 | LR 1.358201e-04 | Loss 3.71397 | PPL 41.02
+Step  26100 | LR 1.355906e-04 | Loss 3.85764 | PPL 47.35
+Step  26150 | LR 1.353609e-04 | Loss 3.88965 | PPL 48.89
+Step  26200 | LR 1.351311e-04 | Loss 3.67410 | PPL 39.41
+Step  26250 | LR 1.349011e-04 | Loss 3.75206 | PPL 42.61
+Step  26300 | LR 1.346709e-04 | Loss 3.71873 | PPL 41.21
+Step  26350 | LR 1.344405e-04 | Loss 3.69984 | PPL 40.44
+Step  26400 | LR 1.342099e-04 | Loss 3.77063 | PPL 43.41
+Step  26450 | LR 1.339792e-04 | Loss 3.93939 | PPL 51.39
+Step  26500 | LR 1.337483e-04 | Loss 3.91121 | PPL 49.96
+Step  26550 | LR 1.335172e-04 | Loss 3.80479 | PPL 44.92
+Step  26600 | LR 1.332860e-04 | Loss 3.78347 | PPL 43.97
+Step  26650 | LR 1.330546e-04 | Loss 3.87038 | PPL 47.96
+Step  26700 | LR 1.328231e-04 | Loss 3.90713 | PPL 49.76
+Step  26750 | LR 1.325913e-04 | Loss 3.61851 | PPL 37.28
+Step  26800 | LR 1.323595e-04 | Loss 4.04961 | PPL 57.37
+Step  26850 | LR 1.321274e-04 | Loss 3.90948 | PPL 49.87
+Step  26900 | LR 1.318952e-04 | Loss 3.52648 | PPL 34.00
+Step  26950 | LR 1.316629e-04 | Loss 3.79786 | PPL 44.61
+Step  27000 | LR 1.314304e-04 | Loss 3.89303 | PPL 49.06
+Step  27050 | LR 1.311977e-04 | Loss 3.75070 | PPL 42.55
+Step  27100 | LR 1.309649e-04 | Loss 3.78025 | PPL 43.83
+Step  27150 | LR 1.307320e-04 | Loss 3.83704 | PPL 46.39
+Step  27200 | LR 1.304989e-04 | Loss 3.77849 | PPL 43.75
+Step  27250 | LR 1.302656e-04 | Loss 3.74083 | PPL 42.13
+Step  27300 | LR 1.300322e-04 | Loss 3.63487 | PPL 37.90
+Step  27350 | LR 1.297987e-04 | Loss 3.51856 | PPL 33.74
+Step  27400 | LR 1.295650e-04 | Loss 3.74019 | PPL 42.11
+Step  27450 | LR 1.293312e-04 | Loss 3.92424 | PPL 50.61
+Step  27500 | LR 1.290973e-04 | Loss 3.69686 | PPL 40.32
+Step  27550 | LR 1.288632e-04 | Loss 3.67347 | PPL 39.39
+WARNING: non-finite gradient at training step 27591. Skipping optimizer update and reducing AMP scale.
+Step  27600 | LR 1.286290e-04 | Loss 3.73776 | PPL 42.00
+Step  27650 | LR 1.283946e-04 | Loss 3.56859 | PPL 35.47
+Step  27700 | LR 1.281601e-04 | Loss 3.74241 | PPL 42.20
+Step  27750 | LR 1.279255e-04 | Loss 3.80034 | PPL 44.72
+Step  27800 | LR 1.276908e-04 | Loss 3.70492 | PPL 40.65
+Step  27850 | LR 1.274560e-04 | Loss 3.80949 | PPL 45.13
+Step  27900 | LR 1.272210e-04 | Loss 3.90014 | PPL 49.41
+Step  27950 | LR 1.269859e-04 | Loss 3.71877 | PPL 41.21
+Step  28000 | LR 1.267506e-04 | Loss 3.53256 | PPL 34.21
+Validation | Loss 3.97861 | PPL 53.44
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_028000.pt
+Step  28050 | LR 1.265153e-04 | Loss 3.86373 | PPL 47.64
+Step  28100 | LR 1.262798e-04 | Loss 3.55715 | PPL 35.06
+Step  28150 | LR 1.260443e-04 | Loss 3.56511 | PPL 35.34
+Step  28200 | LR 1.258086e-04 | Loss 3.77141 | PPL 43.44
+Step  28250 | LR 1.255728e-04 | Loss 3.79790 | PPL 44.61
+Step  28300 | LR 1.253369e-04 | Loss 3.85399 | PPL 47.18
+Step  28350 | LR 1.251009e-04 | Loss 3.68413 | PPL 39.81
+Step  28400 | LR 1.248647e-04 | Loss 4.09212 | PPL 59.87
+Step  28450 | LR 1.246285e-04 | Loss 3.82492 | PPL 45.83
+Step  28500 | LR 1.243922e-04 | Loss 3.58936 | PPL 36.21
+Step  28550 | LR 1.241557e-04 | Loss 4.03574 | PPL 56.58
+Step  28600 | LR 1.239192e-04 | Loss 3.44979 | PPL 31.49
+Step  28650 | LR 1.236826e-04 | Loss 3.77033 | PPL 43.39
+Step  28700 | LR 1.234458e-04 | Loss 3.82044 | PPL 45.62
+Step  28750 | LR 1.232090e-04 | Loss 4.05944 | PPL 57.94
+Step  28800 | LR 1.229721e-04 | Loss 3.78311 | PPL 43.95
+Step  28850 | LR 1.227351e-04 | Loss 3.77153 | PPL 43.45
+Step  28900 | LR 1.224980e-04 | Loss 4.13788 | PPL 62.67
+Step  28950 | LR 1.222608e-04 | Loss 3.73639 | PPL 41.95
+Step  29000 | LR 1.220235e-04 | Loss 3.73496 | PPL 41.89
+Step  29050 | LR 1.217861e-04 | Loss 3.76772 | PPL 43.28
+Step  29100 | LR 1.215487e-04 | Loss 3.66552 | PPL 39.08
+Step  29150 | LR 1.213112e-04 | Loss 3.76242 | PPL 43.05
+Step  29200 | LR 1.210736e-04 | Loss 3.84702 | PPL 46.85
+Step  29250 | LR 1.208359e-04 | Loss 3.42371 | PPL 30.68
+Step  29300 | LR 1.205981e-04 | Loss 3.58404 | PPL 36.02
+Step  29350 | LR 1.203603e-04 | Loss 3.88513 | PPL 48.67
+Step  29400 | LR 1.201224e-04 | Loss 3.72779 | PPL 41.59
+Step  29450 | LR 1.198844e-04 | Loss 3.51141 | PPL 33.50
+Step  29500 | LR 1.196463e-04 | Loss 3.52267 | PPL 33.87
+Step  29550 | LR 1.194082e-04 | Loss 3.80025 | PPL 44.71
+Step  29600 | LR 1.191700e-04 | Loss 3.50486 | PPL 33.28
+Step  29650 | LR 1.189318e-04 | Loss 3.50217 | PPL 33.19
+Step  29700 | LR 1.186934e-04 | Loss 3.66853 | PPL 39.19
+Step  29750 | LR 1.184551e-04 | Loss 3.66423 | PPL 39.03
+Step  29800 | LR 1.182166e-04 | Loss 3.61482 | PPL 37.14
+Step  29850 | LR 1.179781e-04 | Loss 3.72474 | PPL 41.46
+Step  29900 | LR 1.177396e-04 | Loss 3.47432 | PPL 32.28
+Step  29950 | LR 1.175010e-04 | Loss 3.61396 | PPL 37.11
+Step  30000 | LR 1.172623e-04 | Loss 3.59895 | PPL 36.56
+Validation | Loss 3.97169 | PPL 53.07
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_030000.pt
+WARNING: non-finite gradient at training step 30012. Skipping optimizer update and reducing AMP scale.
+Step  30050 | LR 1.170236e-04 | Loss 3.66613 | PPL 39.10
+Step  30100 | LR 1.167848e-04 | Loss 3.49520 | PPL 32.96
+Step  30150 | LR 1.165460e-04 | Loss 3.84552 | PPL 46.78
+Step  30200 | LR 1.163072e-04 | Loss 3.53379 | PPL 34.25
+Step  30250 | LR 1.160683e-04 | Loss 3.68528 | PPL 39.86
+Step  30300 | LR 1.158293e-04 | Loss 3.86792 | PPL 47.84
+Step  30350 | LR 1.155903e-04 | Loss 3.89225 | PPL 49.02
+Step  30400 | LR 1.153513e-04 | Loss 3.91135 | PPL 49.97
+Step  30450 | LR 1.151123e-04 | Loss 3.63971 | PPL 38.08
+Step  30500 | LR 1.148732e-04 | Loss 3.72964 | PPL 41.66
+Step  30550 | LR 1.146340e-04 | Loss 3.78858 | PPL 44.19
+Step  30600 | LR 1.143949e-04 | Loss 3.75448 | PPL 42.71
+Step  30650 | LR 1.141557e-04 | Loss 3.69383 | PPL 40.20
+Step  30700 | LR 1.139164e-04 | Loss 3.73546 | PPL 41.91
+Step  30750 | LR 1.136772e-04 | Loss 3.78087 | PPL 43.85
+Step  30800 | LR 1.134379e-04 | Loss 3.56498 | PPL 35.34
+Step  30850 | LR 1.131986e-04 | Loss 3.54619 | PPL 34.68
+Step  30900 | LR 1.129593e-04 | Loss 3.61374 | PPL 37.10
+Step  30950 | LR 1.127199e-04 | Loss 3.70316 | PPL 40.58
+Step  31000 | LR 1.124806e-04 | Loss 3.67721 | PPL 39.54
+Step  31050 | LR 1.122412e-04 | Loss 3.78603 | PPL 44.08
+Step  31100 | LR 1.120018e-04 | Loss 3.82883 | PPL 46.01
+Step  31150 | LR 1.117624e-04 | Loss 3.52431 | PPL 33.93
+Step  31200 | LR 1.115229e-04 | Loss 3.81239 | PPL 45.26
+Step  31250 | LR 1.112835e-04 | Loss 3.49783 | PPL 33.04
+Step  31300 | LR 1.110441e-04 | Loss 3.60205 | PPL 36.67
+Step  31350 | LR 1.108046e-04 | Loss 3.64180 | PPL 38.16
+Step  31400 | LR 1.105651e-04 | Loss 3.62271 | PPL 37.44
+Step  31450 | LR 1.103257e-04 | Loss 3.53600 | PPL 34.33
+Step  31500 | LR 1.100862e-04 | Loss 3.81847 | PPL 45.53
+Step  31550 | LR 1.098467e-04 | Loss 3.47360 | PPL 32.25
+Step  31600 | LR 1.096073e-04 | Loss 3.69573 | PPL 40.27
+Step  31650 | LR 1.093678e-04 | Loss 3.85345 | PPL 47.16
+Step  31700 | LR 1.091284e-04 | Loss 3.65215 | PPL 38.56
+Step  31750 | LR 1.088889e-04 | Loss 3.70924 | PPL 40.82
+Step  31800 | LR 1.086495e-04 | Loss 3.92112 | PPL 50.46
+Step  31850 | LR 1.084100e-04 | Loss 3.74816 | PPL 42.44
+Step  31900 | LR 1.081706e-04 | Loss 3.69142 | PPL 40.10
+Step  31950 | LR 1.079312e-04 | Loss 3.78786 | PPL 44.16
+Step  32000 | LR 1.076918e-04 | Loss 3.79668 | PPL 44.55
+Validation | Loss 3.92713 | PPL 50.76
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_032000.pt
+Step  32050 | LR 1.074524e-04 | Loss 3.74526 | PPL 42.32
+Step  32100 | LR 1.072131e-04 | Loss 3.42823 | PPL 30.82
+Step  32150 | LR 1.069737e-04 | Loss 3.83278 | PPL 46.19
+Step  32200 | LR 1.067344e-04 | Loss 3.75644 | PPL 42.80
+Step  32250 | LR 1.064951e-04 | Loss 3.94279 | PPL 51.56
+Step  32300 | LR 1.062558e-04 | Loss 3.78972 | PPL 44.24
+Step  32350 | LR 1.060166e-04 | Loss 3.78245 | PPL 43.92
+Step  32400 | LR 1.057774e-04 | Loss 3.71262 | PPL 40.96
+Step  32450 | LR 1.055382e-04 | Loss 3.67181 | PPL 39.32
+Step  32500 | LR 1.052990e-04 | Loss 3.70627 | PPL 40.70
+Step  32550 | LR 1.050599e-04 | Loss 3.57961 | PPL 35.86
+Step  32600 | LR 1.048208e-04 | Loss 3.61483 | PPL 37.15
+Step  32650 | LR 1.045817e-04 | Loss 3.87507 | PPL 48.19
+Step  32700 | LR 1.043427e-04 | Loss 3.83506 | PPL 46.30
+Step  32750 | LR 1.041038e-04 | Loss 3.66555 | PPL 39.08
+Step  32800 | LR 1.038648e-04 | Loss 3.70927 | PPL 40.82
+Step  32850 | LR 1.036259e-04 | Loss 3.53360 | PPL 34.25
+Step  32900 | LR 1.033871e-04 | Loss 3.80487 | PPL 44.92
+Step  32950 | LR 1.031483e-04 | Loss 3.69141 | PPL 40.10
+Step  33000 | LR 1.029096e-04 | Loss 3.59746 | PPL 36.51
+Step  33050 | LR 1.026709e-04 | Loss 3.63246 | PPL 37.81
+Step  33100 | LR 1.024322e-04 | Loss 3.49358 | PPL 32.90
+Step  33150 | LR 1.021936e-04 | Loss 3.62201 | PPL 37.41
+Step  33200 | LR 1.019551e-04 | Loss 3.80003 | PPL 44.70
+Step  33250 | LR 1.017166e-04 | Loss 3.82685 | PPL 45.92
+Step  33300 | LR 1.014782e-04 | Loss 3.61585 | PPL 37.18
+Step  33350 | LR 1.012398e-04 | Loss 3.76866 | PPL 43.32
+Step  33400 | LR 1.010015e-04 | Loss 3.60540 | PPL 36.80
+Step  33450 | LR 1.007633e-04 | Loss 3.66393 | PPL 39.01
+Step  33500 | LR 1.005251e-04 | Loss 3.67226 | PPL 39.34
+Step  33550 | LR 1.002870e-04 | Loss 3.65311 | PPL 38.59
+Step  33600 | LR 1.000490e-04 | Loss 3.54651 | PPL 34.69
+Step  33650 | LR 9.981102e-05 | Loss 3.64926 | PPL 38.45
+Step  33700 | LR 9.957313e-05 | Loss 3.76204 | PPL 43.04
+Step  33750 | LR 9.933532e-05 | Loss 3.46417 | PPL 31.95
+Step  33800 | LR 9.909757e-05 | Loss 3.76451 | PPL 43.14
+Step  33850 | LR 9.885991e-05 | Loss 3.59913 | PPL 36.57
+Step  33900 | LR 9.862232e-05 | Loss 3.71494 | PPL 41.06
+Step  33950 | LR 9.838482e-05 | Loss 3.79078 | PPL 44.29
+Step  34000 | LR 9.814740e-05 | Loss 3.72431 | PPL 41.44
+Validation | Loss 3.93442 | PPL 51.13
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_034000.pt
+WARNING: non-finite gradient at training step 34014. Skipping optimizer update and reducing AMP scale.
+Step  34050 | LR 9.791006e-05 | Loss 3.65222 | PPL 38.56
+Step  34100 | LR 9.767280e-05 | Loss 3.68481 | PPL 39.84
+Step  34150 | LR 9.743564e-05 | Loss 3.55938 | PPL 35.14
+Step  34200 | LR 9.719856e-05 | Loss 3.65701 | PPL 38.75
+Step  34250 | LR 9.696157e-05 | Loss 3.76043 | PPL 42.97
+Step  34300 | LR 9.672468e-05 | Loss 3.78122 | PPL 43.87
+Step  34350 | LR 9.648788e-05 | Loss 3.76911 | PPL 43.34
+Step  34400 | LR 9.625117e-05 | Loss 3.51218 | PPL 33.52
+Step  34450 | LR 9.601457e-05 | Loss 3.64077 | PPL 38.12
+Step  34500 | LR 9.577806e-05 | Loss 3.73528 | PPL 41.90
+Step  34550 | LR 9.554165e-05 | Loss 3.84485 | PPL 46.75
+Step  34600 | LR 9.530535e-05 | Loss 3.82023 | PPL 45.61
+Step  34650 | LR 9.506915e-05 | Loss 3.59241 | PPL 36.32
+Step  34700 | LR 9.483305e-05 | Loss 3.55980 | PPL 35.16
+Step  34750 | LR 9.459706e-05 | Loss 3.75283 | PPL 42.64
+Step  34800 | LR 9.436118e-05 | Loss 3.66348 | PPL 39.00
+Step  34850 | LR 9.412541e-05 | Loss 3.81002 | PPL 45.15
+Step  34900 | LR 9.388976e-05 | Loss 3.61815 | PPL 37.27
+Step  34950 | LR 9.365422e-05 | Loss 3.70804 | PPL 40.77
+Step  35000 | LR 9.341879e-05 | Loss 3.64962 | PPL 38.46
+Step  35050 | LR 9.318348e-05 | Loss 3.43250 | PPL 30.95
+Step  35100 | LR 9.294829e-05 | Loss 3.70749 | PPL 40.75
+Step  35150 | LR 9.271322e-05 | Loss 3.89229 | PPL 49.02
+Step  35200 | LR 9.247828e-05 | Loss 3.76517 | PPL 43.17
+Step  35250 | LR 9.224345e-05 | Loss 3.82985 | PPL 46.06
+Step  35300 | LR 9.200876e-05 | Loss 3.86063 | PPL 47.50
+Step  35350 | LR 9.177419e-05 | Loss 3.64151 | PPL 38.15
+Step  35400 | LR 9.153975e-05 | Loss 3.58134 | PPL 35.92
+Step  35450 | LR 9.130544e-05 | Loss 4.08409 | PPL 59.39
+Step  35500 | LR 9.107126e-05 | Loss 3.73653 | PPL 41.95
+Step  35550 | LR 9.083722e-05 | Loss 3.59428 | PPL 36.39
+WARNING: non-finite gradient at training step 35599. Skipping optimizer update and reducing AMP scale.
+Step  35600 | LR 9.060331e-05 | Loss 3.65002 | PPL 38.48
+Step  35650 | LR 9.036954e-05 | Loss 3.65640 | PPL 38.72
+Step  35700 | LR 9.013591e-05 | Loss 3.60732 | PPL 36.87
+Step  35750 | LR 8.990242e-05 | Loss 3.67745 | PPL 39.55
+Step  35800 | LR 8.966907e-05 | Loss 3.67155 | PPL 39.31
+Step  35850 | LR 8.943586e-05 | Loss 3.61914 | PPL 37.31
+Step  35900 | LR 8.920280e-05 | Loss 3.74084 | PPL 42.13
+Step  35950 | LR 8.896989e-05 | Loss 3.79049 | PPL 44.28
+Step  36000 | LR 8.873713e-05 | Loss 3.71037 | PPL 40.87
+Validation | Loss 3.92066 | PPL 50.43
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_036000.pt
+Step  36050 | LR 8.850452e-05 | Loss 3.74889 | PPL 42.47
+Step  36100 | LR 8.827206e-05 | Loss 3.73871 | PPL 42.04
+Step  36150 | LR 8.803975e-05 | Loss 3.44142 | PPL 31.23
+Step  36200 | LR 8.780760e-05 | Loss 3.91742 | PPL 50.27
+Step  36250 | LR 8.757561e-05 | Loss 3.68537 | PPL 39.86
+Step  36300 | LR 8.734377e-05 | Loss 3.65914 | PPL 38.83
+Step  36350 | LR 8.711210e-05 | Loss 3.56556 | PPL 35.36
+Step  36400 | LR 8.688058e-05 | Loss 3.61759 | PPL 37.25
+Step  36450 | LR 8.664924e-05 | Loss 3.74657 | PPL 42.38
+Step  36500 | LR 8.641805e-05 | Loss 3.73912 | PPL 42.06
+Step  36550 | LR 8.618703e-05 | Loss 3.62556 | PPL 37.55
+Step  36600 | LR 8.595619e-05 | Loss 3.61982 | PPL 37.33
+Step  36650 | LR 8.572551e-05 | Loss 3.45974 | PPL 31.81
+Step  36700 | LR 8.549500e-05 | Loss 3.86168 | PPL 47.55
+Step  36750 | LR 8.526467e-05 | Loss 3.68219 | PPL 39.73
+Step  36800 | LR 8.503451e-05 | Loss 3.64056 | PPL 38.11
+Step  36850 | LR 8.480453e-05 | Loss 3.49978 | PPL 33.11
+Step  36900 | LR 8.457473e-05 | Loss 3.75081 | PPL 42.56
+Step  36950 | LR 8.434511e-05 | Loss 3.63754 | PPL 38.00
+Step  37000 | LR 8.411567e-05 | Loss 3.74988 | PPL 42.52
+Step  37050 | LR 8.388641e-05 | Loss 3.70635 | PPL 40.70
+Step  37100 | LR 8.365734e-05 | Loss 3.43533 | PPL 31.04
+Step  37150 | LR 8.342845e-05 | Loss 3.60498 | PPL 36.78
+Step  37200 | LR 8.319975e-05 | Loss 3.90127 | PPL 49.47
+Step  37250 | LR 8.297125e-05 | Loss 3.60398 | PPL 36.74
+Step  37300 | LR 8.274293e-05 | Loss 3.52113 | PPL 33.82
+Step  37350 | LR 8.251480e-05 | Loss 3.76169 | PPL 43.02
+Step  37400 | LR 8.228688e-05 | Loss 3.69881 | PPL 40.40
+Step  37450 | LR 8.205914e-05 | Loss 3.69108 | PPL 40.09
+Step  37500 | LR 8.183161e-05 | Loss 3.83335 | PPL 46.22
+Step  37550 | LR 8.160427e-05 | Loss 3.95546 | PPL 52.22
+Step  37600 | LR 8.137714e-05 | Loss 3.63119 | PPL 37.76
+Step  37650 | LR 8.115020e-05 | Loss 3.86694 | PPL 47.80
+Step  37700 | LR 8.092348e-05 | Loss 3.84451 | PPL 46.74
+Step  37750 | LR 8.069695e-05 | Loss 3.50013 | PPL 33.12
+Step  37800 | LR 8.047064e-05 | Loss 3.51572 | PPL 33.64
+Step  37850 | LR 8.024453e-05 | Loss 3.76515 | PPL 43.17
+Step  37900 | LR 8.001864e-05 | Loss 3.44396 | PPL 31.31
+Step  37950 | LR 7.979296e-05 | Loss 3.46175 | PPL 31.87
+Step  38000 | LR 7.956749e-05 | Loss 3.57987 | PPL 35.87
+Validation | Loss 3.90628 | PPL 49.71
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_038000.pt
+Step  38050 | LR 7.934223e-05 | Loss 3.78017 | PPL 43.82
+Step  38100 | LR 7.911720e-05 | Loss 3.50826 | PPL 33.39
+Step  38150 | LR 7.889238e-05 | Loss 3.51867 | PPL 33.74
+Step  38200 | LR 7.866778e-05 | Loss 3.71124 | PPL 40.90
+Step  38250 | LR 7.844341e-05 | Loss 3.70196 | PPL 40.53
+Step  38300 | LR 7.821925e-05 | Loss 3.54084 | PPL 34.50
+Step  38350 | LR 7.799533e-05 | Loss 3.75816 | PPL 42.87
+Step  38400 | LR 7.777163e-05 | Loss 3.56990 | PPL 35.51
+Step  38450 | LR 7.754815e-05 | Loss 3.50557 | PPL 33.30
+Step  38500 | LR 7.732491e-05 | Loss 3.63648 | PPL 37.96
+Step  38550 | LR 7.710190e-05 | Loss 3.57633 | PPL 35.74
+Step  38600 | LR 7.687912e-05 | Loss 3.52419 | PPL 33.93
+Step  38650 | LR 7.665658e-05 | Loss 3.70109 | PPL 40.49
+Step  38700 | LR 7.643427e-05 | Loss 3.66577 | PPL 39.09
+Step  38750 | LR 7.621220e-05 | Loss 3.39882 | PPL 29.93
+Step  38800 | LR 7.599037e-05 | Loss 3.65213 | PPL 38.56
+Step  38850 | LR 7.576878e-05 | Loss 3.54729 | PPL 34.72
+Step  38900 | LR 7.554743e-05 | Loss 3.48574 | PPL 32.65
+Step  38950 | LR 7.532633e-05 | Loss 3.50872 | PPL 33.41
+Step  39000 | LR 7.510547e-05 | Loss 3.37799 | PPL 29.31
+Step  39050 | LR 7.488486e-05 | Loss 3.78401 | PPL 43.99
+Step  39100 | LR 7.466449e-05 | Loss 3.78406 | PPL 43.99
+Step  39150 | LR 7.444438e-05 | Loss 3.83833 | PPL 46.45
+Step  39200 | LR 7.422452e-05 | Loss 3.53003 | PPL 34.12
+Step  39250 | LR 7.400491e-05 | Loss 3.58919 | PPL 36.20
+Step  39300 | LR 7.378556e-05 | Loss 3.63059 | PPL 37.73
+Step  39350 | LR 7.356646e-05 | Loss 3.55163 | PPL 34.87
+Step  39400 | LR 7.334762e-05 | Loss 3.54906 | PPL 34.78
+Step  39450 | LR 7.312904e-05 | Loss 3.69523 | PPL 40.25
+Step  39500 | LR 7.291072e-05 | Loss 3.32860 | PPL 27.90
+Step  39550 | LR 7.269267e-05 | Loss 3.76092 | PPL 42.99
+Step  39600 | LR 7.247488e-05 | Loss 3.73774 | PPL 42.00
+Step  39650 | LR 7.225735e-05 | Loss 3.65445 | PPL 38.65
+WARNING: non-finite gradient at training step 39651. Skipping optimizer update and reducing AMP scale.
+Step  39700 | LR 7.204009e-05 | Loss 3.65740 | PPL 38.76
+Step  39750 | LR 7.182310e-05 | Loss 3.52461 | PPL 33.94
+Step  39800 | LR 7.160638e-05 | Loss 3.64312 | PPL 38.21
+Step  39850 | LR 7.138993e-05 | Loss 3.58630 | PPL 36.10
+Step  39900 | LR 7.117376e-05 | Loss 3.58133 | PPL 35.92
+Step  39950 | LR 7.095786e-05 | Loss 3.60042 | PPL 36.61
+Step  40000 | LR 7.074224e-05 | Loss 3.46145 | PPL 31.86
+Validation | Loss 3.88556 | PPL 48.69
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_040000.pt
+Step  40050 | LR 7.052689e-05 | Loss 3.64796 | PPL 38.40
+Step  40100 | LR 7.031183e-05 | Loss 3.77619 | PPL 43.65
+Step  40150 | LR 7.009704e-05 | Loss 3.69822 | PPL 40.38
+Step  40200 | LR 6.988254e-05 | Loss 3.64287 | PPL 38.20
+Step  40250 | LR 6.966832e-05 | Loss 3.74134 | PPL 42.15
+Step  40300 | LR 6.945439e-05 | Loss 3.52138 | PPL 33.83
+Step  40350 | LR 6.924074e-05 | Loss 3.39187 | PPL 29.72
+Step  40400 | LR 6.902738e-05 | Loss 3.42533 | PPL 30.73
+Step  40450 | LR 6.881432e-05 | Loss 3.51820 | PPL 33.72
+Step  40500 | LR 6.860154e-05 | Loss 3.45747 | PPL 31.74
+Step  40550 | LR 6.838906e-05 | Loss 3.57530 | PPL 35.71
+Step  40600 | LR 6.817687e-05 | Loss 3.68764 | PPL 39.95
+Step  40650 | LR 6.796498e-05 | Loss 3.77614 | PPL 43.65
+Step  40700 | LR 6.775339e-05 | Loss 3.34271 | PPL 28.30
+Step  40750 | LR 6.754209e-05 | Loss 3.56804 | PPL 35.45
+Step  40800 | LR 6.733110e-05 | Loss 3.53658 | PPL 34.35
+Step  40850 | LR 6.712040e-05 | Loss 3.81774 | PPL 45.50
+Step  40900 | LR 6.691001e-05 | Loss 3.69166 | PPL 40.11
+Step  40950 | LR 6.669993e-05 | Loss 3.49800 | PPL 33.05
+Step  41000 | LR 6.649015e-05 | Loss 3.57259 | PPL 35.61
+Step  41050 | LR 6.628068e-05 | Loss 3.79716 | PPL 44.57
+Step  41100 | LR 6.607152e-05 | Loss 3.63684 | PPL 37.97
+Step  41150 | LR 6.586268e-05 | Loss 3.52975 | PPL 34.12
+Step  41200 | LR 6.565414e-05 | Loss 3.68449 | PPL 39.82
+Step  41250 | LR 6.544592e-05 | Loss 3.18208 | PPL 24.10
+Step  41300 | LR 6.523801e-05 | Loss 3.61705 | PPL 37.23
+Step  41350 | LR 6.503042e-05 | Loss 3.44973 | PPL 31.49
+Step  41400 | LR 6.482315e-05 | Loss 3.64582 | PPL 38.31
+Step  41450 | LR 6.461620e-05 | Loss 3.47238 | PPL 32.21
+WARNING: non-finite gradient at training step 41454. Skipping optimizer update and reducing AMP scale.
+Step  41500 | LR 6.440957e-05 | Loss 3.66773 | PPL 39.16
+Step  41550 | LR 6.420326e-05 | Loss 3.61440 | PPL 37.13
+Step  41600 | LR 6.399727e-05 | Loss 3.58397 | PPL 36.02
+Step  41650 | LR 6.379162e-05 | Loss 3.61175 | PPL 37.03
+Step  41700 | LR 6.358629e-05 | Loss 3.56739 | PPL 35.42
+Step  41750 | LR 6.338128e-05 | Loss 3.56583 | PPL 35.37
+Step  41800 | LR 6.317661e-05 | Loss 3.64791 | PPL 38.39
+Step  41850 | LR 6.297227e-05 | Loss 3.91765 | PPL 50.28
+Step  41900 | LR 6.276826e-05 | Loss 3.62934 | PPL 37.69
+Step  41950 | LR 6.256459e-05 | Loss 3.56412 | PPL 35.31
+Step  42000 | LR 6.236125e-05 | Loss 3.55383 | PPL 34.95
+Validation | Loss 3.87118 | PPL 48.00
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_042000.pt
+Step  42050 | LR 6.215825e-05 | Loss 3.69110 | PPL 40.09
+Step  42100 | LR 6.195559e-05 | Loss 3.62548 | PPL 37.54
+Step  42150 | LR 6.175327e-05 | Loss 3.61031 | PPL 36.98
+Step  42200 | LR 6.155129e-05 | Loss 3.61641 | PPL 37.20
+Step  42250 | LR 6.134965e-05 | Loss 3.53944 | PPL 34.45
+Step  42300 | LR 6.114836e-05 | Loss 3.58828 | PPL 36.17
+Step  42350 | LR 6.094741e-05 | Loss 3.89456 | PPL 49.13
+Step  42400 | LR 6.074681e-05 | Loss 3.69468 | PPL 40.23
+Step  42450 | LR 6.054656e-05 | Loss 3.58451 | PPL 36.04
+Step  42500 | LR 6.034666e-05 | Loss 3.42428 | PPL 30.70
+Step  42550 | LR 6.014711e-05 | Loss 3.49053 | PPL 32.80
+Step  42600 | LR 5.994792e-05 | Loss 3.46636 | PPL 32.02
+Step  42650 | LR 5.974908e-05 | Loss 3.53499 | PPL 34.29
+Step  42700 | LR 5.955059e-05 | Loss 3.63780 | PPL 38.01
+Step  42750 | LR 5.935246e-05 | Loss 3.49835 | PPL 33.06
+Step  42800 | LR 5.915469e-05 | Loss 3.80766 | PPL 45.04
+Step  42850 | LR 5.895728e-05 | Loss 3.59085 | PPL 36.26
+Step  42900 | LR 5.876023e-05 | Loss 3.89917 | PPL 49.36
+Step  42950 | LR 5.856355e-05 | Loss 3.61557 | PPL 37.17
+Step  43000 | LR 5.836722e-05 | Loss 3.81280 | PPL 45.28
+Step  43050 | LR 5.817127e-05 | Loss 3.51058 | PPL 33.47
+Step  43100 | LR 5.797568e-05 | Loss 3.42578 | PPL 30.75
+Step  43150 | LR 5.778046e-05 | Loss 3.62107 | PPL 37.38
+Step  43200 | LR 5.758560e-05 | Loss 3.67841 | PPL 39.58
+Step  43250 | LR 5.739112e-05 | Loss 3.54660 | PPL 34.70
+Step  43300 | LR 5.719702e-05 | Loss 3.81920 | PPL 45.57
+Step  43350 | LR 5.700328e-05 | Loss 3.66677 | PPL 39.13
+Step  43400 | LR 5.680992e-05 | Loss 3.69805 | PPL 40.37
+Step  43450 | LR 5.661694e-05 | Loss 3.53002 | PPL 34.12
+Step  43500 | LR 5.642434e-05 | Loss 3.52060 | PPL 33.80
+Step  43550 | LR 5.623211e-05 | Loss 3.42721 | PPL 30.79
+Step  43600 | LR 5.604027e-05 | Loss 3.43383 | PPL 31.00
+Step  43650 | LR 5.584880e-05 | Loss 3.62944 | PPL 37.69
+Step  43700 | LR 5.565772e-05 | Loss 3.49136 | PPL 32.83
+Step  43750 | LR 5.546703e-05 | Loss 3.59702 | PPL 36.49
+Step  43800 | LR 5.527672e-05 | Loss 3.72446 | PPL 41.45
+Step  43850 | LR 5.508680e-05 | Loss 3.59724 | PPL 36.50
+Step  43900 | LR 5.489727e-05 | Loss 3.73089 | PPL 41.72
+Step  43950 | LR 5.470813e-05 | Loss 3.26198 | PPL 26.10
+Step  44000 | LR 5.451938e-05 | Loss 3.77168 | PPL 43.45
+Validation | Loss 3.87027 | PPL 47.96
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_044000.pt
+Step  44050 | LR 5.433102e-05 | Loss 3.63661 | PPL 37.96
+Step  44100 | LR 5.414305e-05 | Loss 3.52251 | PPL 33.87
+Step  44150 | LR 5.395549e-05 | Loss 3.63003 | PPL 37.71
+Step  44200 | LR 5.376831e-05 | Loss 3.58574 | PPL 36.08
+Step  44250 | LR 5.358154e-05 | Loss 3.69182 | PPL 40.12
+Step  44300 | LR 5.339517e-05 | Loss 3.69173 | PPL 40.11
+Step  44350 | LR 5.320919e-05 | Loss 3.53278 | PPL 34.22
+Step  44400 | LR 5.302362e-05 | Loss 3.44931 | PPL 31.48
+Step  44450 | LR 5.283845e-05 | Loss 3.71355 | PPL 41.00
+Step  44500 | LR 5.265369e-05 | Loss 3.62267 | PPL 37.44
+Step  44550 | LR 5.246933e-05 | Loss 3.69904 | PPL 40.41
+Step  44600 | LR 5.228538e-05 | Loss 3.64296 | PPL 38.20
+Step  44650 | LR 5.210184e-05 | Loss 3.47921 | PPL 32.43
+Step  44700 | LR 5.191871e-05 | Loss 3.64931 | PPL 38.45
+Step  44750 | LR 5.173599e-05 | Loss 3.47831 | PPL 32.40
+Step  44800 | LR 5.155368e-05 | Loss 3.61718 | PPL 37.23
+Step  44850 | LR 5.137179e-05 | Loss 3.63664 | PPL 37.96
+Step  44900 | LR 5.119031e-05 | Loss 3.57227 | PPL 35.60
+Step  44950 | LR 5.100925e-05 | Loss 3.70526 | PPL 40.66
+Step  45000 | LR 5.082860e-05 | Loss 3.66196 | PPL 38.94
+Step  45050 | LR 5.064837e-05 | Loss 3.88184 | PPL 48.51
+Step  45100 | LR 5.046857e-05 | Loss 3.63747 | PPL 38.00
+Step  45150 | LR 5.028918e-05 | Loss 3.69896 | PPL 40.41
+Step  45200 | LR 5.011022e-05 | Loss 3.42935 | PPL 30.86
+Step  45250 | LR 4.993169e-05 | Loss 3.74585 | PPL 42.34
+Step  45300 | LR 4.975357e-05 | Loss 3.35888 | PPL 28.76
+Step  45350 | LR 4.957589e-05 | Loss 3.50642 | PPL 33.33
+Step  45400 | LR 4.939863e-05 | Loss 3.57791 | PPL 35.80
+Step  45450 | LR 4.922180e-05 | Loss 3.56618 | PPL 35.38
+Step  45500 | LR 4.904540e-05 | Loss 3.51627 | PPL 33.66
+Step  45550 | LR 4.886943e-05 | Loss 3.43697 | PPL 31.09
+Step  45600 | LR 4.869390e-05 | Loss 3.54803 | PPL 34.74
+Step  45650 | LR 4.851880e-05 | Loss 3.68603 | PPL 39.89
+Step  45700 | LR 4.834413e-05 | Loss 3.81049 | PPL 45.17
+Step  45750 | LR 4.816990e-05 | Loss 3.55464 | PPL 34.98
+Step  45800 | LR 4.799611e-05 | Loss 3.69475 | PPL 40.24
+Step  45850 | LR 4.782276e-05 | Loss 3.33548 | PPL 28.09
+Step  45900 | LR 4.764985e-05 | Loss 3.78421 | PPL 44.00
+Step  45950 | LR 4.747738e-05 | Loss 3.69188 | PPL 40.12
+Step  46000 | LR 4.730535e-05 | Loss 3.91057 | PPL 49.93
+Validation | Loss 3.87578 | PPL 48.22
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_046000.pt
+Step  46050 | LR 4.713377e-05 | Loss 3.61555 | PPL 37.17
+Step  46100 | LR 4.696263e-05 | Loss 3.61367 | PPL 37.10
+Step  46150 | LR 4.679193e-05 | Loss 3.37248 | PPL 29.15
+Step  46200 | LR 4.662169e-05 | Loss 3.68746 | PPL 39.94
+Step  46250 | LR 4.645189e-05 | Loss 3.51939 | PPL 33.76
+Step  46300 | LR 4.628255e-05 | Loss 3.60898 | PPL 36.93
+Step  46350 | LR 4.611365e-05 | Loss 3.63426 | PPL 37.87
+Step  46400 | LR 4.594521e-05 | Loss 3.48725 | PPL 32.70
+Step  46450 | LR 4.577722e-05 | Loss 3.61316 | PPL 37.08
+Step  46500 | LR 4.560968e-05 | Loss 3.53790 | PPL 34.39
+Step  46550 | LR 4.544260e-05 | Loss 3.55077 | PPL 34.84
+Step  46600 | LR 4.527598e-05 | Loss 3.80047 | PPL 44.72
+Step  46650 | LR 4.510982e-05 | Loss 3.82859 | PPL 46.00
+Step  46700 | LR 4.494411e-05 | Loss 3.28475 | PPL 26.70
+Step  46750 | LR 4.477887e-05 | Loss 3.75009 | PPL 42.52
+Step  46800 | LR 4.461409e-05 | Loss 3.66384 | PPL 39.01
+Step  46850 | LR 4.444977e-05 | Loss 3.52796 | PPL 34.05
+Step  46900 | LR 4.428591e-05 | Loss 3.86183 | PPL 47.55
+Step  46950 | LR 4.412252e-05 | Loss 3.50255 | PPL 33.20
+WARNING: non-finite gradient at training step 46969. Skipping optimizer update and reducing AMP scale.
+Step  47000 | LR 4.395960e-05 | Loss 3.15479 | PPL 23.45
+Step  47050 | LR 4.379714e-05 | Loss 3.62570 | PPL 37.55
+Step  47100 | LR 4.363515e-05 | Loss 3.40311 | PPL 30.06
+Step  47150 | LR 4.347364e-05 | Loss 3.61563 | PPL 37.17
+Step  47200 | LR 4.331259e-05 | Loss 3.37284 | PPL 29.16
+Step  47250 | LR 4.315201e-05 | Loss 3.79771 | PPL 44.60
+Step  47300 | LR 4.299191e-05 | Loss 3.42056 | PPL 30.59
+Step  47350 | LR 4.283229e-05 | Loss 3.75529 | PPL 42.75
+Step  47400 | LR 4.267314e-05 | Loss 3.58973 | PPL 36.22
+Step  47450 | LR 4.251446e-05 | Loss 3.75414 | PPL 42.70
+Step  47500 | LR 4.235626e-05 | Loss 3.43613 | PPL 31.07
+Step  47550 | LR 4.219855e-05 | Loss 3.58137 | PPL 35.92
+Step  47600 | LR 4.204131e-05 | Loss 3.36838 | PPL 29.03
+Step  47650 | LR 4.188455e-05 | Loss 3.57925 | PPL 35.85
+Step  47700 | LR 4.172828e-05 | Loss 3.58870 | PPL 36.19
+Step  47750 | LR 4.157248e-05 | Loss 3.47491 | PPL 32.29
+Step  47800 | LR 4.141718e-05 | Loss 3.72581 | PPL 41.50
+Step  47850 | LR 4.126236e-05 | Loss 3.76187 | PPL 43.03
+Step  47900 | LR 4.110802e-05 | Loss 3.51755 | PPL 33.70
+Step  47950 | LR 4.095417e-05 | Loss 3.33587 | PPL 28.10
+Step  48000 | LR 4.080082e-05 | Loss 3.52148 | PPL 33.83
+Validation | Loss 3.86703 | PPL 47.80
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_048000.pt
+Step  48050 | LR 4.064795e-05 | Loss 3.35208 | PPL 28.56
+Step  48100 | LR 4.049557e-05 | Loss 3.62896 | PPL 37.67
+Step  48150 | LR 4.034368e-05 | Loss 3.40517 | PPL 30.12
+Step  48200 | LR 4.019229e-05 | Loss 3.58973 | PPL 36.22
+Step  48250 | LR 4.004139e-05 | Loss 3.49883 | PPL 33.08
+Step  48300 | LR 3.989099e-05 | Loss 3.57078 | PPL 35.54
+Step  48350 | LR 3.974108e-05 | Loss 3.61960 | PPL 37.32
+Step  48400 | LR 3.959168e-05 | Loss 3.42460 | PPL 30.71
+Step  48450 | LR 3.944277e-05 | Loss 3.78949 | PPL 44.23
+Step  48500 | LR 3.929435e-05 | Loss 3.25200 | PPL 25.84
+Step  48550 | LR 3.914644e-05 | Loss 3.62856 | PPL 37.66
+Step  48600 | LR 3.899904e-05 | Loss 3.46578 | PPL 32.00
+Step  48650 | LR 3.885213e-05 | Loss 3.63604 | PPL 37.94
+Step  48700 | LR 3.870573e-05 | Loss 3.52166 | PPL 33.84
+Step  48750 | LR 3.855983e-05 | Loss 3.74892 | PPL 42.48
+Step  48800 | LR 3.841444e-05 | Loss 3.65350 | PPL 38.61
+Step  48850 | LR 3.826955e-05 | Loss 3.59760 | PPL 36.51
+Step  48900 | LR 3.812517e-05 | Loss 3.57995 | PPL 35.87
+Step  48950 | LR 3.798131e-05 | Loss 3.80885 | PPL 45.10
+Step  49000 | LR 3.783795e-05 | Loss 3.50918 | PPL 33.42
+Step  49050 | LR 3.769510e-05 | Loss 3.43825 | PPL 31.13
+Step  49100 | LR 3.755276e-05 | Loss 3.76958 | PPL 43.36
+Step  49150 | LR 3.741094e-05 | Loss 3.62342 | PPL 37.47
+Step  49200 | LR 3.726963e-05 | Loss 3.59001 | PPL 36.23
+Step  49250 | LR 3.712884e-05 | Loss 3.60374 | PPL 36.74
+Step  49300 | LR 3.698856e-05 | Loss 3.71204 | PPL 40.94
+Step  49350 | LR 3.684880e-05 | Loss 3.87285 | PPL 48.08
+Step  49400 | LR 3.670955e-05 | Loss 3.71268 | PPL 40.96
+Step  49450 | LR 3.657083e-05 | Loss 3.79795 | PPL 44.61
+Step  49500 | LR 3.643262e-05 | Loss 3.56138 | PPL 35.21
+Step  49550 | LR 3.629494e-05 | Loss 3.79973 | PPL 44.69
+Step  49600 | LR 3.615778e-05 | Loss 3.67082 | PPL 39.28
+Step  49650 | LR 3.602114e-05 | Loss 3.86342 | PPL 47.63
+Step  49700 | LR 3.588502e-05 | Loss 3.57510 | PPL 35.70
+Step  49750 | LR 3.574943e-05 | Loss 3.73157 | PPL 41.74
+Step  49800 | LR 3.561437e-05 | Loss 3.61982 | PPL 37.33
+Step  49850 | LR 3.547983e-05 | Loss 3.54961 | PPL 34.80
+Step  49900 | LR 3.534582e-05 | Loss 3.59211 | PPL 36.31
+Step  49950 | LR 3.521233e-05 | Loss 3.83106 | PPL 46.11
+Step  50000 | LR 3.507938e-05 | Loss 3.60535 | PPL 36.79
+Validation | Loss 3.85030 | PPL 47.01
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_050000.pt
+Step  50050 | LR 3.494696e-05 | Loss 3.45775 | PPL 31.75
+Step  50100 | LR 3.481507e-05 | Loss 3.62468 | PPL 37.51
+Step  50150 | LR 3.468371e-05 | Loss 3.70461 | PPL 40.63
+Step  50200 | LR 3.455288e-05 | Loss 3.47644 | PPL 32.34
+Step  50250 | LR 3.442259e-05 | Loss 3.66636 | PPL 39.11
+Step  50300 | LR 3.429283e-05 | Loss 3.71183 | PPL 40.93
+Step  50350 | LR 3.416361e-05 | Loss 3.46381 | PPL 31.94
+Step  50400 | LR 3.403493e-05 | Loss 3.53742 | PPL 34.38
+Step  50450 | LR 3.390678e-05 | Loss 3.48843 | PPL 32.73
+Step  50500 | LR 3.377917e-05 | Loss 3.64122 | PPL 38.14
+Step  50550 | LR 3.365211e-05 | Loss 3.74613 | PPL 42.36
+Step  50600 | LR 3.352558e-05 | Loss 3.67489 | PPL 39.44
+Step  50650 | LR 3.339959e-05 | Loss 3.31765 | PPL 27.60
+Step  50700 | LR 3.327415e-05 | Loss 3.73351 | PPL 41.83
+Step  50750 | LR 3.314925e-05 | Loss 3.58296 | PPL 35.98
+Step  50800 | LR 3.302489e-05 | Loss 3.15130 | PPL 23.37
+Step  50850 | LR 3.290108e-05 | Loss 3.73859 | PPL 42.04
+Step  50900 | LR 3.277782e-05 | Loss 3.75195 | PPL 42.60
+Step  50950 | LR 3.265510e-05 | Loss 3.30431 | PPL 27.23
+Step  51000 | LR 3.253293e-05 | Loss 3.65866 | PPL 38.81
+Step  51050 | LR 3.241130e-05 | Loss 3.52253 | PPL 33.87
+WARNING: non-finite gradient at training step 51065. Skipping optimizer update and reducing AMP scale.
+Step  51100 | LR 3.229023e-05 | Loss 3.35438 | PPL 28.63
+Step  51150 | LR 3.216971e-05 | Loss 3.61248 | PPL 37.06
+Step  51200 | LR 3.204973e-05 | Loss 3.57585 | PPL 35.72
+Step  51250 | LR 3.193031e-05 | Loss 3.43443 | PPL 31.01
+Step  51300 | LR 3.181144e-05 | Loss 3.46791 | PPL 32.07
+Step  51350 | LR 3.169313e-05 | Loss 3.52646 | PPL 34.00
+Step  51400 | LR 3.157537e-05 | Loss 3.49897 | PPL 33.08
+Step  51450 | LR 3.145817e-05 | Loss 3.85850 | PPL 47.39
+Step  51500 | LR 3.134152e-05 | Loss 3.39748 | PPL 29.89
+Step  51550 | LR 3.122542e-05 | Loss 3.50813 | PPL 33.39
+Step  51600 | LR 3.110989e-05 | Loss 3.42297 | PPL 30.66
+Step  51650 | LR 3.099491e-05 | Loss 3.57597 | PPL 35.73
+Step  51700 | LR 3.088050e-05 | Loss 3.54266 | PPL 34.56
+Step  51750 | LR 3.076664e-05 | Loss 3.43965 | PPL 31.18
+Step  51800 | LR 3.065335e-05 | Loss 3.73767 | PPL 42.00
+Step  51850 | LR 3.054061e-05 | Loss 3.41079 | PPL 30.29
+Step  51900 | LR 3.042844e-05 | Loss 3.47389 | PPL 32.26
+Step  51950 | LR 3.031683e-05 | Loss 3.68329 | PPL 39.78
+Step  52000 | LR 3.020579e-05 | Loss 3.57085 | PPL 35.55
+Validation | Loss 3.85195 | PPL 47.08
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_052000.pt
+Step  52050 | LR 3.009531e-05 | Loss 3.85728 | PPL 47.34
+Step  52100 | LR 2.998540e-05 | Loss 3.31024 | PPL 27.39
+Step  52150 | LR 2.987605e-05 | Loss 3.54997 | PPL 34.81
+Step  52200 | LR 2.976727e-05 | Loss 3.61696 | PPL 37.22
+Step  52250 | LR 2.965906e-05 | Loss 3.52745 | PPL 34.04
+Step  52300 | LR 2.955142e-05 | Loss 3.60241 | PPL 36.69
+Step  52350 | LR 2.944435e-05 | Loss 3.55922 | PPL 35.14
+Step  52400 | LR 2.933784e-05 | Loss 3.53746 | PPL 34.38
+Step  52450 | LR 2.923191e-05 | Loss 3.42339 | PPL 30.67
+Step  52500 | LR 2.912655e-05 | Loss 3.56658 | PPL 35.40
+Step  52550 | LR 2.902177e-05 | Loss 3.45907 | PPL 31.79
+Step  52600 | LR 2.891755e-05 | Loss 3.46246 | PPL 31.90
+Step  52650 | LR 2.881391e-05 | Loss 3.75896 | PPL 42.90
+Step  52700 | LR 2.871085e-05 | Loss 3.40978 | PPL 30.26
+Step  52750 | LR 2.860836e-05 | Loss 3.61596 | PPL 37.19
+Step  52800 | LR 2.850644e-05 | Loss 3.46534 | PPL 31.99
+Step  52850 | LR 2.840511e-05 | Loss 3.60243 | PPL 36.69
+Step  52900 | LR 2.830435e-05 | Loss 3.48164 | PPL 32.51
+Step  52950 | LR 2.820417e-05 | Loss 3.65450 | PPL 38.65
+Step  53000 | LR 2.810457e-05 | Loss 3.31199 | PPL 27.44
+Step  53050 | LR 2.800555e-05 | Loss 3.41497 | PPL 30.42
+Step  53100 | LR 2.790710e-05 | Loss 3.59250 | PPL 36.32
+Step  53150 | LR 2.780924e-05 | Loss 3.53205 | PPL 34.19
+Step  53200 | LR 2.771197e-05 | Loss 3.48738 | PPL 32.70
+Step  53250 | LR 2.761527e-05 | Loss 3.33626 | PPL 28.11
+WARNING: non-finite gradient at training step 53293. Skipping optimizer update and reducing AMP scale.
+Step  53300 | LR 2.751916e-05 | Loss 3.53784 | PPL 34.39
+Step  53350 | LR 2.742363e-05 | Loss 3.87126 | PPL 48.00
+Step  53400 | LR 2.732869e-05 | Loss 3.63495 | PPL 37.90
+Step  53450 | LR 2.723433e-05 | Loss 3.81498 | PPL 45.38
+Step  53500 | LR 2.714056e-05 | Loss 3.24733 | PPL 25.72
+Step  53550 | LR 2.704737e-05 | Loss 3.57967 | PPL 35.86
+Step  53600 | LR 2.695477e-05 | Loss 3.39432 | PPL 29.79
+Step  53650 | LR 2.686276e-05 | Loss 3.48624 | PPL 32.66
+Step  53700 | LR 2.677134e-05 | Loss 3.43388 | PPL 31.00
+Step  53750 | LR 2.668051e-05 | Loss 3.62525 | PPL 37.53
+Step  53800 | LR 2.659026e-05 | Loss 3.76989 | PPL 43.38
+Step  53850 | LR 2.650061e-05 | Loss 3.53302 | PPL 34.23
+Step  53900 | LR 2.641155e-05 | Loss 3.56528 | PPL 35.35
+WARNING: non-finite gradient at training step 53943. Skipping optimizer update and reducing AMP scale.
+Step  53950 | LR 2.632308e-05 | Loss 3.60453 | PPL 36.76
+Step  54000 | LR 2.623520e-05 | Loss 3.37020 | PPL 29.08
+Validation | Loss 3.84324 | PPL 46.68
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_054000.pt
+Step  54050 | LR 2.614792e-05 | Loss 3.54472 | PPL 34.63
+Step  54100 | LR 2.606123e-05 | Loss 3.60615 | PPL 36.82
+Step  54150 | LR 2.597513e-05 | Loss 3.68998 | PPL 40.04
+Step  54200 | LR 2.588963e-05 | Loss 3.59228 | PPL 36.32
+Step  54250 | LR 2.580472e-05 | Loss 3.36746 | PPL 29.00
+Step  54300 | LR 2.572041e-05 | Loss 3.46248 | PPL 31.90
+Step  54350 | LR 2.563670e-05 | Loss 3.40019 | PPL 29.97
+Step  54400 | LR 2.555358e-05 | Loss 3.49292 | PPL 32.88
+Step  54450 | LR 2.547107e-05 | Loss 3.88315 | PPL 48.58
+Step  54500 | LR 2.538915e-05 | Loss 3.57591 | PPL 35.73
+Step  54550 | LR 2.530782e-05 | Loss 3.33770 | PPL 28.15
+Step  54600 | LR 2.522710e-05 | Loss 3.41357 | PPL 30.37
+Step  54650 | LR 2.514698e-05 | Loss 3.42425 | PPL 30.70
+Step  54700 | LR 2.506746e-05 | Loss 3.70496 | PPL 40.65
+Step  54750 | LR 2.498854e-05 | Loss 3.73341 | PPL 41.82
+Step  54800 | LR 2.491023e-05 | Loss 3.39998 | PPL 29.96
+Step  54850 | LR 2.483251e-05 | Loss 3.80315 | PPL 44.84
+Step  54900 | LR 2.475540e-05 | Loss 3.57127 | PPL 35.56
+Step  54950 | LR 2.467889e-05 | Loss 3.59631 | PPL 36.46
+Step  55000 | LR 2.460299e-05 | Loss 3.40626 | PPL 30.15
+Step  55050 | LR 2.452769e-05 | Loss 3.30843 | PPL 27.34
+Step  55100 | LR 2.445299e-05 | Loss 3.69472 | PPL 40.23
+Step  55150 | LR 2.437890e-05 | Loss 3.38419 | PPL 29.49
+Step  55200 | LR 2.430542e-05 | Loss 3.72854 | PPL 41.62
+Step  55250 | LR 2.423254e-05 | Loss 3.97972 | PPL 53.50
+Step  55300 | LR 2.416028e-05 | Loss 3.67017 | PPL 39.26
+Step  55350 | LR 2.408861e-05 | Loss 3.74468 | PPL 42.30
+Step  55400 | LR 2.401756e-05 | Loss 3.66708 | PPL 39.14
+Step  55450 | LR 2.394712e-05 | Loss 3.73449 | PPL 41.87
+Step  55500 | LR 2.387728e-05 | Loss 3.33498 | PPL 28.08
+Step  55550 | LR 2.380806e-05 | Loss 3.63967 | PPL 38.08
+Step  55600 | LR 2.373944e-05 | Loss 3.51423 | PPL 33.59
+Step  55650 | LR 2.367144e-05 | Loss 3.56236 | PPL 35.25
+Step  55700 | LR 2.360404e-05 | Loss 3.51910 | PPL 33.75
+Step  55750 | LR 2.353726e-05 | Loss 3.70511 | PPL 40.65
+Step  55800 | LR 2.347109e-05 | Loss 3.74001 | PPL 42.10
+Step  55850 | LR 2.340553e-05 | Loss 3.48011 | PPL 32.46
+Step  55900 | LR 2.334059e-05 | Loss 3.71020 | PPL 40.86
+Step  55950 | LR 2.327626e-05 | Loss 3.78272 | PPL 43.94
+Step  56000 | LR 2.321254e-05 | Loss 3.35147 | PPL 28.54
+Validation | Loss 3.83581 | PPL 46.33
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_056000.pt
+Step  56050 | LR 2.314944e-05 | Loss 3.53107 | PPL 34.16
+Step  56100 | LR 2.308695e-05 | Loss 3.82942 | PPL 46.04
+Step  56150 | LR 2.302508e-05 | Loss 3.50537 | PPL 33.29
+Step  56200 | LR 2.296383e-05 | Loss 3.55099 | PPL 34.85
+Step  56250 | LR 2.290319e-05 | Loss 3.73904 | PPL 42.06
+Step  56300 | LR 2.284316e-05 | Loss 3.49024 | PPL 32.79
+Step  56350 | LR 2.278376e-05 | Loss 3.88724 | PPL 48.78
+Step  56400 | LR 2.272497e-05 | Loss 3.65140 | PPL 38.53
+WARNING: non-finite gradient at training step 56448. Skipping optimizer update and reducing AMP scale.
+Step  56450 | LR 2.266680e-05 | Loss 3.55815 | PPL 35.10
+Step  56500 | LR 2.260924e-05 | Loss 3.43285 | PPL 30.96
+Step  56550 | LR 2.255231e-05 | Loss 3.52831 | PPL 34.07
+Step  56600 | LR 2.249600e-05 | Loss 3.82303 | PPL 45.74
+Step  56650 | LR 2.244030e-05 | Loss 3.52231 | PPL 33.86
+Step  56700 | LR 2.238522e-05 | Loss 3.42221 | PPL 30.64
+Step  56750 | LR 2.233077e-05 | Loss 3.67849 | PPL 39.59
+Step  56800 | LR 2.227693e-05 | Loss 3.58073 | PPL 35.90
+Step  56850 | LR 2.222372e-05 | Loss 3.45190 | PPL 31.56
+Step  56900 | LR 2.217113e-05 | Loss 3.48321 | PPL 32.56
+Step  56950 | LR 2.211916e-05 | Loss 3.55237 | PPL 34.90
+Step  57000 | LR 2.206781e-05 | Loss 3.44704 | PPL 31.41
+Step  57050 | LR 2.201708e-05 | Loss 3.53408 | PPL 34.26
+Step  57100 | LR 2.196698e-05 | Loss 3.82293 | PPL 45.74
+Step  57150 | LR 2.191750e-05 | Loss 3.69079 | PPL 40.08
+Step  57200 | LR 2.186865e-05 | Loss 3.64845 | PPL 38.42
+Step  57250 | LR 2.182041e-05 | Loss 3.60463 | PPL 36.77
+Step  57300 | LR 2.177281e-05 | Loss 3.61453 | PPL 37.13
+Step  57350 | LR 2.172582e-05 | Loss 3.39041 | PPL 29.68
+Step  57400 | LR 2.167946e-05 | Loss 3.54926 | PPL 34.79
+Step  57450 | LR 2.163373e-05 | Loss 3.50062 | PPL 33.14
+Step  57500 | LR 2.158862e-05 | Loss 3.75207 | PPL 42.61
+Step  57550 | LR 2.154414e-05 | Loss 3.74200 | PPL 42.18
+Step  57600 | LR 2.150029e-05 | Loss 3.41371 | PPL 30.38
+Step  57650 | LR 2.145706e-05 | Loss 3.54836 | PPL 34.76
+Step  57700 | LR 2.141446e-05 | Loss 3.49154 | PPL 32.84
+Step  57750 | LR 2.137248e-05 | Loss 3.40507 | PPL 30.12
+Step  57800 | LR 2.133113e-05 | Loss 3.54192 | PPL 34.53
+Step  57850 | LR 2.129041e-05 | Loss 3.48385 | PPL 32.58
+Step  57900 | LR 2.125032e-05 | Loss 3.55938 | PPL 35.14
+Step  57950 | LR 2.121086e-05 | Loss 3.39043 | PPL 29.68
+Step  58000 | LR 2.117203e-05 | Loss 3.58936 | PPL 36.21
+Validation | Loss 3.83472 | PPL 46.28
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_058000.pt
+Step  58050 | LR 2.113382e-05 | Loss 3.43438 | PPL 31.01
+Step  58100 | LR 2.109624e-05 | Loss 3.64815 | PPL 38.40
+Step  58150 | LR 2.105930e-05 | Loss 3.65911 | PPL 38.83
+Step  58200 | LR 2.102298e-05 | Loss 3.39644 | PPL 29.86
+Step  58250 | LR 2.098729e-05 | Loss 3.59234 | PPL 36.32
+Step  58300 | LR 2.095223e-05 | Loss 3.59173 | PPL 36.30
+Step  58350 | LR 2.091781e-05 | Loss 3.59626 | PPL 36.46
+Step  58400 | LR 2.088401e-05 | Loss 3.50453 | PPL 33.27
+Step  58450 | LR 2.085084e-05 | Loss 3.53176 | PPL 34.18
+Step  58500 | LR 2.081831e-05 | Loss 3.66104 | PPL 38.90
+Step  58550 | LR 2.078641e-05 | Loss 3.53899 | PPL 34.43
+Step  58600 | LR 2.075514e-05 | Loss 3.67209 | PPL 39.33
+Step  58650 | LR 2.072450e-05 | Loss 3.64141 | PPL 38.15
+Step  58700 | LR 2.069449e-05 | Loss 3.49929 | PPL 33.09
+Step  58750 | LR 2.066511e-05 | Loss 3.55115 | PPL 34.85
+Step  58800 | LR 2.063637e-05 | Loss 3.22257 | PPL 25.09
+Step  58850 | LR 2.060826e-05 | Loss 3.47165 | PPL 32.19
+Step  58900 | LR 2.058078e-05 | Loss 3.52480 | PPL 33.95
+Step  58950 | LR 2.055394e-05 | Loss 3.28559 | PPL 26.72
+Step  59000 | LR 2.052773e-05 | Loss 3.56470 | PPL 35.33
+Step  59050 | LR 2.050215e-05 | Loss 3.58292 | PPL 35.98
+Step  59100 | LR 2.047720e-05 | Loss 3.58597 | PPL 36.09
+Step  59150 | LR 2.045289e-05 | Loss 3.53482 | PPL 34.29
+Step  59200 | LR 2.042922e-05 | Loss 3.72119 | PPL 41.31
+Step  59250 | LR 2.040618e-05 | Loss 3.51691 | PPL 33.68
+Step  59300 | LR 2.038377e-05 | Loss 3.97763 | PPL 53.39
+Step  59350 | LR 2.036199e-05 | Loss 3.92472 | PPL 50.64
+Step  59400 | LR 2.034086e-05 | Loss 3.42973 | PPL 30.87
+Step  59450 | LR 2.032035e-05 | Loss 3.62998 | PPL 37.71
+Step  59500 | LR 2.030048e-05 | Loss 3.55016 | PPL 34.82
+Step  59550 | LR 2.028125e-05 | Loss 3.22178 | PPL 25.07
+Step  59600 | LR 2.026265e-05 | Loss 3.58376 | PPL 36.01
+Step  59650 | LR 2.024469e-05 | Loss 3.49651 | PPL 33.00
+Step  59700 | LR 2.022736e-05 | Loss 3.51564 | PPL 33.64
+Step  59750 | LR 2.021066e-05 | Loss 3.74104 | PPL 42.14
+Step  59800 | LR 2.019461e-05 | Loss 3.54936 | PPL 34.79
+Step  59850 | LR 2.017919e-05 | Loss 3.70628 | PPL 40.70
+Step  59900 | LR 2.016440e-05 | Loss 3.42559 | PPL 30.74
+Step  59950 | LR 2.015025e-05 | Loss 3.34446 | PPL 28.35
+Step  60000 | LR 2.013674e-05 | Loss 3.61634 | PPL 37.20
+Validation | Loss 3.83196 | PPL 46.15
+Checkpoint saved: /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/step_060000.pt
+Step  60050 | LR 2.012386e-05 | Loss 3.62347 | PPL 37.47
+Step  60100 | LR 2.011162e-05 | Loss 3.38009 | PPL 29.37
+Step  60150 | LR 2.010002e-05 | Loss 3.61665 | PPL 37.21
+Step  60200 | LR 2.008905e-05 | Loss 3.38332 | PPL 29.47
+Step  60250 | LR 2.007872e-05 | Loss 3.48006 | PPL 32.46
+Step  60300 | LR 2.006902e-05 | Loss 3.56022 | PPL 35.17
+Step  60350 | LR 2.005996e-05 | Loss 3.51711 | PPL 33.69
+Step  60400 | LR 2.005154e-05 | Loss 3.71268 | PPL 40.96
+Step  60450 | LR 2.004376e-05 | Loss 3.36240 | PPL 28.86
+Step  60500 | LR 2.003661e-05 | Loss 3.56303 | PPL 35.27
+WARNING: non-finite gradient at training step 60530. Skipping optimizer update and reducing AMP scale.
+Step  60550 | LR 2.003010e-05 | Loss 3.55311 | PPL 34.92
+Step  60600 | LR 2.002422e-05 | Loss 3.86850 | PPL 47.87
+Step  60650 | LR 2.001899e-05 | Loss 3.57289 | PPL 35.62
+Step  60700 | LR 2.001439e-05 | Loss 3.44792 | PPL 31.43
+Step  60750 | LR 2.001042e-05 | Loss 3.50431 | PPL 33.26
+Step  60800 | LR 2.000710e-05 | Loss 3.51578 | PPL 33.64
+Step  60850 | LR 2.000441e-05 | Loss 3.37442 | PPL 29.21
+Step  60900 | LR 2.000236e-05 | Loss 3.61504 | PPL 37.15
+Step  60950 | LR 2.000094e-05 | Loss 3.57739 | PPL 35.78
+Step  61000 | LR 2.000017e-05 | Loss 3.55246 | PPL 34.90
+
+Final validation loss : 3.83403
+Final validation PPL  : 46.25
+Final checkpoint      : /content/drive/MyDrive/LMA_IP/Nepali/checkpoints/final.pt
+
+================================================================================
+NEPALI PRETRAINING COMPLETE
+================================================================================

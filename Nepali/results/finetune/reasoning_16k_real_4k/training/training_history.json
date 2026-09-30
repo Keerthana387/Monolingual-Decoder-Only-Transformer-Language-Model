@@ -1,0 +1,61 @@
+{
+  "run": "reasoning_16k_real_4k",
+  "config": {
+    "phase": "phase3_reasoning_finetuning",
+    "language": "Nepali",
+    "base_pretrained_checkpoint": "/content/drive/MyDrive/LMA_IP/Nepali/checkpoints/final.pt",
+    "tokenizer": "/content/drive/MyDrive/LMA_IP/Nepali/data/tokenizer/nepali_bpe_8000.json",
+    "data_dir": "/content/drive/MyDrive/LMA_IP/Nepali/finetune/mixed_data_size/reasoning_16k_real_4k/data",
+    "output_dir": "/content/drive/MyDrive/LMA_IP/Nepali/finetune/mixed_data_size/reasoning_16k_real_4k",
+    "vocab_size": 8000,
+    "max_seq_len": 512,
+    "batch_size": 16,
+    "max_steps": 1250,
+    "learning_rate": 5e-05,
+    "weight_decay": 0.01,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "grad_clip": 1.0,
+    "warmup_steps": 100,
+    "min_learning_rate_ratio": 0.1,
+    "log_every": 50,
+    "eval_every": 250,
+    "checkpoint_every": 250,
+    "validation_steps": 100,
+    "seed": 42,
+    "loss_masking": "answer_tokens_and_eos_only",
+    "scheduler": {
+      "type": "warmup_cosine_manual",
+      "warmup_steps": 100,
+      "min_learning_rate_ratio": 0.1
+    }
+  },
+  "checkpoints": [
+    {
+      "step": 250,
+      "loss": 0.566092848777771,
+      "validation_loss": 0.07176613688468933
+    },
+    {
+      "step": 500,
+      "loss": 0.27390575408935547,
+      "validation_loss": 0.028067146399989723
+    },
+    {
+      "step": 750,
+      "loss": 0.33379095792770386,
+      "validation_loss": 0.025450300648808478
+    },
+    {
+      "step": 1000,
+      "loss": 0.5312620401382446,
+      "validation_loss": 0.023889745296910406
+    },
+    {
+      "step": 1250,
+      "loss": 0.2292681783437729,
+      "validation_loss": 0.022723736213520168
+    }
+  ],
+  "note": "Training/validation losses are read from the saved resumable checkpoints. Learning rate is reconstructed from the exact manual warmup+cosine schedule in the config."
+}

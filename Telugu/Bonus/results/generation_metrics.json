@@ -1,0 +1,50 @@
+{
+  "language": "Telugu",
+  "phase": 2,
+  "metric_definitions": {
+    "bleu": "SacreBLEU corpus BLEU-4",
+    "chrf": "SacreBLEU chrF++",
+    "rouge_l": "Token-level average F1 based on LCS",
+    "repetition": "Fraction of repeated 3-grams",
+    "distinct_1": "Unique unigrams / all unigrams",
+    "distinct_2": "Unique bigrams / all bigrams"
+  },
+  "results": {
+    "greedy": {
+      "num_samples": 100,
+      "bleu_4": 8.65872850251834,
+      "chrf_plus_plus": 23.157174593573174,
+      "rouge_l": 0.14106453608979314,
+      "repetition_rate_3gram": 0.5580688723835247,
+      "distinct_1": 0.2881087919038583,
+      "distinct_2": 0.39157413455258
+    },
+    "temperature_0.5": {
+      "num_samples": 100,
+      "bleu_4": 7.502363625126207,
+      "chrf_plus_plus": 23.523156925468918,
+      "rouge_l": 0.1330802701934481,
+      "repetition_rate_3gram": 0.2641843971631206,
+      "distinct_1": 0.4163630341172574,
+      "distinct_2": 0.6337786913326482
+    },
+    "temperature_1.0": {
+      "num_samples": 100,
+      "bleu_4": 4.781914951709623,
+      "chrf_plus_plus": 22.495646714853336,
+      "rouge_l": 0.08876364906327669,
+      "repetition_rate_3gram": 0.01569916027747353,
+      "distinct_1": 0.7315413405920381,
+      "distinct_2": 0.960901725959845
+    },
+    "temperature_1.5": {
+      "num_samples": 100,
+      "bleu_4": 0.5539969911067018,
+      "chrf_plus_plus": 17.221857902039083,
+      "rouge_l": 0.02521507993959676,
+      "repetition_rate_3gram": 0.0,
+      "distinct_1": 0.8109332527937179,
+      "distinct_2": 0.9984428526938648
+    }
+  }
+}

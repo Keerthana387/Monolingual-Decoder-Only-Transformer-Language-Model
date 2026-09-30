@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "run": "reasoning_2k_real_18k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 1.6589362621307373,
+      "final_training_ppl": 5.2537192908363535,
+      "final_validation_loss": 0.06017970472574234,
+      "final_validation_ppl": 1.0620273807371292
+    },
+    {
+      "run": "reasoning_5k_real_15k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 1.2650337219238281,
+      "final_training_ppl": 3.5432122180269134,
+      "final_validation_loss": 0.037557681109756234,
+      "final_validation_ppl": 1.0382718840291352
+    },
+    {
+      "run": "reasoning_8k_real_12k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 1.2287278175354004,
+      "final_training_ppl": 3.4168798754340113,
+      "final_validation_loss": 0.03105991456657648,
+      "final_validation_ppl": 1.0315473067448453
+    },
+    {
+      "run": "reasoning_12k_real_8k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 0.44353604316711426,
+      "final_training_ppl": 1.5582073769296976,
+      "final_validation_loss": 0.02642964443191886,
+      "final_validation_ppl": 1.0267820048891358
+    },
+    {
+      "run": "reasoning_16k_real_4k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 0.2292681783437729,
+      "final_training_ppl": 1.2576792761332423,
+      "final_validation_loss": 0.022723736213520168,
+      "final_validation_ppl": 1.0229838871035388
+    },
+    {
+      "run": "reasoning_20k_real_0k",
+      "max_steps": 1250,
+      "batch_size": 16,
+      "learning_rate": 5e-05,
+      "warmup_steps": 100,
+      "final_step": 1250,
+      "final_training_loss": 0.01583746261894703,
+      "final_training_ppl": 1.0159635399322762,
+      "final_validation_loss": 0.01625429636798799,
+      "final_validation_ppl": 1.0163871160978024
+    }
+  ]
+}

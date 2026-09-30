@@ -1,0 +1,10 @@
+{
+  "language": "Telugu",
+  "phase": 2,
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt",
+  "document_index": 0,
+  "sequence_length": 64,
+  "layers": 10,
+  "heads": 8,
+  "example_text": "అభిమానుల ఆధార్ నెంబర్లు తీసుకుని, వాటిని ఎంట్రీ వేసుకుని, మళ్లీ ఆడిటోరియం దగ్గర రిజిస్టర్ లో పేరు, ఆధార్ నెంబరు, వచ్చినది ఆ వ్యక్తేనా కాదా అన్నది వేలి ముద్ర సాయంతో వెరిఫై చేసుకుని లోపలకు పంపించే పని చేస్తే ఎలా వుంటుందా అని డిస్క"
+}

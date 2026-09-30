@@ -1,0 +1,243 @@
+{
+  "language": "Nepali",
+  "source_directory": "/home/keerthana/Desktop/Classwork/4-1/Language Models and Agents/Individual Project/individual-project-Keerthana387/Nepali/data/tokenized",
+  "input_tokens_before_split": 636582387,
+  "train_tokens": 500000000,
+  "validation_tokens": 10000000,
+  "test_tokens": 10000000,
+  "unused_tokens": 116582387,
+  "dtype": "uint16",
+  "bytes_per_token": 2,
+  "train_shard_size": 10000000,
+  "split_method": "strict sequential token-stream split",
+  "overlap": false,
+  "train_range": {
+    "start": 0,
+    "end_exclusive": 500000000,
+    "tokens": 500000000
+  },
+  "validation_range": {
+    "start": 500000000,
+    "end_exclusive": 510000000,
+    "tokens": 10000000
+  },
+  "test_range": {
+    "start": 510000000,
+    "end_exclusive": 520000000,
+    "tokens": 10000000
+  },
+  "train_shards": [
+    {
+      "file": "train_000.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_001.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_002.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_003.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_004.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_005.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_006.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_007.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_008.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_009.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_010.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_011.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_012.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_013.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_014.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_015.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_016.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_017.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_018.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_019.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_020.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_021.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_022.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_023.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_024.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_025.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_026.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_027.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_028.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_029.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_030.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_031.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_032.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_033.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_034.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_035.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_036.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_037.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_038.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_039.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_040.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_041.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_042.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_043.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_044.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_045.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_046.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_047.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_048.bin",
+      "tokens": 10000000
+    },
+    {
+      "file": "train_049.bin",
+      "tokens": 10000000
+    }
+  ],
+  "validation_shards": [
+    {
+      "file": "val_000.bin",
+      "tokens": 10000000
+    }
+  ],
+  "test_shards": [
+    {
+      "file": "test_000.bin",
+      "tokens": 10000000
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+difficulty,n,pretrained_correct,pretrained_accuracy_percent,finetuned_correct,finetuned_accuracy_percent,improvement_percentage_points,newly_correct,regressed
+easy,962,0,0.0,628,65.28066528066527,65.28066528066527,628,0
+hard,1479,0,0.0,309,20.892494929006084,20.892494929006084,309,0
+medium,559,0,0.0,157,28.08586762075134,28.08586762075134,157,0

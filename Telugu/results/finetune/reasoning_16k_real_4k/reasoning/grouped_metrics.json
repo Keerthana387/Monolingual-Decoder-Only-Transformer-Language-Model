@@ -1,0 +1,208 @@
+{
+  "task_type": [
+    {
+      "task_type": "direct_comparison",
+      "n": 458,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 167,
+      "finetuned_accuracy_percent": 36.46288209606987,
+      "improvement_percentage_points": 36.46288209606987,
+      "newly_correct": 167,
+      "regressed": 0
+    },
+    {
+      "task_type": "distractor_reasoning",
+      "n": 222,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 37,
+      "finetuned_accuracy_percent": 16.666666666666668,
+      "improvement_percentage_points": 16.666666666666668,
+      "newly_correct": 37,
+      "regressed": 0
+    },
+    {
+      "task_type": "equality",
+      "n": 240,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 231,
+      "finetuned_accuracy_percent": 96.25,
+      "improvement_percentage_points": 96.25,
+      "newly_correct": 231,
+      "regressed": 0
+    },
+    {
+      "task_type": "mixed_transitive",
+      "n": 284,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 68,
+      "finetuned_accuracy_percent": 23.943661971830984,
+      "improvement_percentage_points": 23.943661971830984,
+      "newly_correct": 68,
+      "regressed": 0
+    },
+    {
+      "task_type": "ordering",
+      "n": 414,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 96,
+      "finetuned_accuracy_percent": 23.18840579710145,
+      "improvement_percentage_points": 23.18840579710145,
+      "newly_correct": 96,
+      "regressed": 0
+    },
+    {
+      "task_type": "reverse_comparison",
+      "n": 264,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 230,
+      "finetuned_accuracy_percent": 87.12121212121212,
+      "improvement_percentage_points": 87.12121212121212,
+      "newly_correct": 230,
+      "regressed": 0
+    },
+    {
+      "task_type": "transitive_2",
+      "n": 559,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 157,
+      "finetuned_accuracy_percent": 28.08586762075134,
+      "improvement_percentage_points": 28.08586762075134,
+      "newly_correct": 157,
+      "regressed": 0
+    },
+    {
+      "task_type": "transitive_3",
+      "n": 559,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 108,
+      "finetuned_accuracy_percent": 19.32021466905188,
+      "improvement_percentage_points": 19.32021466905188,
+      "newly_correct": 108,
+      "regressed": 0
+    }
+  ],
+  "difficulty": [
+    {
+      "difficulty": "easy",
+      "n": 962,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 628,
+      "finetuned_accuracy_percent": 65.28066528066527,
+      "improvement_percentage_points": 65.28066528066527,
+      "newly_correct": 628,
+      "regressed": 0
+    },
+    {
+      "difficulty": "hard",
+      "n": 1479,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 309,
+      "finetuned_accuracy_percent": 20.892494929006084,
+      "improvement_percentage_points": 20.892494929006084,
+      "newly_correct": 309,
+      "regressed": 0
+    },
+    {
+      "difficulty": "medium",
+      "n": 559,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 157,
+      "finetuned_accuracy_percent": 28.08586762075134,
+      "improvement_percentage_points": 28.08586762075134,
+      "newly_correct": 157,
+      "regressed": 0
+    }
+  ],
+  "attribute": [
+    {
+      "attribute": "age",
+      "n": 529,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 198,
+      "finetuned_accuracy_percent": 37.42911153119093,
+      "improvement_percentage_points": 37.42911153119093,
+      "newly_correct": 198,
+      "regressed": 0
+    },
+    {
+      "attribute": "height",
+      "n": 485,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 203,
+      "finetuned_accuracy_percent": 41.855670103092784,
+      "improvement_percentage_points": 41.855670103092784,
+      "newly_correct": 203,
+      "regressed": 0
+    },
+    {
+      "attribute": "price",
+      "n": 722,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 241,
+      "finetuned_accuracy_percent": 33.37950138504155,
+      "improvement_percentage_points": 33.37950138504155,
+      "newly_correct": 241,
+      "regressed": 0
+    },
+    {
+      "attribute": "quantity",
+      "n": 778,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 253,
+      "finetuned_accuracy_percent": 32.51928020565553,
+      "improvement_percentage_points": 32.51928020565553,
+      "newly_correct": 253,
+      "regressed": 0
+    },
+    {
+      "attribute": "weight",
+      "n": 486,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 199,
+      "finetuned_accuracy_percent": 40.946502057613166,
+      "improvement_percentage_points": 40.946502057613166,
+      "newly_correct": 199,
+      "regressed": 0
+    }
+  ],
+  "entity_type": [
+    {
+      "entity_type": "object",
+      "n": 1500,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 494,
+      "finetuned_accuracy_percent": 32.93333333333333,
+      "improvement_percentage_points": 32.93333333333333,
+      "newly_correct": 494,
+      "regressed": 0
+    },
+    {
+      "entity_type": "person",
+      "n": 1500,
+      "pretrained_correct": 0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_correct": 600,
+      "finetuned_accuracy_percent": 40.0,
+      "improvement_percentage_points": 40.0,
+      "newly_correct": 600,
+      "regressed": 0
+    }
+  ]
+}

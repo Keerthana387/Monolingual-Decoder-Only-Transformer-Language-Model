@@ -1,0 +1,10 @@
+{
+  "language": "Nepali",
+  "phase": 2,
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Nepali/checkpoints/final.pt",
+  "document_index": 0,
+  "sequence_length": 64,
+  "layers": 11,
+  "heads": 8,
+  "example_text": "ब झा ङको छ बि स पा थि भे रा गाउँपालिका मा संचालन भएको बा न् नि की चैत ली मेला लाई लकडा उनले छो एको छैन । कोरोना संक्रमण न होस् भनेर सरकारले घर बाहिर न निस्क न र भिड न गर्न आग्रह गरे पनि मे लामा सय ौं सहभागी भएका छन् । भारत बाट घर फर् केका हरु समेत मे लामा सहभागी"
+}

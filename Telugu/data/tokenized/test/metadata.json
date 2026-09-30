@@ -1,0 +1,19 @@
+{
+  "input_file": "Telugu/telugu_test.jsonl",
+  "tokenizer": "Telugu/telugu_bpe_6000.model",
+  "vocab_size": 6000,
+  "sequence_length": 512,
+  "block_size": 513,
+  "documents": 10000,
+  "characters": 10124204,
+  "tokens": 2830330,
+  "unknown_tokens": 0,
+  "unk_rate_percent": 0.0,
+  "usable_tokens": 2830221,
+  "discarded_tokens": 109,
+  "samples": 5517,
+  "num_shards": 1,
+  "shard_token_counts": [
+    2830330
+  ]
+}

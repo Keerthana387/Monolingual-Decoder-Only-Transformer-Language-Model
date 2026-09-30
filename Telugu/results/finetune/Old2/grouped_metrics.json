@@ -1,0 +1,221 @@
+{
+  "language": "Telugu",
+  "n_test": 3000,
+  "pretrained": {
+    "exact_match_accuracy": 0.0,
+    "mean_answer_token_accuracy": 0.024333333333333332
+  },
+  "finetuned": {
+    "exact_match_accuracy": 0.49033333333333334,
+    "mean_answer_token_accuracy": 0.49433333333333335
+  },
+  "absolute_accuracy_improvement": 0.49033333333333334,
+  "paired_outcomes": {
+    "both_wrong": 1529,
+    "finetuned_only": 1471
+  },
+  "by_task_type": {
+    "pretrained": {
+      "direct_comparison": {
+        "n": 458,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.07314410480349345
+      },
+      "distractor_reasoning": {
+        "n": 222,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.0045045045045045045
+      },
+      "equality": {
+        "n": 240,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.0
+      },
+      "mixed_transitive": {
+        "n": 284,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.00528169014084507
+      },
+      "ordering": {
+        "n": 414,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.01932367149758454
+      },
+      "reverse_comparison": {
+        "n": 264,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.022727272727272728
+      },
+      "transitive_2": {
+        "n": 559,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.025044722719141325
+      },
+      "transitive_3": {
+        "n": 559,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.016100178890876567
+      }
+    },
+    "finetuned": {
+      "direct_comparison": {
+        "n": 458,
+        "accuracy": 0.5218340611353712,
+        "answer_token_accuracy": 0.5294759825327511
+      },
+      "distractor_reasoning": {
+        "n": 222,
+        "accuracy": 0.2927927927927928,
+        "answer_token_accuracy": 0.29954954954954954
+      },
+      "equality": {
+        "n": 240,
+        "accuracy": 1.0,
+        "answer_token_accuracy": 1.0
+      },
+      "mixed_transitive": {
+        "n": 284,
+        "accuracy": 0.3591549295774648,
+        "answer_token_accuracy": 0.3609154929577465
+      },
+      "ordering": {
+        "n": 414,
+        "accuracy": 0.35990338164251207,
+        "answer_token_accuracy": 0.3635265700483092
+      },
+      "reverse_comparison": {
+        "n": 264,
+        "accuracy": 0.9621212121212122,
+        "answer_token_accuracy": 0.9659090909090909
+      },
+      "transitive_2": {
+        "n": 559,
+        "accuracy": 0.6082289803220036,
+        "answer_token_accuracy": 0.6144901610017889
+      },
+      "transitive_3": {
+        "n": 559,
+        "accuracy": 0.14669051878354203,
+        "answer_token_accuracy": 0.1475849731663685
+      }
+    }
+  },
+  "by_difficulty": {
+    "pretrained": {
+      "easy": {
+        "n": 962,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.04106029106029106
+      },
+      "hard": {
+        "n": 1479,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.013184584178498986
+      },
+      "medium": {
+        "n": 559,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.025044722719141325
+      }
+    },
+    "finetuned": {
+      "easy": {
+        "n": 962,
+        "accuracy": 0.761954261954262,
+        "answer_token_accuracy": 0.7666320166320166
+      },
+      "hard": {
+        "n": 1479,
+        "accuracy": 0.2691007437457742,
+        "answer_token_accuracy": 0.2718052738336714
+      },
+      "medium": {
+        "n": 559,
+        "accuracy": 0.6082289803220036,
+        "answer_token_accuracy": 0.6144901610017889
+      }
+    }
+  },
+  "by_attribute": {
+    "pretrained": {
+      "age": {
+        "n": 529,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.023629489603024575
+      },
+      "height": {
+        "n": 485,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.012371134020618556
+      },
+      "price": {
+        "n": 722,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.04293628808864266
+      },
+      "quantity": {
+        "n": 778,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.017994858611825194
+      },
+      "weight": {
+        "n": 486,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.01954732510288066
+      }
+    },
+    "finetuned": {
+      "age": {
+        "n": 529,
+        "accuracy": 0.4877126654064272,
+        "answer_token_accuracy": 0.4896030245746692
+      },
+      "height": {
+        "n": 485,
+        "accuracy": 0.5237113402061856,
+        "answer_token_accuracy": 0.5237113402061856
+      },
+      "price": {
+        "n": 722,
+        "accuracy": 0.4778393351800554,
+        "answer_token_accuracy": 0.4840720221606648
+      },
+      "quantity": {
+        "n": 778,
+        "accuracy": 0.45629820051413883,
+        "answer_token_accuracy": 0.4646529562982005
+      },
+      "weight": {
+        "n": 486,
+        "accuracy": 0.5329218106995884,
+        "answer_token_accuracy": 0.5329218106995884
+      }
+    }
+  },
+  "by_entity_type": {
+    "pretrained": {
+      "object": {
+        "n": 1500,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.03
+      },
+      "person": {
+        "n": 1500,
+        "accuracy": 0.0,
+        "answer_token_accuracy": 0.018666666666666668
+      }
+    },
+    "finetuned": {
+      "object": {
+        "n": 1500,
+        "accuracy": 0.4666666666666667,
+        "answer_token_accuracy": 0.474
+      },
+      "person": {
+        "n": 1500,
+        "accuracy": 0.514,
+        "answer_token_accuracy": 0.5146666666666667
+      }
+    }
+  }
+}

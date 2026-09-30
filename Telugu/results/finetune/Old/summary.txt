@@ -1,0 +1,16 @@
+Telugu Phase 3 Reasoning Evaluation
+====================================
+
+Test examples: 3,000
+
+Pretrained exact-match: 0.0000
+Fine-tuned exact-match: 0.5407
+Absolute improvement: +0.5407
+
+Pretrained token accuracy: 0.0315
+Fine-tuned token accuracy: 0.5460
+
+Both correct: 0
+Fine-tuned only: 1622
+Pretrained only: 0
+Both wrong: 1378

@@ -1,0 +1,113 @@
+{
+  "experiment": {
+    "language": "Nepali",
+    "total_training_examples_per_run": 20000,
+    "same_pretrained_checkpoint": "/content/drive/MyDrive/LMA_IP/Nepali/checkpoints/final.pt",
+    "same_held_out_test_set": "/content/drive/MyDrive/LMA_IP/Nepali/reasoning/data/test.jsonl",
+    "tokenizer": "/content/drive/MyDrive/LMA_IP/Nepali/data/tokenizer/nepali_bpe_8000.json",
+    "seed": 42,
+    "reasoning_sizes": [
+      2000,
+      5000,
+      8000,
+      12000,
+      16000,
+      20000
+    ],
+    "real_sizes": [
+      18000,
+      15000,
+      12000,
+      8000,
+      4000,
+      0
+    ],
+    "note": "Reasoning fraction is fraction of training examples, not fraction of target tokens. Real pretraining examples are longer than synthetic reasoning examples."
+  },
+  "runs": [
+    {
+      "run": "reasoning_2k_real_18k",
+      "reasoning_examples": 2000,
+      "real_examples": 18000,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 0.1,
+      "real_fraction_of_examples": 0.9,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 2.533333333333333,
+      "absolute_improvement_pp": 2.533333333333333,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 27.036997354497355,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_2k_real_18k/reasoning/metrics.json"
+    },
+    {
+      "run": "reasoning_5k_real_15k",
+      "reasoning_examples": 5000,
+      "real_examples": 15000,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 0.25,
+      "real_fraction_of_examples": 0.75,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 5.666666666666666,
+      "absolute_improvement_pp": 5.666666666666666,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 32.26574074074074,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_5k_real_15k/reasoning/metrics.json"
+    },
+    {
+      "run": "reasoning_8k_real_12k",
+      "reasoning_examples": 8000,
+      "real_examples": 12000,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 0.4,
+      "real_fraction_of_examples": 0.6,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 11.066666666666666,
+      "absolute_improvement_pp": 11.066666666666666,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 38.329537037037035,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_8k_real_12k/reasoning/metrics.json"
+    },
+    {
+      "run": "reasoning_12k_real_8k",
+      "reasoning_examples": 12000,
+      "real_examples": 8000,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 0.6,
+      "real_fraction_of_examples": 0.4,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 14.6,
+      "absolute_improvement_pp": 14.6,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 43.43055555555556,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_12k_real_8k/reasoning/metrics.json"
+    },
+    {
+      "run": "reasoning_16k_real_4k",
+      "reasoning_examples": 16000,
+      "real_examples": 4000,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 0.8,
+      "real_fraction_of_examples": 0.2,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 15.1,
+      "absolute_improvement_pp": 15.1,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 46.28,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_16k_real_4k/reasoning/metrics.json"
+    },
+    {
+      "run": "reasoning_20k_real_0k",
+      "reasoning_examples": 20000,
+      "real_examples": 0,
+      "total_training_examples": 20000,
+      "reasoning_fraction_of_examples": 1.0,
+      "real_fraction_of_examples": 0.0,
+      "pretrained_accuracy_percent": 0.0,
+      "finetuned_accuracy_percent": 13.900000000000002,
+      "absolute_improvement_pp": 13.900000000000002,
+      "pretrained_token_accuracy_percent": 1.7177083333333332,
+      "finetuned_token_accuracy_percent": 43.87833333333333,
+      "metrics_file": "/content/drive/MyDrive/LMA_IP/Nepali/results/finetune/reasoning_20k_real_0k/reasoning/metrics.json"
+    }
+  ]
+}

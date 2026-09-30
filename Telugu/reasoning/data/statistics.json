@@ -1,0 +1,424 @@
+{
+  "dataset": {
+    "language": "te",
+    "language_name": "Telugu",
+    "seed": 2026,
+    "generator": "generate_reasoning_data.py",
+    "entity_split_policy": "Entity names may appear across splits; exact reasoning prompts may not."
+  },
+  "requested_sizes": {
+    "train": 20000,
+    "val": 2000,
+    "test": 3000,
+    "total": 25000
+  },
+  "splits": {
+    "train": {
+      "size": 20000,
+      "task_distribution": {
+        "direct_comparison": 2852,
+        "transitive_3": 3654,
+        "transitive_2": 3539,
+        "ordering": 2811,
+        "mixed_transitive": 2004,
+        "distractor_reasoning": 1542,
+        "equality": 1610,
+        "reverse_comparison": 1988
+      },
+      "task_percentages": {
+        "direct_comparison": 14.26,
+        "transitive_3": 18.27,
+        "transitive_2": 17.7,
+        "ordering": 14.06,
+        "mixed_transitive": 10.02,
+        "distractor_reasoning": 7.71,
+        "equality": 8.05,
+        "reverse_comparison": 9.94
+      },
+      "difficulty_distribution": {
+        "easy": 6450,
+        "hard": 10011,
+        "medium": 3539
+      },
+      "attribute_distribution": {
+        "age": 3298,
+        "weight": 3328,
+        "price": 4966,
+        "quantity": 5076,
+        "height": 3332
+      },
+      "entity_type_distribution": {
+        "person": 9958,
+        "object": 10042
+      },
+      "mean_reasoning_steps": 2.101,
+      "unique_entities": 162,
+      "unique_answers": 163
+    },
+    "val": {
+      "size": 2000,
+      "task_distribution": {
+        "equality": 157,
+        "transitive_2": 330,
+        "mixed_transitive": 219,
+        "distractor_reasoning": 156,
+        "transitive_3": 367,
+        "ordering": 302,
+        "direct_comparison": 284,
+        "reverse_comparison": 185
+      },
+      "task_percentages": {
+        "equality": 7.85,
+        "transitive_2": 16.5,
+        "mixed_transitive": 10.95,
+        "distractor_reasoning": 7.8,
+        "transitive_3": 18.35,
+        "ordering": 15.1,
+        "direct_comparison": 14.2,
+        "reverse_comparison": 9.25
+      },
+      "difficulty_distribution": {
+        "easy": 626,
+        "medium": 330,
+        "hard": 1044
+      },
+      "attribute_distribution": {
+        "weight": 296,
+        "price": 515,
+        "age": 356,
+        "height": 342,
+        "quantity": 491
+      },
+      "entity_type_distribution": {
+        "person": 994,
+        "object": 1006
+      },
+      "mean_reasoning_steps": 2.131,
+      "unique_entities": 162,
+      "unique_answers": 163
+    },
+    "test": {
+      "size": 3000,
+      "task_distribution": {
+        "transitive_2": 559,
+        "direct_comparison": 458,
+        "mixed_transitive": 284,
+        "distractor_reasoning": 222,
+        "transitive_3": 559,
+        "ordering": 414,
+        "equality": 240,
+        "reverse_comparison": 264
+      },
+      "task_percentages": {
+        "transitive_2": 18.63,
+        "direct_comparison": 15.27,
+        "mixed_transitive": 9.47,
+        "distractor_reasoning": 7.4,
+        "transitive_3": 18.63,
+        "ordering": 13.8,
+        "equality": 8.0,
+        "reverse_comparison": 8.8
+      },
+      "difficulty_distribution": {
+        "medium": 559,
+        "easy": 962,
+        "hard": 1479
+      },
+      "attribute_distribution": {
+        "age": 529,
+        "price": 722,
+        "weight": 486,
+        "height": 485,
+        "quantity": 778
+      },
+      "entity_type_distribution": {
+        "person": 1500,
+        "object": 1500
+      },
+      "mean_reasoning_steps": 2.098,
+      "unique_entities": 162,
+      "unique_answers": 163
+    }
+  },
+  "multi_hop": {
+    "train_count": 10004,
+    "train_percentage": 50.02,
+    "val_count": 999,
+    "val_percentage": 49.95,
+    "test_count": 1532,
+    "test_percentage": 51.07
+  },
+  "entity_pools": {
+    "people": 74,
+    "objects": 88
+  },
+  "attributes": {
+    "height": {
+      "entity_type": "person",
+      "noun": "ఎత్తు",
+      "unit": "సెంటీమీటర్లు",
+      "min_value": 145,
+      "max_value": 195
+    },
+    "age": {
+      "entity_type": "person",
+      "noun": "వయస్సు",
+      "unit": "సంవత్సరాలు",
+      "min_value": 18,
+      "max_value": 65
+    },
+    "weight": {
+      "entity_type": "person",
+      "noun": "బరువు",
+      "unit": "కిలోలు",
+      "min_value": 45,
+      "max_value": 100
+    },
+    "price": {
+      "entity_type": "object",
+      "noun": "ధర",
+      "unit": "రూపాయలు",
+      "min_value": 100,
+      "max_value": 5000
+    },
+    "quantity": {
+      "entity_type": "object",
+      "noun": "పరిమాణం",
+      "unit": "యూనిట్లు",
+      "min_value": 1,
+      "max_value": 100
+    }
+  },
+  "task_weights": {
+    "direct_comparison": 0.14,
+    "reverse_comparison": 0.1,
+    "equality": 0.08,
+    "transitive_2": 0.18,
+    "transitive_3": 0.18,
+    "ordering": 0.14,
+    "mixed_transitive": 0.1,
+    "distractor_reasoning": 0.08
+  },
+  "leakage_controls": {
+    "entity_overlap_across_splits": "allowed",
+    "duplicate_entities_within_example": "forbidden",
+    "exact_prompt_overlap_across_splits": "forbidden",
+    "test_template_overlap_with_train_val": "forbidden",
+    "numeric_value_in_prompt": "forbidden"
+  },
+  "generator_version": "v2-diverse",
+  "diversity_changes": [
+    "expanded task-family distribution",
+    "mixed relation directions and statement ordering",
+    "additional Telugu wording variants",
+    "mixed_transitive reasoning task",
+    "distractor_reasoning task",
+    "held-out test templates remain enforced"
+  ],
+  "generation_stats": {
+    "train": {
+      "split": "train",
+      "size": 20000,
+      "generation_attempts": 20044,
+      "duplicate_prompts_rejected": 44,
+      "cross_split_duplicates_rejected": 0,
+      "task_distribution": {
+        "direct_comparison": 2852,
+        "transitive_3": 3654,
+        "transitive_2": 3539,
+        "ordering": 2811,
+        "mixed_transitive": 2004,
+        "distractor_reasoning": 1542,
+        "equality": 1610,
+        "reverse_comparison": 1988
+      },
+      "attribute_distribution": {
+        "age": 3298,
+        "weight": 3328,
+        "price": 4966,
+        "quantity": 5076,
+        "height": 3332
+      },
+      "entity_type_distribution": {
+        "person": 9958,
+        "object": 10042
+      },
+      "difficulty_distribution": {
+        "easy": 6450,
+        "hard": 10011,
+        "medium": 3539
+      },
+      "template_distribution": {
+        "direct_greater_01": 346,
+        "transitive3_01": 3654,
+        "transitive3_02": 3654,
+        "direct_lower_04": 388,
+        "transitive2_01": 3539,
+        "transitive2_02": 3539,
+        "ordering_01": 2811,
+        "ordering_02": 2811,
+        "mixed_transitive_train_02": 1044,
+        "mixed_transitive_train_05": 1004,
+        "distractor_train_06": 809,
+        "distractor_train_03": 768,
+        "distractor_train_01": 750,
+        "equality_03": 548,
+        "distractor_train_02": 788,
+        "distractor_train_05": 723,
+        "mixed_transitive_train_03": 1008,
+        "equality_02": 501,
+        "mixed_transitive_train_01": 1008,
+        "reverse_04": 526,
+        "reverse_03": 470,
+        "mixed_transitive_train_04": 991,
+        "mixed_transitive_train_06": 957,
+        "distractor_train_04": 788,
+        "direct_greater_03": 334,
+        "direct_greater_02": 333,
+        "reverse_01": 499,
+        "equality_01": 561,
+        "direct_lower_02": 360,
+        "direct_lower_01": 371,
+        "direct_lower_03": 351,
+        "direct_greater_04": 369,
+        "reverse_02": 493
+      },
+      "unique_prompts": 20000
+    },
+    "val": {
+      "split": "val",
+      "size": 2000,
+      "generation_attempts": 2008,
+      "duplicate_prompts_rejected": 2,
+      "cross_split_duplicates_rejected": 6,
+      "task_distribution": {
+        "equality": 157,
+        "transitive_2": 330,
+        "mixed_transitive": 219,
+        "distractor_reasoning": 156,
+        "transitive_3": 367,
+        "ordering": 302,
+        "direct_comparison": 284,
+        "reverse_comparison": 185
+      },
+      "attribute_distribution": {
+        "weight": 296,
+        "price": 515,
+        "age": 356,
+        "height": 342,
+        "quantity": 491
+      },
+      "entity_type_distribution": {
+        "person": 994,
+        "object": 1006
+      },
+      "difficulty_distribution": {
+        "easy": 626,
+        "medium": 330,
+        "hard": 1044
+      },
+      "template_distribution": {
+        "equality_03": 49,
+        "equality_01": 56,
+        "equality_02": 52,
+        "transitive2_01": 330,
+        "transitive2_02": 330,
+        "mixed_transitive_train_05": 107,
+        "mixed_transitive_train_02": 118,
+        "mixed_transitive_train_01": 90,
+        "distractor_train_06": 77,
+        "transitive3_01": 367,
+        "transitive3_02": 367,
+        "ordering_01": 302,
+        "ordering_02": 302,
+        "distractor_train_03": 65,
+        "distractor_train_05": 72,
+        "direct_lower_03": 38,
+        "mixed_transitive_train_03": 122,
+        "direct_greater_04": 28,
+        "reverse_01": 54,
+        "distractor_train_01": 94,
+        "distractor_train_02": 83,
+        "distractor_train_04": 77,
+        "mixed_transitive_train_06": 112,
+        "direct_lower_01": 44,
+        "mixed_transitive_train_04": 108,
+        "direct_greater_01": 35,
+        "direct_lower_04": 33,
+        "reverse_04": 39,
+        "direct_greater_03": 39,
+        "reverse_03": 50,
+        "direct_lower_02": 25,
+        "direct_greater_02": 42,
+        "reverse_02": 42
+      },
+      "unique_prompts": 2000
+    },
+    "test": {
+      "split": "test",
+      "size": 3000,
+      "generation_attempts": 3001,
+      "duplicate_prompts_rejected": 1,
+      "cross_split_duplicates_rejected": 0,
+      "task_distribution": {
+        "transitive_2": 559,
+        "direct_comparison": 458,
+        "mixed_transitive": 284,
+        "distractor_reasoning": 222,
+        "transitive_3": 559,
+        "ordering": 414,
+        "equality": 240,
+        "reverse_comparison": 264
+      },
+      "attribute_distribution": {
+        "age": 529,
+        "price": 722,
+        "weight": 486,
+        "height": 485,
+        "quantity": 778
+      },
+      "entity_type_distribution": {
+        "person": 1500,
+        "object": 1500
+      },
+      "difficulty_distribution": {
+        "medium": 559,
+        "easy": 962,
+        "hard": 1479
+      },
+      "template_distribution": {
+        "transitive2_test_01": 559,
+        "transitive2_test_02": 559,
+        "direct_lower_test_02": 66,
+        "mixed_transitive_test_06": 166,
+        "mixed_transitive_test_03": 120,
+        "distractor_test_05": 120,
+        "distractor_test_01": 115,
+        "direct_greater_test_02": 84,
+        "transitive3_test_01": 559,
+        "transitive3_test_02": 559,
+        "ordering_test_01": 414,
+        "ordering_test_02": 414,
+        "equality_test_02": 77,
+        "distractor_test_03": 107,
+        "distractor_test_06": 103,
+        "equality_test_01": 78,
+        "direct_greater_test_03": 88,
+        "mixed_transitive_test_01": 161,
+        "mixed_transitive_test_04": 127,
+        "mixed_transitive_test_02": 155,
+        "reverse_test_02": 89,
+        "direct_greater_test_01": 75,
+        "distractor_test_02": 110,
+        "mixed_transitive_test_05": 123,
+        "reverse_test_03": 80,
+        "direct_lower_test_01": 71,
+        "equality_test_03": 85,
+        "distractor_test_04": 111,
+        "reverse_test_01": 95,
+        "direct_lower_test_03": 74
+      },
+      "unique_prompts": 3000
+    }
+  }
+}

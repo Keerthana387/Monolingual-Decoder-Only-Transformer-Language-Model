@@ -1,0 +1,7 @@
+run,reasoning_examples,real_examples,total_training_examples,reasoning_fraction_of_examples,real_fraction_of_examples,pretrained_accuracy_percent,finetuned_accuracy_percent,absolute_improvement_pp,pretrained_answer_token_accuracy_percent,finetuned_answer_token_accuracy_percent,metrics_file
+reasoning_2k_real_18k,2000,18000,20000,0.1,0.9,0.0,31.066666666666666,31.066666666666666,6.752777777777777,34.781190476190474,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_2k_real_18k/reasoning/metrics.json
+reasoning_5k_real_15k,5000,15000,20000,0.25,0.75,0.0,36.36666666666667,36.36666666666667,6.752777777777777,39.93119047619047,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_5k_real_15k/reasoning/metrics.json
+reasoning_8k_real_12k,8000,12000,20000,0.4,0.6,0.0,37.3,37.3,6.752777777777777,40.83896825396825,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_8k_real_12k/reasoning/metrics.json
+reasoning_12k_real_8k,12000,8000,20000,0.6,0.4,0.0,36.666666666666664,36.666666666666664,6.752777777777777,40.25015873015873,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_12k_real_8k/reasoning/metrics.json
+reasoning_16k_real_4k,16000,4000,20000,0.8,0.2,0.0,36.46666666666667,36.46666666666667,6.752777777777777,40.06999999999999,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_16k_real_4k/reasoning/metrics.json
+reasoning_20k_real_0k,20000,0,20000,1.0,0.0,0.0,42.1,42.1,6.752777777777777,45.59555555555555,/content/drive/MyDrive/LMA_IP/Telugu/results/finetune/reasoning_20k_real_0k/reasoning/metrics.json

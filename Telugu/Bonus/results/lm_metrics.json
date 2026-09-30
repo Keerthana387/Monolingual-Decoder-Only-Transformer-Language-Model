@@ -1,0 +1,14 @@
+{
+  "language": "Telugu",
+  "phase": 2,
+  "split": "test",
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/Bonus/checkpoints/final.pt",
+  "parameters": 22813056,
+  "vocab_size": 6000,
+  "context_length": 512,
+  "test_loss": 3.1708116888762254,
+  "perplexity": 23.826816471421647,
+  "bpb": 0.4736663334620374,
+  "evaluated_target_tokens": 2824704,
+  "test_utf8_bytes": 27280066
+}

@@ -1,0 +1,11 @@
+{
+  "language": "Telugu",
+  "phase": 2,
+  "split": "test",
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt",
+  "document_index": 0,
+  "sequence_length": 64,
+  "layers": 10,
+  "heads": 8,
+  "example_text": "\"భారతి నేను నిరపరాధిని. అప్పట్లో ఎలక్షన్స్ జనరల్ ఎలక్షన్స్ స్థాయిలో జరిగాయి. దెబ్బలాటలు, కొట్లాటలు ఎన్నో జరిగాయి. నా అపోజిషన్ కాండిడేట్ పూర్ణాకి ఓ పొలిటికల్ పార్టీతో సంబంధం ఉంది. ఆ పార్టీ అతన్ని"
+}

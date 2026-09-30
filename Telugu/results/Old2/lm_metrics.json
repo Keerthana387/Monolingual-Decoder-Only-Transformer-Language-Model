@@ -1,0 +1,13 @@
+{
+  "language": "Telugu",
+  "phase": 2,
+  "checkpoint": "/content/drive/MyDrive/LMA_IP/Telugu/checkpoints/final.pt",
+  "parameters": 23042432,
+  "vocab_size": 6000,
+  "context_length": 512,
+  "validation_loss": 3.171221964020718,
+  "perplexity": 23.83659402759924,
+  "bpb": 0.47937713680477534,
+  "evaluated_target_tokens": 2916864,
+  "validation_utf8_bytes": 27838129
+}

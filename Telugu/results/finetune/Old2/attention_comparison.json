@@ -1,0 +1,27 @@
+{
+  "language": "Telugu",
+  "num_examples": 50,
+  "num_layers": 10,
+  "early_layer": 0,
+  "late_layer": 9,
+  "pretrained": {
+    "early": {
+      "entropy": 2.7791656017303468,
+      "mean_distance": 12.080099868774415
+    },
+    "late": {
+      "entropy": 1.9927762007713319,
+      "mean_distance": 12.359256267547607
+    }
+  },
+  "finetuned": {
+    "early": {
+      "entropy": 2.7815004491806032,
+      "mean_distance": 11.955924854278564
+    },
+    "late": {
+      "entropy": 1.698397765159607,
+      "mean_distance": 13.680496664047242
+    }
+  }
+}

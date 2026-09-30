@@ -1,0 +1,25 @@
+{
+  "id": "telugu_test_002619",
+  "language": "te",
+  "language_name": "Telugu",
+  "split": "test",
+  "task_type": "direct_comparison",
+  "difficulty": "easy",
+  "prompt": "యశ్వంత్ యొక్క ఎత్తు కంటే శశాంక్ యొక్క ఎత్తు ఎక్కువగా ఉంది. శశాంక్, యశ్వంత్ — వీరిలో ఎక్కువ ఎత్తు ఉన్నది ఎవరు?",
+  "answer": "శశాంక్",
+  "entities": [
+    "శశాంక్",
+    "యశ్వంత్"
+  ],
+  "attribute": "height",
+  "entity_type": "person",
+  "values": {
+    "శశాంక్": 160,
+    "యశ్వంత్": 147
+  },
+  "template_ids": [
+    "direct_greater_test_01"
+  ],
+  "comparison": "greater",
+  "reasoning_steps": 1
+}

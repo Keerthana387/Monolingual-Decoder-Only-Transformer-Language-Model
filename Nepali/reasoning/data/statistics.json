@@ -1,0 +1,237 @@
+{
+  "language": "ne",
+  "language_name": "Nepali",
+  "seed": 20260914,
+  "sizes": {
+    "train": 20000,
+    "val": 2000,
+    "test": 3000,
+    "total": 25000
+  },
+  "task_weights": {
+    "direct_comparison": 0.2,
+    "reverse_comparison": 0.15,
+    "equality": 0.1,
+    "transitive_2": 0.2,
+    "transitive_3": 0.2,
+    "ordering": 0.15
+  },
+  "attributes": {
+    "height": {
+      "entity_type": "person",
+      "noun": "उचाइ",
+      "unit": "सेन्टिमिटर",
+      "min": 145,
+      "max": 195
+    },
+    "age": {
+      "entity_type": "person",
+      "noun": "उमेर",
+      "unit": "वर्ष",
+      "min": 18,
+      "max": 65
+    },
+    "weight": {
+      "entity_type": "person",
+      "noun": "तौल",
+      "unit": "किलोग्राम",
+      "min": 45,
+      "max": 100
+    },
+    "price": {
+      "entity_type": "object",
+      "noun": "मूल्य",
+      "unit": "रुपैयाँ",
+      "min": 100,
+      "max": 5000
+    },
+    "quantity": {
+      "entity_type": "object",
+      "noun": "परिमाण",
+      "unit": "एकाइ",
+      "min": 1,
+      "max": 100
+    }
+  },
+  "split_statistics": {
+    "train": {
+      "split": "train",
+      "size": 20000,
+      "task_counts": {
+        "equality": 2002,
+        "transitive_3": 4078,
+        "transitive_2": 4051,
+        "direct_comparison": 3934,
+        "reverse_comparison": 2917,
+        "ordering": 3018
+      },
+      "task_percentages": {
+        "equality": 10.01,
+        "transitive_3": 20.39,
+        "transitive_2": 20.255,
+        "direct_comparison": 19.67,
+        "reverse_comparison": 14.585,
+        "ordering": 15.09
+      },
+      "attribute_counts": {
+        "quantity": 5049,
+        "weight": 3383,
+        "age": 3275,
+        "height": 3333,
+        "price": 4960
+      },
+      "entity_type_counts": {
+        "object": 10009,
+        "person": 9991
+      },
+      "difficulty_counts": {
+        "easy": 8853,
+        "hard": 7096,
+        "medium": 4051
+      },
+      "mean_reasoning_steps": 1.9122,
+      "unique_entities": 148,
+      "unique_answers": 149,
+      "multi_hop_examples": 11147
+    },
+    "val": {
+      "split": "val",
+      "size": 2000,
+      "task_counts": {
+        "transitive_3": 409,
+        "transitive_2": 416,
+        "direct_comparison": 399,
+        "ordering": 314,
+        "equality": 188,
+        "reverse_comparison": 274
+      },
+      "task_percentages": {
+        "transitive_3": 20.45,
+        "transitive_2": 20.8,
+        "direct_comparison": 19.95,
+        "ordering": 15.7,
+        "equality": 9.4,
+        "reverse_comparison": 13.7
+      },
+      "attribute_counts": {
+        "price": 503,
+        "height": 317,
+        "weight": 349,
+        "age": 346,
+        "quantity": 485
+      },
+      "entity_type_counts": {
+        "object": 988,
+        "person": 1012
+      },
+      "difficulty_counts": {
+        "hard": 723,
+        "medium": 416,
+        "easy": 861
+      },
+      "mean_reasoning_steps": 1.931,
+      "unique_entities": 148,
+      "unique_answers": 149,
+      "multi_hop_examples": 1139
+    },
+    "test": {
+      "split": "test",
+      "size": 3000,
+      "task_counts": {
+        "transitive_3": 581,
+        "direct_comparison": 579,
+        "transitive_2": 630,
+        "equality": 285,
+        "reverse_comparison": 473,
+        "ordering": 452
+      },
+      "task_percentages": {
+        "transitive_3": 19.367,
+        "direct_comparison": 19.3,
+        "transitive_2": 21.0,
+        "equality": 9.5,
+        "reverse_comparison": 15.767,
+        "ordering": 15.067
+      },
+      "attribute_counts": {
+        "height": 510,
+        "quantity": 757,
+        "price": 761,
+        "weight": 477,
+        "age": 495
+      },
+      "entity_type_counts": {
+        "person": 1482,
+        "object": 1518
+      },
+      "difficulty_counts": {
+        "hard": 1033,
+        "easy": 1337,
+        "medium": 630
+      },
+      "mean_reasoning_steps": 1.8987,
+      "unique_entities": 148,
+      "unique_answers": 149,
+      "multi_hop_examples": 1663
+    }
+  },
+  "generation_statistics": {
+    "train": {
+      "duplicate_retries": 29,
+      "generation_attempts": 20029
+    },
+    "val": {
+      "duplicate_retries": 8,
+      "generation_attempts": 2008
+    },
+    "test": {
+      "duplicate_retries": 0,
+      "generation_attempts": 3000
+    }
+  },
+  "leakage_and_integrity": {
+    "train_val_exact_prompt_overlap": 0,
+    "train_test_exact_prompt_overlap": 0,
+    "val_test_exact_prompt_overlap": 0,
+    "train_val_template_count": 44,
+    "test_template_count": 34,
+    "template_overlap": [],
+    "entity_overlap_allowed": true
+  },
+  "leakage_policy": {
+    "exact_prompt_overlap_across_splits": "prohibited",
+    "test_template_overlap_with_train_val": "prohibited",
+    "entity_overlap_across_splits": "allowed",
+    "numeric_value_in_prompt": "prohibited",
+    "statement_order": "shuffled",
+    "transitive_question_entity_order": "shuffled"
+  },
+  "template_counts": {
+    "direct_greater_train": 4,
+    "direct_lower_train": 4,
+    "direct_greater_test": 3,
+    "direct_lower_test": 3,
+    "reverse_train": 4,
+    "reverse_test": 3,
+    "equality_train": 3,
+    "equality_test": 3,
+    "transitive_2_train": 2,
+    "transitive_2_test": 2,
+    "transitive_3_train": 3,
+    "transitive_3_test": 3,
+    "ordering_train": 3,
+    "ordering_test": 3,
+    "direct_greater_train_v2": 6,
+    "direct_lower_train_v2": 6,
+    "direct_greater_test_v2": 4,
+    "direct_lower_test_v2": 4,
+    "reverse_train_v2": 5,
+    "reverse_test_v2": 4,
+    "equality_train_v2": 4,
+    "equality_test_v2": 4,
+    "edge_greater_train_v2": 4,
+    "edge_lower_train_v2": 4,
+    "edge_greater_test_v2": 3,
+    "edge_lower_test_v2": 3
+  }
+}

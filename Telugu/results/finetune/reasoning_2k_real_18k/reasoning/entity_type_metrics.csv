@@ -1,0 +1,3 @@
+entity_type,n,pretrained_correct,pretrained_accuracy_percent,finetuned_correct,finetuned_accuracy_percent,improvement_percentage_points,newly_correct,regressed
+object,1500,0,0.0,399,26.6,26.6,399,0
+person,1500,0,0.0,533,35.53333333333333,35.53333333333333,533,0

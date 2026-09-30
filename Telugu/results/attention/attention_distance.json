@@ -1,0 +1,402 @@
+[
+  {
+    "layer": 0,
+    "head": 0,
+    "mean_attention_distance": 15.250303268432617
+  },
+  {
+    "layer": 0,
+    "head": 1,
+    "mean_attention_distance": 14.09931755065918
+  },
+  {
+    "layer": 0,
+    "head": 2,
+    "mean_attention_distance": 15.527411460876465
+  },
+  {
+    "layer": 0,
+    "head": 3,
+    "mean_attention_distance": 15.47331714630127
+  },
+  {
+    "layer": 0,
+    "head": 4,
+    "mean_attention_distance": 16.167890548706055
+  },
+  {
+    "layer": 0,
+    "head": 5,
+    "mean_attention_distance": 15.829229354858398
+  },
+  {
+    "layer": 0,
+    "head": 6,
+    "mean_attention_distance": 16.138940811157227
+  },
+  {
+    "layer": 0,
+    "head": 7,
+    "mean_attention_distance": 14.44546127319336
+  },
+  {
+    "layer": 1,
+    "head": 0,
+    "mean_attention_distance": 18.111133575439453
+  },
+  {
+    "layer": 1,
+    "head": 1,
+    "mean_attention_distance": 15.759468078613281
+  },
+  {
+    "layer": 1,
+    "head": 2,
+    "mean_attention_distance": 15.599538803100586
+  },
+  {
+    "layer": 1,
+    "head": 3,
+    "mean_attention_distance": 18.68222999572754
+  },
+  {
+    "layer": 1,
+    "head": 4,
+    "mean_attention_distance": 14.119884490966797
+  },
+  {
+    "layer": 1,
+    "head": 5,
+    "mean_attention_distance": 15.654755592346191
+  },
+  {
+    "layer": 1,
+    "head": 6,
+    "mean_attention_distance": 13.155709266662598
+  },
+  {
+    "layer": 1,
+    "head": 7,
+    "mean_attention_distance": 12.738174438476562
+  },
+  {
+    "layer": 2,
+    "head": 0,
+    "mean_attention_distance": 20.154375076293945
+  },
+  {
+    "layer": 2,
+    "head": 1,
+    "mean_attention_distance": 16.702739715576172
+  },
+  {
+    "layer": 2,
+    "head": 2,
+    "mean_attention_distance": 19.98969268798828
+  },
+  {
+    "layer": 2,
+    "head": 3,
+    "mean_attention_distance": 16.55644416809082
+  },
+  {
+    "layer": 2,
+    "head": 4,
+    "mean_attention_distance": 15.488075256347656
+  },
+  {
+    "layer": 2,
+    "head": 5,
+    "mean_attention_distance": 8.73161506652832
+  },
+  {
+    "layer": 2,
+    "head": 6,
+    "mean_attention_distance": 15.743706703186035
+  },
+  {
+    "layer": 2,
+    "head": 7,
+    "mean_attention_distance": 5.657017707824707
+  },
+  {
+    "layer": 3,
+    "head": 0,
+    "mean_attention_distance": 8.732376098632812
+  },
+  {
+    "layer": 3,
+    "head": 1,
+    "mean_attention_distance": 2.0384631156921387
+  },
+  {
+    "layer": 3,
+    "head": 2,
+    "mean_attention_distance": 2.3835902214050293
+  },
+  {
+    "layer": 3,
+    "head": 3,
+    "mean_attention_distance": 2.5435774326324463
+  },
+  {
+    "layer": 3,
+    "head": 4,
+    "mean_attention_distance": 17.166343688964844
+  },
+  {
+    "layer": 3,
+    "head": 5,
+    "mean_attention_distance": 4.939169406890869
+  },
+  {
+    "layer": 3,
+    "head": 6,
+    "mean_attention_distance": 5.168544769287109
+  },
+  {
+    "layer": 3,
+    "head": 7,
+    "mean_attention_distance": 17.046367645263672
+  },
+  {
+    "layer": 4,
+    "head": 0,
+    "mean_attention_distance": 2.9364728927612305
+  },
+  {
+    "layer": 4,
+    "head": 1,
+    "mean_attention_distance": 4.40916633605957
+  },
+  {
+    "layer": 4,
+    "head": 2,
+    "mean_attention_distance": 7.827185153961182
+  },
+  {
+    "layer": 4,
+    "head": 3,
+    "mean_attention_distance": 2.543159008026123
+  },
+  {
+    "layer": 4,
+    "head": 4,
+    "mean_attention_distance": 7.46462345123291
+  },
+  {
+    "layer": 4,
+    "head": 5,
+    "mean_attention_distance": 3.8774030208587646
+  },
+  {
+    "layer": 4,
+    "head": 6,
+    "mean_attention_distance": 4.1214070320129395
+  },
+  {
+    "layer": 4,
+    "head": 7,
+    "mean_attention_distance": 1.501557469367981
+  },
+  {
+    "layer": 5,
+    "head": 0,
+    "mean_attention_distance": 3.728087902069092
+  },
+  {
+    "layer": 5,
+    "head": 1,
+    "mean_attention_distance": 1.0426323413848877
+  },
+  {
+    "layer": 5,
+    "head": 2,
+    "mean_attention_distance": 7.021286487579346
+  },
+  {
+    "layer": 5,
+    "head": 3,
+    "mean_attention_distance": 14.606678009033203
+  },
+  {
+    "layer": 5,
+    "head": 4,
+    "mean_attention_distance": 2.2376484870910645
+  },
+  {
+    "layer": 5,
+    "head": 5,
+    "mean_attention_distance": 4.273686408996582
+  },
+  {
+    "layer": 5,
+    "head": 6,
+    "mean_attention_distance": 12.880805969238281
+  },
+  {
+    "layer": 5,
+    "head": 7,
+    "mean_attention_distance": 16.220748901367188
+  },
+  {
+    "layer": 6,
+    "head": 0,
+    "mean_attention_distance": 6.594178676605225
+  },
+  {
+    "layer": 6,
+    "head": 1,
+    "mean_attention_distance": 16.47252082824707
+  },
+  {
+    "layer": 6,
+    "head": 2,
+    "mean_attention_distance": 5.717644691467285
+  },
+  {
+    "layer": 6,
+    "head": 3,
+    "mean_attention_distance": 2.3679680824279785
+  },
+  {
+    "layer": 6,
+    "head": 4,
+    "mean_attention_distance": 4.038728713989258
+  },
+  {
+    "layer": 6,
+    "head": 5,
+    "mean_attention_distance": 12.146682739257812
+  },
+  {
+    "layer": 6,
+    "head": 6,
+    "mean_attention_distance": 7.1484856605529785
+  },
+  {
+    "layer": 6,
+    "head": 7,
+    "mean_attention_distance": 6.532609939575195
+  },
+  {
+    "layer": 7,
+    "head": 0,
+    "mean_attention_distance": 15.46239185333252
+  },
+  {
+    "layer": 7,
+    "head": 1,
+    "mean_attention_distance": 18.94257354736328
+  },
+  {
+    "layer": 7,
+    "head": 2,
+    "mean_attention_distance": 15.521151542663574
+  },
+  {
+    "layer": 7,
+    "head": 3,
+    "mean_attention_distance": 12.799186706542969
+  },
+  {
+    "layer": 7,
+    "head": 4,
+    "mean_attention_distance": 4.648448944091797
+  },
+  {
+    "layer": 7,
+    "head": 5,
+    "mean_attention_distance": 13.547220230102539
+  },
+  {
+    "layer": 7,
+    "head": 6,
+    "mean_attention_distance": 18.983936309814453
+  },
+  {
+    "layer": 7,
+    "head": 7,
+    "mean_attention_distance": 14.847058296203613
+  },
+  {
+    "layer": 8,
+    "head": 0,
+    "mean_attention_distance": 15.575292587280273
+  },
+  {
+    "layer": 8,
+    "head": 1,
+    "mean_attention_distance": 8.493851661682129
+  },
+  {
+    "layer": 8,
+    "head": 2,
+    "mean_attention_distance": 13.104982376098633
+  },
+  {
+    "layer": 8,
+    "head": 3,
+    "mean_attention_distance": 18.149507522583008
+  },
+  {
+    "layer": 8,
+    "head": 4,
+    "mean_attention_distance": 12.237035751342773
+  },
+  {
+    "layer": 8,
+    "head": 5,
+    "mean_attention_distance": 15.10629940032959
+  },
+  {
+    "layer": 8,
+    "head": 6,
+    "mean_attention_distance": 17.21092987060547
+  },
+  {
+    "layer": 8,
+    "head": 7,
+    "mean_attention_distance": 14.282010078430176
+  },
+  {
+    "layer": 9,
+    "head": 0,
+    "mean_attention_distance": 15.793243408203125
+  },
+  {
+    "layer": 9,
+    "head": 1,
+    "mean_attention_distance": 13.048158645629883
+  },
+  {
+    "layer": 9,
+    "head": 2,
+    "mean_attention_distance": 17.94333267211914
+  },
+  {
+    "layer": 9,
+    "head": 3,
+    "mean_attention_distance": 17.86480712890625
+  },
+  {
+    "layer": 9,
+    "head": 4,
+    "mean_attention_distance": 15.997832298278809
+  },
+  {
+    "layer": 9,
+    "head": 5,
+    "mean_attention_distance": 14.44936752319336
+  },
+  {
+    "layer": 9,
+    "head": 6,
+    "mean_attention_distance": 18.34319305419922
+  },
+  {
+    "layer": 9,
+    "head": 7,
+    "mean_attention_distance": 16.57436180114746
+  }
+]

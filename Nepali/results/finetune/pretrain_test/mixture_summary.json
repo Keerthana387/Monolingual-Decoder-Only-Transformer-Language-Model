@@ -1,0 +1,151 @@
+{
+  "held_out_token_file": "/content/LMA_IP_DATA/train/test/test_000.bin",
+  "pretrained_baseline": {
+    "loss": 3.3538235263824463,
+    "ppl": 28.61192320939512,
+    "bpb": 0.4420171061942528,
+    "generation": {
+      "greedy": {
+        "samples": 100,
+        "BLEU4_corpus": 0.2829750572712481,
+        "chrF_mean": 15.813354606141349,
+        "ROUGE_L_mean": 9.433021806853583,
+        "repetition_rate_mean": 0.6880645161290324,
+        "distinct_1_mean": 0.258125,
+        "distinct_2_mean": 0.2919047619047619
+      },
+      "temperature_0.5": {
+        "samples": 100,
+        "BLEU4_corpus": 0.2942582576245939,
+        "chrF_mean": 17.48613738091217,
+        "ROUGE_L_mean": 9.19626168224299,
+        "repetition_rate_mean": 0.3825806451612903,
+        "distinct_1_mean": 0.4446875,
+        "distinct_2_mean": 0.5531746031746032
+      },
+      "temperature_1.0": {
+        "samples": 100,
+        "BLEU4_corpus": 0.1360760897652463,
+        "chrF_mean": 17.199766482565234,
+        "ROUGE_L_mean": 6.915887850467289,
+        "repetition_rate_mean": 0.014032258064516126,
+        "distinct_1_mean": 0.85671875,
+        "distinct_2_mean": 0.9673015873015873
+      },
+      "temperature_1.5": {
+        "samples": 100,
+        "BLEU4_corpus": 0.030923322828422615,
+        "chrF_mean": 15.965783265597947,
+        "ROUGE_L_mean": 4.317757009345795,
+        "repetition_rate_mean": 0.00048387096774193505,
+        "distinct_1_mean": 0.95640625,
+        "distinct_2_mean": 0.9988888888888888
+      }
+    }
+  },
+  "runs": [
+    {
+      "run": "reasoning_2k_real_18k",
+      "reasoning_examples": 2000,
+      "real_examples": 18000,
+      "reasoning_fraction_of_examples": 0.1,
+      "loss": 11.680045738220215,
+      "ppl": 118189.64072823034,
+      "bpb": 1.539371400078815,
+      "BLEU4_greedy": 0.2330263607662596,
+      "chrF_greedy": 15.394970209867886,
+      "ROUGE_L_greedy": 9.090342679127728,
+      "repetition_greedy": 0.6972580645161289,
+      "distinct1_greedy": 0.249375,
+      "distinct2_greedy": 0.282063492063492,
+      "delta_ppl_vs_pretrained": 118161.02880502095,
+      "delta_bpb_vs_pretrained": 1.0973542938845622
+    },
+    {
+      "run": "reasoning_5k_real_15k",
+      "reasoning_examples": 5000,
+      "real_examples": 15000,
+      "reasoning_fraction_of_examples": 0.25,
+      "loss": 12.65264305114746,
+      "ppl": 312588.54472592165,
+      "bpb": 1.6675548439513428,
+      "BLEU4_greedy": 0.2159582768121804,
+      "chrF_greedy": 15.397441489055316,
+      "ROUGE_L_greedy": 8.766355140186917,
+      "repetition_greedy": 0.7051612903225808,
+      "distinct1_greedy": 0.24828125,
+      "distinct2_greedy": 0.2774603174603174,
+      "delta_ppl_vs_pretrained": 312559.93280271225,
+      "delta_bpb_vs_pretrained": 1.22553773775709
+    },
+    {
+      "run": "reasoning_8k_real_12k",
+      "reasoning_examples": 8000,
+      "real_examples": 12000,
+      "reasoning_fraction_of_examples": 0.4,
+      "loss": 12.3399619140625,
+      "ppl": 228653.24341783437,
+      "bpb": 1.6263450395926438,
+      "BLEU4_greedy": 0.23523564102004665,
+      "chrF_greedy": 15.151125996820333,
+      "ROUGE_L_greedy": 9.102803738317757,
+      "repetition_greedy": 0.7079032258064515,
+      "distinct1_greedy": 0.244375,
+      "distinct2_greedy": 0.27365079365079364,
+      "delta_ppl_vs_pretrained": 228624.63149462498,
+      "delta_bpb_vs_pretrained": 1.184327933398391
+    },
+    {
+      "run": "reasoning_12k_real_8k",
+      "reasoning_examples": 12000,
+      "real_examples": 8000,
+      "reasoning_fraction_of_examples": 0.6,
+      "loss": 11.765260536193848,
+      "ppl": 128702.72108262467,
+      "bpb": 1.5506022827143902,
+      "BLEU4_greedy": 0.22411293314063138,
+      "chrF_greedy": 15.156485043227882,
+      "ROUGE_L_greedy": 8.928348909657322,
+      "repetition_greedy": 0.695,
+      "distinct1_greedy": 0.2540625,
+      "distinct2_greedy": 0.28587301587301583,
+      "delta_ppl_vs_pretrained": 128674.10915941528,
+      "delta_bpb_vs_pretrained": 1.1085851765201373
+    },
+    {
+      "run": "reasoning_16k_real_4k",
+      "reasoning_examples": 16000,
+      "real_examples": 4000,
+      "reasoning_fraction_of_examples": 0.8,
+      "loss": 11.533894973754883,
+      "ppl": 102119.09138107543,
+      "bpb": 1.5201094629289122,
+      "BLEU4_greedy": 0.19594542422765965,
+      "chrF_greedy": 14.754467541827335,
+      "ROUGE_L_greedy": 8.616822429906541,
+      "repetition_greedy": 0.673225806451613,
+      "distinct1_greedy": 0.2446875,
+      "distinct2_greedy": 0.27634920634920634,
+      "delta_ppl_vs_pretrained": 102090.47945786604,
+      "delta_bpb_vs_pretrained": 1.0780923567346594
+    },
+    {
+      "run": "reasoning_20k_real_0k",
+      "reasoning_examples": 20000,
+      "real_examples": 0,
+      "reasoning_fraction_of_examples": 1.0,
+      "loss": 8.210477855682374,
+      "ppl": 3679.3002207739164,
+      "bpb": 1.0820997687243463,
+      "BLEU4_greedy": 4.730667864031506e-06,
+      "chrF_greedy": 4.208099676487613,
+      "ROUGE_L_greedy": 2.7180997365178907,
+      "repetition_greedy": 0.17950858202518544,
+      "distinct1_greedy": 0.5401316700477885,
+      "distinct2_greedy": 0.4813891941391942,
+      "delta_ppl_vs_pretrained": 3650.6882975645212,
+      "delta_bpb_vs_pretrained": 0.6400826625300935
+    }
+  ],
+  "evaluation_note": "The held-out set is the project's original tokenized test/test_000.bin. The same token IDs are evaluated for the Phase 2 pretrained checkpoint and every Phase 3 fine-tuned checkpoint. BPB uses UTF-8 bytes obtained by decoding the evaluated token sequences with the existing Nepali tokenizer."
+}
